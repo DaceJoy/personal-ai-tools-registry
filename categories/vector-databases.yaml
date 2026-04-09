@@ -1,0 +1,49 @@
+category_id: vector-databases
+display_name: Vector Databases
+description: >
+  Stores dense and sparse vector embeddings for semantic search and recall.
+  Used as the fallback retrieval layer in the hybrid knowledge base (primary = curated .md).
+
+personalai_relevance: >
+  Activated in Phase 2 (second user or company tenant).
+  Each tenant gets an isolated collection with JWT access control.
+  Hybrid search (dense + sparse) gives best recall without a separate BM25 index.
+
+selection_criteria:
+  - hybrid_search_native: true      # dense + sparse in single call
+  - jwt_per_collection: true        # mandatory for multi-tenant isolation
+  - arm64_support: true             # Oracle VM requirement
+  - self_hosted: true               # local-first policy
+
+tools:
+  - tool_id: qdrant
+    status: active
+    recommended: true
+    reason: "Hybrid search native (v1.10+), JWT collections, ARM64, tiered multitenancy"
+
+  - tool_id: chroma
+    status: watch
+    recommended: false
+    reason: "Simple API, but no JWT per collection — not suitable for multi-tenant isolation"
+    source:
+      github: https://github.com/chroma-core/chroma
+      docs: https://docs.trychroma.com/
+
+  - tool_id: weaviate
+    status: watch
+    recommended: false
+    reason: "Full-featured, but heavier resource footprint than qdrant"
+    source:
+      github: https://github.com/weaviate/weaviate
+      docs: https://weaviate.io/developers/weaviate
+
+  - tool_id: milvus
+    status: watch
+    recommended: false
+    reason: "Enterprise-grade scale, overkill for personal use"
+    source:
+      github: https://github.com/milvus-io/milvus
+      docs: https://milvus.io/docs
+
+last_reviewed: 2026-04-09
+reviewed_by: initial-setup

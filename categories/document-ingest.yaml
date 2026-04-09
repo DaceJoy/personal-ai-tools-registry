@@ -1,0 +1,49 @@
+category_id: document-ingest
+display_name: Document Ingest
+description: >
+  Parses external documents (PDF, DOCX, HTML, images) into structured text chunks
+  for indexing into the vector knowledge base.
+
+personalai_relevance: >
+  Activated in Phase 2 when Block G4 option 3 is selected (external document sources).
+  Output feeds into Qdrant collections via embedding pipeline.
+  Local processing only — no data sent to cloud services.
+
+selection_criteria:
+  - local_processing: true
+  - pdf_support: true
+  - table_extraction: true
+  - structured_output: true    # Markdown or JSON, not raw text dump
+
+tools:
+  - tool_id: docling
+    status: active
+    recommended: true
+    reason: "Layout-aware PDF/DOCX parsing, local, structured output, IBM-maintained"
+
+  - tool_id: unstructured
+    status: watch
+    recommended: false
+    reason: "Broad format support, but cloud API by default — requires self-hosted setup"
+    source:
+      github: https://github.com/Unstructured-IO/unstructured
+      docs: https://docs.unstructured.io/
+
+  - tool_id: markitdown
+    status: watch
+    recommended: false
+    reason: "Microsoft tool, converts Office/PDF to Markdown — simpler than docling"
+    source:
+      github: https://github.com/microsoft/markitdown
+      docs: https://github.com/microsoft/markitdown#readme
+
+  - tool_id: apache-tika
+    status: watch
+    recommended: false
+    reason: "Java-based, very broad format support, but heavy dependency"
+    source:
+      github: null
+      docs: https://tika.apache.org/
+
+last_reviewed: 2026-04-09
+reviewed_by: initial-setup

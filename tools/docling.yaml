@@ -1,0 +1,38 @@
+tool_id: docling
+display_name: Docling
+category: document-ingest
+status: active
+type: infrastructure
+
+source:
+  github: https://github.com/DS4SD/docling
+  docs: https://ds4sd.github.io/docling/
+  pypi: docling
+  docker: null               # no official Docker image, install via pip
+
+relevance_to_personalai:
+  use_case: "Document ingestion pipeline — parse PDF/DOCX/HTML into chunks for Qdrant indexing (Phase 2)"
+  phase: 2                   # activate when external document sources are added (Block G4 option 3)
+  replaces_what: null
+  alternatives: [unstructured, apache-tika, markitdown]
+
+highlights:
+  - "Converts PDF, DOCX, PPTX, HTML, images to structured Markdown/JSON"
+  - "Layout-aware: preserves tables, figures, headings"
+  - "Local processing — no data sent to cloud"
+  - "DoclingDocument format: structured representation with bounding boxes"
+
+install:
+  hint: "pip install docling"
+  docs_url: https://ds4sd.github.io/docling/installation/
+  arm64_support: true
+  config_ref: null           # install guide fetched from docs at Phase 2 setup
+
+fork_notes: >
+  IBM/DS4SD organisation blocks API forking.
+  Fork manually via GitHub UI if needed: https://github.com/DS4SD/docling
+
+maintained_by: company-ibm   # IBM Research — low deletion risk
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "Block G Phase 2 document ingest option"

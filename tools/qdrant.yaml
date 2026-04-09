@@ -1,0 +1,40 @@
+tool_id: qdrant
+display_name: Qdrant
+category: vector-databases
+status: active
+type: infrastructure
+
+source:
+  github: https://github.com/qdrant/qdrant
+  docs: https://qdrant.tech/documentation/
+  docker: qdrant/qdrant
+  pypi: qdrant-client
+
+relevance_to_personalai:
+  use_case: "Vector DB for hybrid knowledge base — semantic recall layer (Phase 2)"
+  phase: 2                   # activate when adding 2nd user or company tenant
+  replaces_what: null
+  alternatives: [chroma, weaviate, milvus]
+
+highlights:
+  - "Hybrid search: dense + BM42 sparse in single Query API call (v1.10+)"
+  - "JWT per collection — proper tenant isolation without payload filtering hacks"
+  - "Tiered multitenancy: dedicated shard for collections >20K vectors (v1.16+)"
+  - "Named volumes: docker run -v /qdrant-storage:/qdrant/storage — easy migration"
+  - "ARM64 binary available — works on Oracle VM"
+
+install:
+  hint: "docker run -p 6333:6333 -v qdrant-storage:/qdrant/storage qdrant/qdrant"
+  docs_url: https://qdrant.tech/documentation/guides/installation/
+  arm64_support: true
+  config_ref: "docs/architecture/hybrid-knowledge-base.md"
+
+security_notes:
+  - "JWT per user per collection — see docs/architecture/multi-user.md"
+  - "Payload filtering is NOT access control — use separate collections per tenant"
+  - "OWASP LLM08: hash chunks before indexing to detect vector poisoning (Phase 2)"
+
+maintained_by: company    # qdrant.tech — low deletion risk, do not fork
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "Block G Phase 2 vector DB selection"
