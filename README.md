@@ -11,9 +11,15 @@
 
 ---
 
+> Special thanks to **[Daniel Miessler](https://github.com/danielmiessler)** for the inspiration.
+> This registry exists because of his work on [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure).
+
+---
+
 ## Contents
 
 - [How to read this registry](#how-to-read-this-registry)
+- [Review status](#review-status)
 - [🏗️ Agent Frameworks & Architecture](#-agent-frameworks--architecture)
 - [🧰 Skill Packs](#-skill-packs)
 - [🔒 Security Scanning](#-security-scanning)
@@ -26,12 +32,13 @@
 
 ## How to read this registry
 
-Each tool lives in `tools/<tool-id>/` with two files:
+Each tool lives in `tools/<tool-id>/` with up to three files:
 
 | File | Purpose |
 |------|---------|
 | `meta.yaml` | Source URLs, install hints, relevance to PersonalAI, phase |
-| `categories.yaml` | Detected categories, keywords, use cases (written by ecosystem-scout) |
+| `categories.yaml` | Detected categories, keywords, use cases |
+| `comparison.yaml` | Side-by-side comparison with alternatives (optional) |
 
 **Phase** indicates when a tool becomes relevant:
 
@@ -42,8 +49,33 @@ Each tool lives in `tools/<tool-id>/` with two files:
 | ![Phase 3](https://img.shields.io/badge/phase-3%20scale-red) | Hundreds of users, enterprise |
 
 > [!TIP]
-> `upstream_fork` entries are forks maintained at `github.com/DaceJoy/upstream-<name>`.
-> Fork sync is automated monthly by `capability-auditor`.
+> `upstream_fork` entries point to maintained forks. Fork sync is automated monthly.
+
+---
+
+## Review status
+
+> [!NOTE]
+> `last_verified` dates are maintained in each `tools/<id>/meta.yaml`.
+> ecosystem-scout checks this table to decide which entries need a fresh review.
+> Entries not reviewed in **90+ days** are flagged for re-verification.
+
+| Tool | Last verified | Phase | Status |
+|------|--------------|-------|--------|
+| [PAI](tools/pai/meta.yaml) | 2026-04-09 | 1 | ✅ active |
+| [everything-claude-code](tools/everything-claude-code/meta.yaml) | 2026-04-09 | 1 | ✅ active |
+| [agentshield](tools/agentshield/meta.yaml) | 2026-04-09 | 1 | ✅ active |
+| [code-review-graph](tools/code-review-graph/meta.yaml) | 2026-04-09 | 1 | ✅ active |
+| [gstack](tools/gstack/meta.yaml) | 2026-04-09 | 1 | ✅ active |
+| [qdrant](tools/qdrant/meta.yaml) | 2026-04-09 | 2 | ✅ active |
+| [docling](tools/docling/meta.yaml) | 2026-04-09 | 2 | ✅ active |
+
+> When running ecosystem-scout manually:
+> ```
+> 1. Review all entries (regardless of last_verified)
+> 2. Review only entries older than 90 days  [default]
+> 3. Review selected entries — specify tool IDs
+> ```
 
 ---
 
@@ -80,6 +112,7 @@ Adopt selectively via `capability-auditor` — do not import wholesale.
 
 - **Source:** https://github.com/affaan-m/everything-claude-code
 - **Keywords:** skills, hooks, memory patterns, AgentShield, slash commands
+- **Compare with:** [gstack](tools/gstack/meta.yaml) — specialist roles vs breadth of skills
 
 ### [gstack](tools/gstack/meta.yaml)
 
@@ -92,6 +125,7 @@ Pattern: activate a specialist role for focused, expert-level responses.
 
 - **Source:** https://github.com/garrytan/gstack
 - **Keywords:** specialist skills, virtual team, role-based prompting
+- **Compare with:** [everything-claude-code](tools/everything-claude-code/meta.yaml) — depth per role vs breadth
 
 ---
 
@@ -105,7 +139,7 @@ Tools for auditing agent configs, hooks, MCP servers, and detecting secrets or i
 ![OWASP](https://img.shields.io/badge/OWASP-LLM01%20LLM02%20LLM06%20LLM07-red)
 ![Fork](https://img.shields.io/badge/fork-upstream--agentshield-blue)
 
-102 security rules across 5 categories. Used as **verify-checklist step 14**
+102 security rules across 5 categories. Used as a mandatory security gate
 before every promotion to `active`.
 
 - **Source:** https://github.com/affaan-m/agentshield
@@ -139,9 +173,19 @@ Structural context replaces file dumps — **49× fewer tokens** on daily tasks.
 Semantic search backends. Activated in **Phase 2** (multi-user or company tenant).
 
 > [!WARNING]
-> Vector databases are infrastructure, not capability upstreams.
-> They are not tracked in `sources.template.yaml` — install instructions
-> are fetched from official docs at Phase 2 setup time.
+> Vector databases are infrastructure tools.
+> Install instructions are fetched from official docs at Phase 2 setup time.
+
+### Comparison
+
+| | [Qdrant](tools/qdrant/meta.yaml) | Chroma | Weaviate | Milvus |
+|---|---|---|---|---|
+| Hybrid search native | ✅ (v1.10+) | ❌ | ⚠️ partial | ✅ |
+| JWT per collection | ✅ | ❌ | ✅ | ✅ |
+| ARM64 support | ✅ | ✅ | ⚠️ | ⚠️ |
+| Self-hosted | ✅ | ✅ | ✅ | ✅ |
+| Suited for personal scale | ✅ | ✅ | ⚠️ heavier | ❌ overkill |
+| **Recommended** | ✅ **Yes** | ❌ | ❌ | ❌ |
 
 ### [Qdrant](tools/qdrant/meta.yaml) ✅ Recommended
 
@@ -150,17 +194,24 @@ Semantic search backends. Activated in **Phase 2** (multi-user or company tenant
 ![ARM64](https://img.shields.io/badge/ARM64-supported-brightgreen)
 ![Company](https://img.shields.io/badge/maintained%20by-qdrant.tech-blue)
 
-Native hybrid search (dense + BM42 sparse) · JWT per collection · ARM64 binary.
-
 - **Docs:** https://qdrant.tech/documentation/
 - **Install:** `docker run -p 6333:6333 -v qdrant-storage:/qdrant/storage qdrant/qdrant`
-- **Alternatives evaluated:** Chroma (no JWT isolation) · Weaviate (heavier) · Milvus (enterprise scale)
 
 ---
 
 ## 📄 Document Ingestion
 
-Parse external documents into chunks for vector indexing. Activated in **Phase 2** (Block G4 option 3).
+Parse external documents into chunks for vector indexing. Phase 2, Block G4 option 3.
+
+### Comparison
+
+| | [Docling](tools/docling/meta.yaml) | Unstructured | MarkItDown | Apache Tika |
+|---|---|---|---|---|
+| PDF layout-aware | ✅ | ✅ | ⚠️ basic | ✅ |
+| Local processing default | ✅ | ❌ cloud | ✅ | ✅ |
+| ARM64 | ✅ | ⚠️ | ✅ | ⚠️ Java |
+| Structured output | ✅ JSON/MD | ✅ | ✅ MD only | ✅ XML |
+| **Recommended** | ✅ **Yes** | ❌ | ⚠️ simple tasks | ❌ |
 
 ### [Docling](tools/docling/meta.yaml) ✅ Recommended
 
@@ -168,11 +219,8 @@ Parse external documents into chunks for vector indexing. Activated in **Phase 2
 ![Local](https://img.shields.io/badge/processing-local-brightgreen)
 ![Company](https://img.shields.io/badge/maintained%20by-IBM%20Research-blue)
 
-Layout-aware PDF/DOCX/HTML parsing · local processing · structured Markdown output.
-
 - **Docs:** https://ds4sd.github.io/docling/
 - **Install:** `pip install docling`
-- **Alternatives evaluated:** Unstructured (cloud default) · MarkItDown (simpler) · Apache Tika (Java)
 
 ---
 
@@ -180,9 +228,9 @@ Layout-aware PDF/DOCX/HTML parsing · local processing · structured Markdown ou
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry format.
 
-New tools are proposed by `ecosystem-scout` (quarterly) and reviewed by `capability-auditor`.
-The `categories.yaml` per tool is written by ecosystem-scout after analysing repo contents.
+New tools are proposed quarterly and reviewed before being added.
+The `categories.yaml` per tool is written after analysing repo contents.
 
 > [!NOTE]
-> `README.md` is regenerated by ecosystem-scout after each quarterly run.
+> `README.md` is regenerated after each quarterly review run.
 > Do not edit it manually — edit `tools/<id>/meta.yaml` or `categories/_index.yaml` instead.
