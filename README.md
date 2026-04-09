@@ -69,6 +69,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [gstack](tools/gstack/meta.yaml) | 2026-04-09 | 1 | ✅ active |
 | [qdrant](tools/qdrant/meta.yaml) | 2026-04-09 | 2 | ✅ active |
 | [docling](tools/docling/meta.yaml) | 2026-04-09 | 2 | ✅ active |
+| [bge-m3](tools/bge-m3/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
 
 > When running ecosystem-scout manually:
 > ```
@@ -221,6 +222,32 @@ Parse external documents into chunks for vector indexing. Phase 2, Block G4 opti
 
 - **Docs:** https://ds4sd.github.io/docling/
 - **Install:** `pip install docling`
+
+---
+
+## 🔢 Embedding Models
+
+Local models for vector indexing. Phase 2+ — activated when Qdrant is set up.
+
+> [!NOTE]
+> Embedding models run locally on your hardware.
+> RAM requirements and quality trade-offs documented per entry.
+
+### [BGE-M3](tools/bge-m3/meta.yaml) — Phase 2 upgrade path
+
+![Phase 2](https://img.shields.io/badge/phase-2-yellow)
+![Local](https://img.shields.io/badge/inference-local-brightgreen)
+![Multilingual](https://img.shields.io/badge/languages-100%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+Unified embedding model: dense + sparse (BM25-like) + ColBERT in one pass.
+Replaces `nomic-embed-text` + separate BM42 index. Polish language supported.
+
+- **Source:** https://github.com/FlagOpen/FlagEmbedding
+- **HuggingFace:** https://huggingface.co/BAAI/bge-m3
+- **Install:** `pip install -U FlagEmbedding`
+- **RAM:** ~2 GB (FP16)
+- **Phase 1 default:** use `nomic-embed-text` (lighter). Migrate here for quality.
 
 ---
 

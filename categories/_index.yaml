@@ -69,3 +69,13 @@ categories:
     display_name: MCP Server Security
     emoji: "🔌"
     description: "Security evaluation and monitoring for Model Context Protocol servers"
+
+  - id: embedding-models
+    display_name: Embedding Models
+    emoji: "🔢"
+    description: "Local embedding models for vector indexing — dense, sparse, and unified (Phase 2+)"
+
+  - id: hybrid-search
+    display_name: Hybrid Search & Retrieval
+    emoji: "🔍"
+    description: "Techniques combining semantic and keyword search: RRF, DBSF, dynamic weighting, RAG-Fusion"

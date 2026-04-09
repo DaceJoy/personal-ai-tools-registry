@@ -1,0 +1,31 @@
+tool_id: bge-m3
+detected_by: architecture-review
+detected_date: 2026-04-09
+
+primary_category: embedding-models
+additional_categories:
+  - vector-databases
+  - hybrid-search
+
+keywords:
+  - embeddings
+  - dense retrieval
+  - sparse retrieval
+  - ColBERT
+  - BM25 replacement
+  - multilingual
+  - hybrid search
+  - FlagEmbedding
+  - BGE
+  - local inference
+
+use_cases:
+  - "Phase 2 embedding: replace nomic-embed-text + BM42 with unified model"
+  - "Multilingual RAG — Polish language support"
+  - "Long document indexing (8192 tokens)"
+  - "Hybrid search without separate keyword index"
+
+tags:
+  phase: [2]
+  type: [embedding, ml-model, local]
+  maintained_by: community-baai

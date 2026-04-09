@@ -1,0 +1,46 @@
+tool_id: bge-m3
+display_name: BGE-M3 (FlagEmbedding)
+category: embedding-models
+status: watch
+type: embedding-model
+
+source:
+  github: https://github.com/FlagOpen/FlagEmbedding
+  docs: https://huggingface.co/BAAI/bge-m3
+  docker: null
+  pypi: FlagEmbedding
+
+relevance_to_personalai:
+  use_case: >
+    Phase 2 embedding upgrade: replaces nomic-embed-text + BM42.
+    Single model provides dense + sparse + ColBERT vectors.
+    Eliminates need for separate BM25 — Qdrant uses BGE-M3 sparse natively.
+  phase: 2
+  replaces_what: "nomic-embed-text (dense) + Qdrant BM42 sparse"
+  alternatives:
+    - nomic-embed-text (Phase 1 default — simpler, lower RAM)
+    - text-embedding-3-small (OpenAI cloud, non-local)
+
+highlights:
+  - "Unified model: dense + sparse (BM25-like) + ColBERT in one pass"
+  - "100+ languages — including Polish"
+  - "8192 token context window (long documents)"
+  - "MIT license — commercially usable"
+  - "Runs fully local, no API needed"
+  - "Qdrant native support via FlagEmbedding integration"
+  - "Outperforms OpenAI models on multilingual benchmarks (MIRACL, MKQA)"
+
+install:
+  hint: "pip install -U FlagEmbedding"
+  docs_url: https://huggingface.co/BAAI/bge-m3
+  arm64_support: true
+
+maintained_by: community-baai
+upstream_fork: null
+last_verified: 2026-04-09
+added_by: architecture-review
+added_reason: >
+  Solves hybrid search dynamic weighting: unified dense+sparse from one model
+  means Qdrant Weighted RRF gets consistent score spaces without client-side normalization.
+  Polish language support critical for personal-scale multi-language use.
+notes: "RAM: ~2 GB FP16. Phase 1: use nomic-embed-text. Phase 2: migrate to BGE-M3 for quality."
