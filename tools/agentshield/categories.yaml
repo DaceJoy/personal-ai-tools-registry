@@ -1,0 +1,30 @@
+tool_id: agentshield
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: security-scanning
+additional_categories:
+  - mcp-server-security
+  - prompt-injection-protection
+  - llm-output-validation
+
+keywords:
+  - security scan
+  - secrets detection
+  - prompt injection
+  - MCP security
+  - agent config review
+  - hook analysis
+  - jailbreak detection
+  - OWASP LLM
+
+use_cases:
+  - "Pre-promotion security gate (verify-checklist step 14)"
+  - "Hook analysis: detect command injection / exfiltration"
+  - "MCP server audit before enabling"
+
+tags:
+  phase: [1]
+  type: [security, cli]
+  owasp_covers: [LLM01, LLM02, LLM06, LLM07]
+  maintained_by: community-individual

@@ -1,0 +1,30 @@
+tool_id: qdrant
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: vector-databases
+additional_categories:
+  - multi-tenant-auth
+  - knowledge-base-backend
+  - hybrid-search
+
+keywords:
+  - vector search
+  - semantic search
+  - hybrid search
+  - dense sparse
+  - BM42
+  - JWT isolation
+  - multi-tenant
+  - self-hosted
+
+use_cases:
+  - "Semantic recall layer in hybrid knowledge base (fallback to curated .md)"
+  - "Tenant-isolated vector collections with JWT per collection"
+
+tags:
+  phase: [2, 3]
+  type: [infrastructure, database]
+  deployment: [docker, self-hosted, cloud]
+  platform: [linux, arm64, windows, macos]
+  maintained_by: company

@@ -1,0 +1,28 @@
+tool_id: gstack
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: skill-packs
+additional_categories:
+  - agent-orchestration
+  - self-improvement-patterns
+
+keywords:
+  - specialist skills
+  - virtual team
+  - CEO role
+  - designer role
+  - QA engineer
+  - security engineer
+  - release engineer
+  - Claude Code skills
+
+use_cases:
+  - "Specialist role activation: 'Act as security engineer and review this'"
+  - "Virtual engineering team for solo developers"
+
+tags:
+  phase: [1]
+  type: [skill-pack]
+  adoption: manual-promotion
+  maintained_by: community-individual

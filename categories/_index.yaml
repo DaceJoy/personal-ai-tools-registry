@@ -1,0 +1,71 @@
+version: 1
+# Master list of all categories in this registry.
+# ecosystem-scout uses this to classify new tools.
+# README.md sections are generated in this order.
+
+categories:
+
+  - id: agent-frameworks
+    display_name: Agent Frameworks & Architecture
+    emoji: "🏗️"
+    description: "Foundational patterns for building multi-agent AI systems"
+
+  - id: skill-packs
+    display_name: Skill Packs
+    emoji: "🧰"
+    description: "Curated collections of Claude Code skills and specialist roles"
+
+  - id: security-scanning
+    display_name: Security Scanning
+    emoji: "🔒"
+    description: "Tools for auditing agent configs, hooks, MCP servers, and secrets"
+
+  - id: code-context-tools
+    display_name: Code Context & Token Optimization
+    emoji: "⚡"
+    description: "Tools that reduce token usage and improve code understanding"
+
+  - id: vector-databases
+    display_name: Vector Databases
+    emoji: "🗄️"
+    description: "Semantic search backends for hybrid knowledge base (Phase 2+)"
+
+  - id: document-ingest
+    display_name: Document Ingestion
+    emoji: "📄"
+    description: "Parse and chunk external documents for vector indexing (Phase 2+)"
+
+  - id: agent-orchestration
+    display_name: Agent Orchestration
+    emoji: "🔄"
+    description: "Multi-agent coordination, routing, and task delegation patterns"
+
+  - id: multi-tenant-auth
+    display_name: Multi-Tenant Auth & Isolation
+    emoji: "🔑"
+    description: "JWT, collection-level isolation, cross-tenant access control"
+
+  - id: knowledge-base-backend
+    display_name: Knowledge Base Backend
+    emoji: "🧠"
+    description: "Storage and retrieval backends for AI memory systems"
+
+  - id: prompt-injection-protection
+    display_name: Prompt Injection Protection
+    emoji: "🛡️"
+    description: "Input sanitization, guardrails, and injection detection (OWASP LLM01)"
+
+  - id: self-improvement-patterns
+    display_name: Self-Improvement Patterns
+    emoji: "📈"
+    description: "Capability lifecycle, gotcha tracking, ecosystem discovery loops"
+
+  - id: local-processing
+    display_name: Local Processing
+    emoji: "💻"
+    description: "Tools that run fully offline without sending data to cloud APIs"
+
+  - id: mcp-server-security
+    display_name: MCP Server Security
+    emoji: "🔌"
+    description: "Security evaluation and monitoring for Model Context Protocol servers"

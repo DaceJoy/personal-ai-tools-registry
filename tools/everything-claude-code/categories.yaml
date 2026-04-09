@@ -1,0 +1,29 @@
+tool_id: everything-claude-code
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: skill-packs
+additional_categories:
+  - security-scanning
+  - agent-orchestration
+  - self-improvement-patterns
+
+keywords:
+  - Claude Code skills
+  - agents
+  - hooks
+  - memory patterns
+  - AgentShield
+  - security scanning
+  - slash commands
+
+use_cases:
+  - "Selective skill adoption: cherry-pick into CLAUDE.md"
+  - "Agent templates: review before adopting"
+  - "AgentShield: 102-rule security scanner for agent configs"
+
+tags:
+  phase: [1]
+  type: [skill-pack, security]
+  adoption: manual-promotion
+  maintained_by: community-individual

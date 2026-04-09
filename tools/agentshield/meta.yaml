@@ -1,0 +1,34 @@
+tool_id: agentshield
+display_name: AgentShield
+category: security-scanning
+status: active
+type: security-tooling
+
+source:
+  github: https://github.com/affaan-m/agentshield
+  docs: https://github.com/affaan-m/agentshield#readme
+  docker: null
+  pypi: agentshield
+
+relevance_to_personalai:
+  use_case: "Security scanner — verify-checklist step 14 before promotion to active"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "102 rules across 5 categories: secrets, permissions, hooks, MCP, agent config"
+  - "Detects hidden instructions, jailbreaks in agent YAML"
+  - "Hook analysis: command injection, exfiltration patterns"
+  - "MCP server security: 23 rules"
+
+install:
+  hint: "pip install agentshield OR uvx agentshield scan ."
+  docs_url: https://github.com/affaan-m/agentshield#readme
+  arm64_support: true
+
+maintained_by: community-individual
+upstream_fork: https://github.com/DaceJoy/upstream-agentshield
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "OWASP LLM Top 10 — verify step before every promotion"

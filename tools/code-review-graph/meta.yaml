@@ -1,0 +1,34 @@
+tool_id: code-review-graph
+display_name: Code Review Graph
+category: code-context-tools
+status: active
+type: mcp-tool
+
+source:
+  github: https://github.com/tirth8205/code-review-graph
+  docs: https://github.com/tirth8205/code-review-graph#readme
+  docker: null
+  pypi: code-review-graph
+
+relevance_to_personalai:
+  use_case: "Reduces token usage ~49x on coding tasks via Tree-sitter AST knowledge graph"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "49x token reduction on daily tasks, 6.8x on code review"
+  - "Tree-sitter AST → local knowledge graph → MCP server"
+  - "Graph-based context instead of file dumps"
+  - "Default ON — easy to disable per device"
+
+install:
+  hint: "uvx code-review-graph OR pip install code-review-graph"
+  docs_url: https://github.com/tirth8205/code-review-graph#readme
+  arm64_support: true
+
+maintained_by: community-individual
+upstream_fork: https://github.com/DaceJoy/upstream-code-review-graph
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "Solves context window pressure without truncating — structural solution"

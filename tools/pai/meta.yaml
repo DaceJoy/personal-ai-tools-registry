@@ -1,0 +1,33 @@
+tool_id: pai
+display_name: Personal AI Infrastructure (PAI)
+category: agent-frameworks
+status: active
+type: foundation-framework
+
+source:
+  github: https://github.com/danielmiessler/Personal_AI_Infrastructure
+  docs: https://github.com/danielmiessler/Personal_AI_Infrastructure#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Foundation architecture — bootstrap and conceptual base for this project"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Original PAI concept by Daniel Miessler"
+  - "Multi-tenant extensions, capability auditor, orchestrator added in this fork"
+  - "update_policy: audit-only — we read ideas, do not merge blindly"
+
+install:
+  hint: null
+  docs_url: https://github.com/danielmiessler/Personal_AI_Infrastructure#readme
+  arm64_support: null
+
+maintained_by: community-individual
+upstream_fork: https://github.com/DaceJoy/upstream-pai
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "Foundation of this project"

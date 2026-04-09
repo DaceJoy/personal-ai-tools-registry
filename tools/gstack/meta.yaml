@@ -1,0 +1,34 @@
+tool_id: gstack
+display_name: gstack
+category: skill-packs
+status: active
+type: skill-pack
+
+source:
+  github: https://github.com/garrytan/gstack
+  docs: https://github.com/garrytan/gstack#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "23 specialist skills: CEO, Designer, QA, Security, Release Engineer — virtual team pattern"
+  phase: 1
+  replaces_what: null
+  alternatives: [everything-claude-code]
+
+highlights:
+  - "23 specialist roles — each with focused, expert-level prompting"
+  - "16k+ GitHub stars, MIT license"
+  - "By Garry Tan (YC CEO) — validated by startup community"
+  - "Pattern: specialist-team with Claude Code"
+
+install:
+  hint: "Clone and cherry-pick role files into CLAUDE.md or agents/"
+  docs_url: https://github.com/garrytan/gstack#readme
+  arm64_support: null
+
+maintained_by: community-individual
+upstream_fork: https://github.com/DaceJoy/upstream-gstack
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "Virtual specialist team pattern — CEO/Designer/QA/Security roles"

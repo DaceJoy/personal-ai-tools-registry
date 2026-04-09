@@ -1,0 +1,27 @@
+tool_id: docling
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: document-ingest
+additional_categories:
+  - knowledge-base-backend
+  - local-processing
+
+keywords:
+  - PDF parsing
+  - DOCX
+  - layout-aware
+  - document chunking
+  - markdown conversion
+  - local processing
+  - structured output
+
+use_cases:
+  - "Parse external documents into chunks for Qdrant indexing (Phase 2)"
+
+tags:
+  phase: [2, 3]
+  type: [infrastructure, ingest]
+  deployment: [pip, local]
+  platform: [linux, arm64, windows, macos]
+  maintained_by: company-ibm

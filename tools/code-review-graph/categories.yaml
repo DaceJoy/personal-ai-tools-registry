@@ -1,0 +1,27 @@
+tool_id: code-review-graph
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: code-context-tools
+additional_categories:
+  - mcp-server-security
+  - token-budget-limiting
+
+keywords:
+  - Tree-sitter
+  - AST
+  - knowledge graph
+  - MCP
+  - token reduction
+  - code analysis
+  - context optimization
+
+use_cases:
+  - "Replace file-dump context with graph-based structural context"
+  - "Code review with minimal token usage"
+
+tags:
+  phase: [1]
+  type: [mcp, tooling]
+  enabled_by_default: true
+  maintained_by: community-individual

@@ -1,0 +1,34 @@
+tool_id: everything-claude-code
+display_name: Everything Claude Code
+category: skill-packs
+status: active
+type: skill-pack
+
+source:
+  github: https://github.com/affaan-m/everything-claude-code
+  docs: https://github.com/affaan-m/everything-claude-code#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "156 skills + 38 agents + AgentShield — selective adoption via capability-auditor"
+  phase: 1
+  replaces_what: null
+  alternatives: [gstack]
+
+highlights:
+  - "156 Claude Code skills covering dev, ops, security, research"
+  - "38 pre-built agents — inspect before adopting"
+  - "Includes AgentShield (security scanner) as a subproject"
+  - "31.9k GitHub stars in 9 days — high community validation"
+
+install:
+  hint: "Clone and cherry-pick skills into CLAUDE.md or agents/"
+  docs_url: https://github.com/affaan-m/everything-claude-code#readme
+  arm64_support: null
+
+maintained_by: community-individual
+upstream_fork: https://github.com/DaceJoy/upstream-everything-claude-code
+last_verified: 2026-04-09
+added_by: initial-setup
+added_reason: "Largest community-validated Claude Code skill library"

@@ -1,0 +1,26 @@
+tool_id: pai
+detected_by: initial-setup
+detected_date: 2026-04-09
+
+primary_category: agent-frameworks
+additional_categories:
+  - agent-orchestration
+  - self-improvement-patterns
+  - multi-tenant-auth
+
+keywords:
+  - personal AI
+  - multi-tenant
+  - orchestration
+  - capability auditor
+  - staged adoption
+  - interview-driven setup
+
+use_cases:
+  - "Conceptual foundation: tenant separation, routing policy, capability lifecycle"
+
+tags:
+  phase: [1]
+  type: [framework, architecture]
+  adoption: audit-only
+  maintained_by: community-individual
