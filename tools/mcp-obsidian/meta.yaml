@@ -1,0 +1,53 @@
+tool_id: mcp-obsidian
+display_name: mcp-obsidian
+category: mcp-server-security
+status: watch
+type: mcp-server
+
+source:
+  github: https://github.com/MarkusPfundstein/mcp-obsidian
+  docs: https://github.com/MarkusPfundstein/mcp-obsidian#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: >
+    Phase 2 option: gives Zumi live search and read/write access to an Obsidian vault
+    running on the same machine. Useful when the Obsidian vault overlaps with or extends
+    the runtime-memory knowledge layer.
+    Phase 1 alternative: direct file reads via Read tool (no plugin required).
+  phase: 2
+  replaces_what: null
+  alternatives:
+    - direct-file-read (Phase 1 — no plugin, Obsidian not required to be running)
+    - qdrant-indexing (Phase 3 — full semantic search over vault)
+
+highlights:
+  - "7 MCP tools: list, browse, get content, search, insert, append, delete"
+  - "Live access — reads current vault state while Obsidian is running"
+  - "Search across entire vault (not just runtime-memory subdirectory)"
+  - "MIT license, uvx install"
+  - "Requires: Obsidian running + Local REST API community plugin installed"
+
+install:
+  hint: "uvx mcp-obsidian"
+  docs_url: https://github.com/MarkusPfundstein/mcp-obsidian#readme
+  arm64_support: true
+  prerequisites:
+    - "Obsidian app running"
+    - "Obsidian plugin: Local REST API (community plugin by coddingtonbear)"
+    - "REST API key from plugin settings"
+
+maintained_by: community-individual
+upstream_fork: null
+last_verified: 2026-04-09
+added_by: architecture-review
+added_reason: >
+  Enables Obsidian vault as live knowledge source for Zumi.
+  Particularly useful when personal notes (outside runtime-memory) are in an Obsidian vault.
+notes: >
+  Phase 1 users: skip this tool. Zumi reads .md files directly via file path — no MCP needed.
+  Phase 2: activate when you want Zumi to search across your full Obsidian vault, not just
+  the runtime-memory subdirectory.
+  The Local REST API plugin must NOT be installed on machines where security is a concern —
+  it opens an HTTP endpoint in the vault.

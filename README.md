@@ -5,8 +5,8 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-9-blue)
-![Categories](https://img.shields.io/badge/categories-13-green)
+![Tools](https://img.shields.io/badge/tools-10-blue)
+![Categories](https://img.shields.io/badge/categories-15-green)
 ![Maintained](https://img.shields.io/badge/maintained%20by-ecosystem--scout-orange)
 
 ---
@@ -70,6 +70,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [qdrant](tools/qdrant/meta.yaml) | 2026-04-09 | 2 | ✅ active |
 | [docling](tools/docling/meta.yaml) | 2026-04-09 | 2 | ✅ active |
 | [bge-m3](tools/bge-m3/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
+| [mcp-obsidian](tools/mcp-obsidian/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
 
 > When running ecosystem-scout manually:
 > ```
@@ -248,6 +249,26 @@ Replaces `nomic-embed-text` + separate BM42 index. Polish language supported.
 - **Install:** `pip install -U FlagEmbedding`
 - **RAM:** ~2 GB (FP16)
 - **Phase 1 default:** use `nomic-embed-text` (lighter). Migrate here for quality.
+
+---
+
+## 🔌 MCP Servers — Knowledge Access
+
+MCP servers that give Claude Code live access to external knowledge sources.
+
+### [mcp-obsidian](tools/mcp-obsidian/meta.yaml) — Phase 2, opt-in
+
+![Phase 2](https://img.shields.io/badge/phase-2-yellow)
+![Requires plugin](https://img.shields.io/badge/requires-Obsidian%20REST%20API%20plugin-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+Live search and read/write access to an Obsidian vault via MCP.
+**Phase 1 alternative:** Zumi reads `.md` files directly — no plugin required.
+
+- **Source:** https://github.com/MarkusPfundstein/mcp-obsidian
+- **Install:** `uvx mcp-obsidian`
+- **Requires:** Obsidian running + Local REST API community plugin
+- **Operations:** list, browse, get content, search, insert, append, delete
 
 ---
 

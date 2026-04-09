@@ -1,0 +1,27 @@
+tool_id: mcp-obsidian
+detected_by: architecture-review
+detected_date: 2026-04-09
+
+primary_category: knowledge-base-backend
+additional_categories:
+  - mcp-server-security
+  - local-processing
+
+keywords:
+  - obsidian
+  - MCP server
+  - vault access
+  - knowledge base
+  - personal notes
+  - live search
+  - local REST API
+
+use_cases:
+  - "Live Obsidian vault search from Claude Code (Phase 2)"
+  - "Read/write personal notes via MCP without manual file paths"
+  - "Bridge between Obsidian human-editing and AI knowledge layer"
+
+tags:
+  phase: [2]
+  type: [mcp, integration, knowledge]
+  maintained_by: community-individual
