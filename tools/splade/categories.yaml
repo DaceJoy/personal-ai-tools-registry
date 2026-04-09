@@ -1,0 +1,26 @@
+tool_id: splade
+detected_by: perplexity-research
+detected_date: 2026-04-09
+
+primary_category: hybrid-search
+additional_categories:
+  - embedding-models
+
+keywords:
+  - sparse retrieval
+  - learned sparse representations
+  - BERT-based
+  - BM25 alternative
+  - neural sparse
+  - fast retrieval
+  - SPLADE
+
+use_cases:
+  - "Sparse component in hybrid search (alternative to BM42)"
+  - "Fast neural retrieval where BGE-M3 is too resource-heavy"
+  - "Polish-language sparse retrieval (via sdadas/polish-splade)"
+
+tags:
+  phase: [2]
+  type: [embedding, ml-model, local, sparse]
+  maintained_by: company-naver

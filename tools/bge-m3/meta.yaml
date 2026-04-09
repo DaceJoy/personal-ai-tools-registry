@@ -25,7 +25,7 @@ highlights:
   - "Unified model: dense + sparse (BM25-like) + ColBERT in one pass"
   - "100+ languages — including Polish"
   - "8192 token context window (long documents)"
-  - "MIT license — commercially usable"
+  - "Apache 2.0 license — commercially usable"
   - "Runs fully local, no API needed"
   - "Qdrant native support via FlagEmbedding integration"
   - "Outperforms OpenAI models on multilingual benchmarks (MIRACL, MKQA)"
@@ -43,4 +43,8 @@ added_reason: >
   Solves hybrid search dynamic weighting: unified dense+sparse from one model
   means Qdrant Weighted RRF gets consistent score spaces without client-side normalization.
   Polish language support critical for personal-scale multi-language use.
-notes: "RAM: ~2 GB FP16. Phase 1: use nomic-embed-text. Phase 2: migrate to BGE-M3 for quality."
+notes: >
+  RAM: ~2-4 GB for model + inference (FP16). Index storage: 8-24 GB for large corpora;
+  personal scale (few thousand docs) ~2-4 GB total. Phase 1: use nomic-embed-text (lighter).
+  Phase 2: migrate to BGE-M3. Benchmark: PL-MTEB (huggingface.co/spaces/PL-MTEB/leaderboard).
+  ColBERT weight example for Qdrant prefetch: [0.4 dense, 0.2 sparse, 0.4 colbert].

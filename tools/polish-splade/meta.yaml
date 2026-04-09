@@ -1,0 +1,42 @@
+tool_id: polish-splade
+display_name: Polish SPLADE (sdadas)
+category: hybrid-search
+status: watch
+type: embedding-model
+
+source:
+  github: null
+  docs: https://huggingface.co/sdadas/polish-splade
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: >
+    Polish-language sparse retrieval model based on SPLADE architecture.
+    Only production-ready Polish sparse neural model available.
+    Relevant for PL-language hybrid search when BGE-M3 is not used.
+  phase: 2
+  replaces_what: "BM25/BM42 for Polish-language sparse retrieval"
+  alternatives:
+    - bge-m3 (preferred — handles Polish natively as part of 100+ lang unified model)
+
+highlights:
+  - "Only production-ready Polish sparse neural model"
+  - "Apache 2.0 license"
+  - "Based on SPLADE architecture + Polish BERT"
+  - "Pairs with naver/splade tooling"
+
+install:
+  hint: "from transformers import AutoTokenizer, AutoModel  # load from HuggingFace"
+  docs_url: https://huggingface.co/sdadas/polish-splade
+  arm64_support: true
+
+maintained_by: community-individual
+upstream_fork: null
+last_verified: 2026-04-09
+added_by: perplexity-research-2026-04-09
+added_reason: >
+  Polish-specific sparse model — relevant for PL-language vault content.
+  Use if BGE-M3 is too heavy and Polish quality matters.
+  Benchmark on PL-MTEB: huggingface.co/spaces/PL-MTEB/leaderboard
+notes: "See also: naver/splade for base tooling. BGE-M3 is preferred for new deployments."

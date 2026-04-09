@@ -1,0 +1,25 @@
+tool_id: polish-splade
+detected_by: perplexity-research
+detected_date: 2026-04-09
+
+primary_category: hybrid-search
+additional_categories:
+  - embedding-models
+  - local-processing
+
+keywords:
+  - Polish NLP
+  - sparse retrieval
+  - SPLADE
+  - Polish BERT
+  - PL-MTEB
+  - local inference
+
+use_cases:
+  - "Polish-language sparse component in hybrid search"
+  - "PL retrieval without BGE-M3 overhead"
+
+tags:
+  phase: [2]
+  type: [embedding, ml-model, local, sparse, polish]
+  maintained_by: community-individual

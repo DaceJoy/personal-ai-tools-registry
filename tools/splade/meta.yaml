@@ -1,0 +1,50 @@
+tool_id: splade
+display_name: SPLADE (Sparse Learned Representations)
+category: hybrid-search
+status: watch
+type: embedding-model
+
+source:
+  github: https://github.com/naver/splade
+  docs: https://github.com/naver/splade#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: >
+    Phase 2 alternative to BM42 sparse component.
+    SPLADE learns sparse representations via neural network — better than BM25/BM42
+    at capturing semantic meaning while maintaining sparse retrieval speed (~40ms).
+    Polish model available (sdadas/polish-splade).
+  phase: 2
+  replaces_what: "Qdrant BM42 sparse component"
+  alternatives:
+    - bge-m3 (preferred — unified model, no separate sparse needed)
+    - qdrant-bm42 (built-in, simpler, no extra model)
+
+highlights:
+  - "Sparse neural retrieval — ~40ms latency, matches dense quality"
+  - "Learned from BERT: better semantic sparse than BM25/BM42"
+  - "Polish model available: sdadas/polish-splade"
+  - "Apache 2.0 license"
+  - "Runs fully local"
+  - "BEIR benchmarks: comparable to dense vector search"
+
+install:
+  hint: "pip install splade"
+  docs_url: https://github.com/naver/splade#readme
+  arm64_support: true
+
+maintained_by: company-naver
+upstream_fork: null
+last_verified: 2026-04-09
+added_by: perplexity-research-2026-04-09
+added_reason: >
+  Faster sparse alternative (~40ms) to BM42 with better semantic quality.
+  Polish model (sdadas/polish-splade) makes it relevant for PL-language retrieval.
+  Note: BGE-M3 is preferred (unified dense+sparse), but SPLADE is a lighter option
+  if only sparse improvement is needed.
+notes: >
+  See also: sdadas/polish-splade for Polish-language SPLADE model.
+  Benchmark on PL-MTEB for Polish quality comparison.
+  Not Qdrant-native — requires custom sparse vector indexing.

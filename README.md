@@ -5,7 +5,7 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-10-blue)
+![Tools](https://img.shields.io/badge/tools-12-blue)
 ![Categories](https://img.shields.io/badge/categories-15-green)
 ![Maintained](https://img.shields.io/badge/maintained%20by-ecosystem--scout-orange)
 
@@ -71,6 +71,8 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [docling](tools/docling/meta.yaml) | 2026-04-09 | 2 | ✅ active |
 | [bge-m3](tools/bge-m3/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
 | [mcp-obsidian](tools/mcp-obsidian/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
+| [splade](tools/splade/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
+| [polish-splade](tools/polish-splade/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
 
 > When running ecosystem-scout manually:
 > ```
