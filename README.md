@@ -5,9 +5,9 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-12-blue)
+![Tools](https://img.shields.io/badge/tools-11-blue)
 ![Categories](https://img.shields.io/badge/categories-15-green)
-![Maintained](https://img.shields.io/badge/maintained%20by-ecosystem--scout-orange)
+![Maintained](https://img.shields.io/badge/maintained%20by-manual%20%2B%20upstream--movement%20feed-orange)
 
 ---
 
@@ -48,38 +48,58 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | ![Phase 2](https://img.shields.io/badge/phase-2%20multi--user-yellow) | Second user or company tenant added |
 | ![Phase 3](https://img.shields.io/badge/phase-3%20scale-red) | Hundreds of users, enterprise |
 
-> [!TIP]
-> `upstream_fork` entries point to maintained forks. Fork sync is automated monthly.
+> [!WARNING]
+> `upstream_fork` entries point to forks kept as **deletion insurance only**. Fork sync is
+> NOT automated and never was: measured 2026-11-01, all 5 forks had been pushed exactly once
+> each at creation (2026-04-08/16) and were 207-209 days stale, while this file claimed
+> "automated monthly" -- which is precisely why nobody checked. How far behind each fork is
+> now runs weekly (`upstream_ahead_of_fork` in the feed below) and surfaces as a signal, but
+> **bringing a fork forward is still a human action**.
+>
+> | | our fork | upstream branch | commits behind, 2026-11-01 |
+> |---|---|---|---|
+> | pai | `DaceJoy/upstream-pai` | `main` | **124** |
+> | code-review-graph | `DaceJoy/upstream-code-review-graph` | `staging` | **1077** |
+> | agentshield | `DaceJoy/upstream-agentshield` | `main` | **96** |
+> | everything-claude-code | `DaceJoy/upstream-everything-claude-code` | `main` | **3115** |
+> | gstack | `DaceJoy/upstream-gstack` | `main` | **569** |
+>
+> The branch column matters: our `upstream-code-review-graph` fork tracks `main` while its
+> upstream develops on `staging`, so the count is measured against the branch upstream actually
+> moves, not the one the fork happens to default to.
 
 ---
 
 ## Review status
 
 > [!NOTE]
-> `last_verified` dates are maintained in each `tools/<id>/meta.yaml`.
-> ecosystem-scout checks this table to decide which entries need a fresh review.
-> Entries not reviewed in **90+ days** are flagged for re-verification.
+> `last_verified` and the `upstream_head` PIN live in each `tools/<id>/meta.yaml`; this table
+> mirrors them. Entries not reviewed in **90+ days** are due for re-verification -- a human
+> pass, not an agent. What is automated is NOTICING: `upstream-movement-feed.py` compares each
+> entry's pin against its upstream's live head every week and raises a signal when they differ.
+> Nothing flagged these entries between 2026-04-09 and 2026-11-01 (206 days) because the
+> flagger was a sentence in a document rather than a program.
 
-| Tool | Last verified | Phase | Status |
-|------|--------------|-------|--------|
-| [PAI](tools/pai/meta.yaml) | 2026-04-09 | 1 | ✅ active |
-| [everything-claude-code](tools/everything-claude-code/meta.yaml) | 2026-04-09 | 1 | ✅ active |
-| [agentshield](tools/agentshield/meta.yaml) | 2026-04-09 | 1 | ✅ active |
-| [code-review-graph](tools/code-review-graph/meta.yaml) | 2026-04-09 | 1 | ✅ active |
-| [gstack](tools/gstack/meta.yaml) | 2026-04-09 | 1 | ✅ active |
-| [qdrant](tools/qdrant/meta.yaml) | 2026-04-09 | 2 | ✅ active |
-| [docling](tools/docling/meta.yaml) | 2026-04-09 | 2 | ✅ active |
-| [bge-m3](tools/bge-m3/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
-| [mcp-obsidian](tools/mcp-obsidian/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
-| [splade](tools/splade/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
-| [polish-splade](tools/polish-splade/meta.yaml) | 2026-04-09 | 2 | 👀 watch |
+| Tool | Last verified | Pin (`upstream_head`) | Phase | Status |
+|------|--------------|----------------------|-------|--------|
+| [PAI](tools/pai/meta.yaml) | 2026-11-01 | `b7efec97` | 1 | ✅ active |
+| [everything-claude-code](tools/everything-claude-code/meta.yaml) | 2026-11-01 | `b38be6a7` | 1 | ✅ active |
+| [agentshield](tools/agentshield/meta.yaml) | 2026-11-01 | `b0891303` | 1 | ✅ active |
+| [code-review-graph](tools/code-review-graph/meta.yaml) | 2026-11-01 | `d72e8fbf` | 1 | ✅ active |
+| [gstack](tools/gstack/meta.yaml) | 2026-11-01 | `f7397563` | 1 | ✅ active |
+| [qdrant](tools/qdrant/meta.yaml) | 2026-11-01 | `222b2e44` | 2 | ✅ active |
+| [docling](tools/docling/meta.yaml) | 2026-11-01 | `26a5bcfd` | 2 | ✅ active |
+| [bge-m3](tools/bge-m3/meta.yaml) | 2026-11-01 | `897baa67` | 2 | 👀 watch |
+| [mcp-obsidian](tools/mcp-obsidian/meta.yaml) | 2026-11-01 | `5ee0b84f` | 2 | 👀 watch |
+| [splade](tools/splade/meta.yaml) | 2026-11-01 | `8dcd33a0` | 2 | 👀 watch |
+| [polish-splade](tools/polish-splade/meta.yaml) | 2026-11-01 | `13649a1c` | 2 | 👀 watch |
 
-> When running ecosystem-scout manually:
-> ```
-> 1. Review all entries (regardless of last_verified)
-> 2. Review only entries older than 90 days  [default]
-> 3. Review selected entries — specify tool IDs
-> ```
+> A re-verification pass, concretely (what the 2026-11-01 pass did): for each entry read
+> `source.github`, confirm the repo resolves and is not archived, read its **default branch**
+> (`code-review-graph` is `staging`, not `main`), record that branch's head SHA and date as
+> `upstream_head` / `upstream_head_date`, set `last_verified`, and mirror both into the table
+> above. An entry with no GitHub source is verified at its real source -- `polish-splade` at
+> `huggingface.co/api/models/sdadas/polish-splade`, whose `sha` is its pin.
 
 ---
 
@@ -282,5 +302,8 @@ New tools are proposed quarterly and reviewed before being added.
 The `categories.yaml` per tool is written after analysing repo contents.
 
 > [!NOTE]
-> `README.md` is regenerated after each quarterly review run.
-> Do not edit it manually — edit `tools/<id>/meta.yaml` or `categories/_index.yaml` instead.
+> There is NO generator for this file -- no script in this repo reads `meta.yaml` and writes
+> `README.md`. The sentence that used to stand here ("regenerated after each quarterly review
+> run, do not edit it manually") described one that was never written, so the table below drifted
+> from the metas unnoticed. Until a generator exists, edit `tools/<id>/meta.yaml` **and** this
+> file in the same commit, and treat any disagreement between them as a defect in this file.

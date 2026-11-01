@@ -33,7 +33,9 @@ install:
 
 maintained_by: community-individual
 upstream_fork: null
-last_verified: 2026-04-09
+upstream_head: 13649a1c0f141a024673516e2b7166fb3b7495f3            # huggingface:sdadas/polish-splade
+upstream_head_date: 2026-09-22
+last_verified: 2026-11-01
 added_by: perplexity-research-2026-04-09
 added_reason: >
   Polish-specific sparse model — relevant for PL-language vault content.

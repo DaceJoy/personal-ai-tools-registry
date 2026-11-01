@@ -29,6 +29,8 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-gstack
-last_verified: 2026-04-09
+upstream_head: f739756389d1fa7ebca2a10d84c97c294bfea4c5            # garrytan/gstack@main
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "Virtual specialist team pattern — CEO/Designer/QA/Security roles"

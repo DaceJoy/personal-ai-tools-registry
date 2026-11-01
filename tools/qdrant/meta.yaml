@@ -35,6 +35,8 @@ security_notes:
   - "OWASP LLM08: hash chunks before indexing to detect vector poisoning (Phase 2)"
 
 maintained_by: company    # qdrant.tech — low deletion risk, do not fork
-last_verified: 2026-04-09
+upstream_head: 222b2e44ab1c3f17e8246396ead6558e45041df7            # qdrant/qdrant@master
+upstream_head_date: 2026-10-21
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "Block G Phase 2 vector DB selection"

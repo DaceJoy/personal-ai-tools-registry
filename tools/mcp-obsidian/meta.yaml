@@ -40,7 +40,9 @@ install:
 
 maintained_by: community-individual
 upstream_fork: null
-last_verified: 2026-04-09
+upstream_head: 5ee0b84fa8319fd2fdf0db0ee1febb065e712a15            # MarkusPfundstein/mcp-obsidian@main
+upstream_head_date: 2026-08-31
+last_verified: 2026-11-01
 added_by: architecture-review
 added_reason: >
   Enables Obsidian vault as live knowledge source for Zumi.

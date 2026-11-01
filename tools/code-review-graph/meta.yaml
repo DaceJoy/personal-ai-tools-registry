@@ -29,6 +29,8 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-code-review-graph
-last_verified: 2026-04-09
+upstream_head: d72e8fbf7ef571b668c26a4222a284bf7792e7a1            # tirth8205/code-review-graph@staging
+upstream_head_date: 2026-10-15
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "Solves context window pressure without truncating — structural solution"

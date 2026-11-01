@@ -28,6 +28,8 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-pai
-last_verified: 2026-04-09
+upstream_head: b7efec97d8c3885feee285bee468c35602fb0606            # danielmiessler/Personal_AI_Infrastructure@main
+upstream_head_date: 2026-10-28
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "Foundation of this project"

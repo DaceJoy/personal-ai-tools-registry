@@ -29,6 +29,8 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-everything-claude-code
-last_verified: 2026-04-09
+upstream_head: b38be6a7f6350964d59328b52f0624e1d1d552d1            # affaan-m/everything-claude-code@main
+upstream_head_date: 2026-10-30
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "Largest community-validated Claude Code skill library"

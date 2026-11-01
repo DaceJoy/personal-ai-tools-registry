@@ -33,6 +33,8 @@ fork_notes: >
   Fork manually via GitHub UI if needed: https://github.com/DS4SD/docling
 
 maintained_by: company-ibm   # IBM Research — low deletion risk
-last_verified: 2026-04-09
+upstream_head: 26a5bcfd0812b2483338b591563fd64664f7272b            # DS4SD/docling@main
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "Block G Phase 2 document ingest option"

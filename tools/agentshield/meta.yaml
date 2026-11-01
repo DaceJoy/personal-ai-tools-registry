@@ -29,6 +29,8 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-agentshield
-last_verified: 2026-04-09
+upstream_head: b0891303bdcd6037376a94263d45cfd2ff3dfb98            # affaan-m/agentshield@main
+upstream_head_date: 2026-09-10
+last_verified: 2026-11-01
 added_by: initial-setup
 added_reason: "OWASP LLM Top 10 — verify step before every promotion"

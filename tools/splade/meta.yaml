@@ -37,7 +37,9 @@ install:
 
 maintained_by: company-naver
 upstream_fork: null
-last_verified: 2026-04-09
+upstream_head: 8dcd33a054d790e74aceda25b128c1b188c5d9c1            # naver/splade@main
+upstream_head_date: 2024-05-03
+last_verified: 2026-11-01
 added_by: perplexity-research-2026-04-09
 added_reason: >
   Faster sparse alternative (~40ms) to BM42 with better semantic quality.
@@ -48,3 +50,9 @@ notes: >
   See also: sdadas/polish-splade for Polish-language SPLADE model.
   Benchmark on PL-MTEB for Polish quality comparison.
   Not Qdrant-native — requires custom sparse vector indexing.
+  DORMANT UPSTREAM, measured 2026-11-01: naver/splade head commit is 2024-05-03, 2.5 years
+  old; repo alive, not archived. A research reference implementation that stopped moving is
+  normal for its kind and is NOT grounds for status: deprecated under CONTRIBUTING (that is
+  for unmaintained or superseded tools). Kept at status: watch, which already means not
+  adopted. bge-m3 stays preferred; revisit only if Polish sparse retrieval is needed
+  without bge-m3.
