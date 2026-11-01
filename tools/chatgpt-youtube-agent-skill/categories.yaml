@@ -1,0 +1,15 @@
+tool_id: chatgpt-youtube-agent-skill
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: skill-packs
+additional_categories: []
+
+use_cases:
+  - "Mic's own named content-publishing interest (blog/YT/social); channel-relative-median competitor-ranking script verified in full; no live household channel exists yet to apply it to"
+
+tags:
+  phase: [2]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

@@ -1,0 +1,15 @@
+tool_id: claude-code-usage-monitor
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: usage-observability
+additional_categories: []
+
+use_cases:
+  - "Clearest direct NEEDS.md match found anywhere in this program: a local, host-reachable usage signal for N18 (the headroom preflight that cannot reach the proxy host)"
+
+tags:
+  phase: [1]
+  type: [cli-tool]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

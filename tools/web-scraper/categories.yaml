@@ -1,0 +1,15 @@
+tool_id: web-scraper
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: scraping-tools
+additional_categories: []
+
+use_cases:
+  - "Phase-0 reconnaissance pattern before escalating the 4-tier scrape ladder (N20)"
+
+tags:
+  phase: [1]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

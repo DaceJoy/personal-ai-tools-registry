@@ -1,0 +1,35 @@
+tool_id: discordchatexporter
+display_name: DiscordChatExporter
+category: data-export-tools
+status: active
+type: cli-tool
+
+source:
+  github: https://github.com/tyrrrz/DiscordChatExporter
+  docs: https://github.com/tyrrrz/DiscordChatExporter#readme
+  docker: ghcr.io/tyrrrz/discordchatexporter (see repo Dockerfile)
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Mic's own named requirement: export a private Discord account's messages (no attachments) with randomized pacing. ADOPT via the maintained Docker image, gated on mic's explicit credential go-ahead."
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "--media is opt-in and off by default -- no 'skip attachments' flag needed"
+  - "--respect-rate-limits is reactive-only (429/advisory headers), confirming the wrapper must do proactive pacing"
+  - "Maintained Docker image, fits LXC122's existing Docker-compose stack"
+
+install:
+  hint: "see https://github.com/tyrrrz/DiscordChatExporter#readme"
+  docs_url: https://github.com/tyrrrz/DiscordChatExporter#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 14ee1f64906c5791730053edb181f294a18712cd
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T22 grill + DISCORD-SPEC.md (S8): ADOPT as a dependency (Docker image); the household WRAPPER (DISCORD-SPEC.md) supplies the proactive pacing the tool itself does not have"

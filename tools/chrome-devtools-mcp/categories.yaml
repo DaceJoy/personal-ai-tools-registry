@@ -1,0 +1,15 @@
+tool_id: chrome-devtools-mcp
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: browser-automation-mcp
+additional_categories: []
+
+use_cases:
+  - "Not a fetch contender -- the capability is already occupied by familypai-crawl4ai at Tier 3"
+
+tags:
+  phase: [2]
+  type: [mcp-server]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

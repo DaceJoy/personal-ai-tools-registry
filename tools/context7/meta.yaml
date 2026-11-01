@@ -1,0 +1,34 @@
+tool_id: context7
+display_name: Context7
+category: documentation-retrieval-mcp
+status: watch
+type: mcp-server
+
+source:
+  github: https://github.com/upstash/context7
+  docs: https://github.com/upstash/context7#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Up-to-date, version-specific library docs -- complements /library/search (static corpus) rather than rivalling it; blocked from a live test by RUBRIC rule 1 (no execution outside S-A) and ops-gw live:false policy"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "CLI+Skills mode needs no MCP registration (lower-risk path than the MCP server)"
+  - "Hosted, version-specific doc retrieval"
+
+install:
+  hint: "see https://github.com/upstash/context7#readme"
+  docs_url: https://github.com/upstash/context7#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: 7836c583918374fbecffacf866afb7594b919466
+upstream_head_date: 2026-10-30
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T07 grill (S-C instrument wave): WATCH, library-side half of the comparison run and pasted (a real corpus gap confirmed), Context7's own output not independently verified"

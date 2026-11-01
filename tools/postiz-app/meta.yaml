@@ -1,0 +1,34 @@
+tool_id: postiz-app
+display_name: Postiz
+category: social-publishing
+status: watch
+type: application
+
+source:
+  github: https://github.com/gitroomhq/postiz-app
+  docs: https://github.com/gitroomhq/postiz-app#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "No live consumer project exists (NEEDS.md holds no row); unresolved AUTONOMY question -- no documented agent-publish consent gate, unlike its graded rival yominpost"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Already names Paperclip (our own control plane) as a supported agent integration"
+  - "Self-hosted edition not feature-gated vs. cloud"
+
+install:
+  hint: "see https://github.com/gitroomhq/postiz-app#readme"
+  docs_url: https://github.com/gitroomhq/postiz-app#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: 4d13c6a2a84796ea5000baf08459417ec015ef3d
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T24 grill (S10): WATCH, 14-platform publisher, names our own Paperclip as a supported integration; AGPL-3.0, Postgres+Redis+Temporal self-host footprint"

@@ -5,8 +5,8 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-11-blue)
-![Categories](https://img.shields.io/badge/categories-15-green)
+![Tools](https://img.shields.io/badge/tools-42-blue)
+![Categories](https://img.shields.io/badge/categories-27-green)
 ![Maintained](https://img.shields.io/badge/maintained%20by-manual%20%2B%20upstream--movement%20feed-orange)
 
 ---
@@ -93,6 +93,45 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [mcp-obsidian](tools/mcp-obsidian/meta.yaml) | 2026-11-01 | `5ee0b84f` | 2 | 👀 watch |
 | [splade](tools/splade/meta.yaml) | 2026-11-01 | `8dcd33a0` | 2 | 👀 watch |
 | [polish-splade](tools/polish-splade/meta.yaml) | 2026-11-01 | `13649a1c` | 2 | 👀 watch |
+| [agent-browser (Vercel Labs)](tools/agent-browser/meta.yaml) | 2026-11-01 | `5868f7c05020` | 3 | 👀 watch |
+| [Agent-Reach](tools/agent-reach/meta.yaml) | 2026-11-01 | `7a38047acf26` | 1 | 👀 watch |
+| [AstraQuant (patterns only, OWNED-ELSEWHERE)](tools/astra-quant-agent/meta.yaml) | 2026-11-01 | `e0b29fef1818` | 1 | 👀 watch |
+| [Awesome Free LLM APIs](tools/awesome-free-llm-apis/meta.yaml) | 2026-11-01 | `2527fd445fb9` | 1 | 👀 watch |
+| [Caveman](tools/caveman/meta.yaml) | 2026-11-01 | `9b68f7ed12b0` | 1 | 👀 watch |
+| [ChatGPT YouTube Agent Skill](tools/chatgpt-youtube-agent-skill/meta.yaml) | 2026-11-01 | `6314d3c17dfa` | 2 | 👀 watch |
+| [Chrome DevTools MCP](tools/chrome-devtools-mcp/meta.yaml) | 2026-11-01 | `8d009e854f8a` | 2 | 👀 watch |
+| [Claude Code Usage Monitor](tools/claude-code-usage-monitor/meta.yaml) | 2026-11-01 | `c59a83bf943f` | 1 | 👀 watch |
+| [Claude Code Usage Dashboard (phuryn)](tools/claude-usage-phuryn/meta.yaml) | 2026-11-01 | `3eea154474e9` | 2 | 👀 watch |
+| [Context7](tools/context7/meta.yaml) | 2026-11-01 | `7836c5839183` | 2 | 👀 watch |
+| [DiscordChatExporter](tools/discordchatexporter/meta.yaml) | 2026-11-01 | `14ee1f64906c` | 1 | ✅ active |
+| [House Planner](tools/house-planner/meta.yaml) | 2026-11-01 | `5c91280da6c5` | 3 | 👀 watch |
+| [Hypit](tools/hypit/meta.yaml) | 2026-11-01 | `0762c6be56c0` | 2 | 👀 watch |
+| [kimi-k3-in-c](tools/kimi-k3-in-c/meta.yaml) | 2026-11-01 | `81bb6c23ccee` | 3 | 👀 watch |
+| [Logo Design Skill](tools/logo-design-skill/meta.yaml) | 2026-11-01 | `734090317a21` | 3 | 👀 watch |
+| [LongCat-DeepResearch](tools/longcat-deepresearch/meta.yaml) | 2026-11-01 | `f8d3a99dabba` | 2 | 👀 watch |
+| [MiroFish](tools/mirofish/meta.yaml) | 2026-11-01 | `7657031ac011` | 2 | 👀 watch |
+| [NextChat](tools/nextchat/meta.yaml) | 2026-11-01 | `1d3dc3315129` | 3 | 👀 watch |
+| [Obscura](tools/obscura/meta.yaml) | 2026-11-01 | `8534b401898e` | 2 | 👀 watch |
+| [OpenCut](tools/opencut/meta.yaml) | 2026-11-01 | `e66801077856` | 3 | 👀 watch |
+| [Orkas](tools/orkas/meta.yaml) | 2026-11-01 | `12f59a2e077b` | 3 | 👀 watch |
+| [Papermorph](tools/papermorph/meta.yaml) | 2026-11-01 | `810e9bca280b` | 1 | 👀 watch |
+| [Postiz](tools/postiz-app/meta.yaml) | 2026-11-01 | `4d13c6a2a847` | 3 | 👀 watch |
+| [Replica Skill](tools/replica-skill/meta.yaml) | 2026-11-01 | `77c9436fb3d1` | 2 | 👀 watch |
+| [Roast Room](tools/roast-room/meta.yaml) | 2026-11-01 | `e40f40652d56` | 2 | 👀 watch |
+| [RTK (Rust Token Killer)](tools/rtk/meta.yaml) | 2026-11-01 | `16d1ccfd40d1` | 1 | 👀 watch |
+| [Thinking Orbs](tools/thinking-orbs/meta.yaml) | 2026-11-01 | `de85557ca220` | 2 | 👀 watch |
+| [skills (Vercel Labs CLI)](tools/vercel-skills-cli/meta.yaml) | 2026-11-01 | `92a9a34ac3bf` | 1 | 👀 watch |
+| [web-scraper (yfe404)](tools/web-scraper/meta.yaml) | 2026-11-01 | `40ef9f8c45d4` | 1 | 👀 watch |
+| [YominPost](tools/yominpost/meta.yaml) | 2026-11-01 | `12d7a35ea5ed` | 3 | 👀 watch |
+| [YouTube Agent Skill (Jakeschincariol)](tools/youtube-agent-skill/meta.yaml) | 2026-11-01 | `a2feb2104981` | 2 | 👀 watch |
+
+> The 31 rows above `polish-splade` are the pre-existing 11 entries (verified 2026-11-01 by the
+> S1b session of `FamilyPAI/MEMORY/WORK/20261030-230237_github-target-grill-and-source-repo-
+> register`). The 31 rows below it were ADDED by that same thread's S9 synthesis session
+> (2026-11-01), one per non-REJECT verdict across its 37-target grill program (33 obliged minus 2
+> `T18-CLS-*` class-files, which cover 12 repos each and are not individual tools -- see that
+> thread's `FIT-MATRIX.md` for the full needs x elements mapping). Every `upstream_head` pin
+> above was read live via `gh api .../commits` at write time, not estimated.
 
 > A re-verification pass, concretely (what the 2026-11-01 pass did): for each entry read
 > `source.github`, confirm the repo resolves and is not archived, read its **default branch**

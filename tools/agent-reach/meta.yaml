@@ -1,0 +1,35 @@
+tool_id: agent-reach
+display_name: Agent-Reach
+category: agent-frameworks
+status: watch
+type: library
+
+source:
+  github: https://github.com/Panniantong/Agent-Reach
+  docs: https://github.com/Panniantong/Agent-Reach#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Typed result-envelope pattern (FINAL vs retryable codes) for our own /links pipeline; mic's library-daemon hypothesis answered NO on 3 grounds"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "FINAL_CODES envelope distinguishing permanent-fail from retryable"
+  - "Per-code agent hints written where the actor reads them"
+  - "Pinned-tool record shape (tested/floor/exclude) relevant to N15"
+
+install:
+  hint: "see https://github.com/Panniantong/Agent-Reach#readme"
+  docs_url: https://github.com/Panniantong/Agent-Reach#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 7a38047acf26a729cbb27851e3cb81639da86b29
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T09 grill (S2): HARVEST the result envelope (FINAL_CODES, per-code hints, pinned-tool record shape) against N01/N15/N17/N19"

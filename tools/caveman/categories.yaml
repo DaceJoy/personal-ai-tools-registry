@@ -1,0 +1,15 @@
+tool_id: caveman
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: token-optimization
+additional_categories: []
+
+use_cases:
+  - "Strongest NEEDS.md match in this whole program: closes N21 (Read-less rock, externally corroborated by Adobe Research/JetBrains/Elastic) and N12 (/caveman-compress memory-file tool) via a zero-risk skill-only install"
+
+tags:
+  phase: [1]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

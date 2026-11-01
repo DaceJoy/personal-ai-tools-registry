@@ -1,0 +1,15 @@
+tool_id: obscura
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: scraping-tools
+additional_categories: []
+
+use_cases:
+  - "S-A bake-off: WATCH, one REIMPLEMENT (robots.txt engine), one unproven DEPEND candidate (renderer, parked on S-C hosting + a corpus that doesn't exist yet), stealth transport unconfirmed"
+
+tags:
+  phase: [2]
+  type: [cli-tool]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

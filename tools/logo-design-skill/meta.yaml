@@ -1,0 +1,34 @@
+tool_id: logo-design-skill
+display_name: Logo Design Skill
+category: skill-packs
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/kaankiziltug/logo-design-skill
+  docs: https://github.com/kaankiziltug/logo-design-skill#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Well-built but no fit: CreatePAIPackIcon already covers our one branding touchpoint at good-enough quality; its 1,432-file reference SVG library is third-party trademarked material, flagged IGNORE for vendoring"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Dependency-free SVG tooling"
+  - "Skill text + taxonomy (not the trademarked bytes) is REIMPLEMENT-eligible"
+
+install:
+  hint: "see https://github.com/kaankiziltug/logo-design-skill#readme"
+  docs_url: https://github.com/kaankiziltug/logo-design-skill#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 734090317a2155c5bf1ae8bd4cc85c6848a0128f
+upstream_head_date: 2026-10-20
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T21 grill (S3b): WATCH, no NEEDS.md row; TRADEMARKS.md flags its reference library as not vendorable regardless of future fit"

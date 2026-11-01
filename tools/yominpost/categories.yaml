@@ -1,0 +1,15 @@
+tool_id: yominpost
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: social-publishing
+additional_categories: []
+
+use_cases:
+  - "Won the T24 rivalry on AUTONOMY: MCP tool list architecturally excludes a publish action (verified from mcp_server.py itself); one-day-old single-push repo, real trust/maturity cost against postiz's 3 years"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

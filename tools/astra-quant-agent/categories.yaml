@@ -1,0 +1,15 @@
+tool_id: astra-quant-agent
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: software-engineering-patterns
+additional_categories: []
+
+use_cases:
+  - "Software-architecture patterns only (hypothesis-vs-enforcement, prompt-caching, fail-closed credential gate, doc-honesty CI tests) -- FamilyPAI does NOT adopt the trading component itself, by standing rule"
+
+tags:
+  phase: [1]
+  type: [reference]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

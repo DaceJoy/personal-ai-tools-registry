@@ -1,0 +1,15 @@
+tool_id: vercel-skills-cli
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: tool-discovery
+additional_categories: []
+
+use_cases:
+  - "The install mechanism this program used 3 times (hypit, caveman, agent-browser) without ever grilling it; find-skills sub-skill's quality-gate procedure is a pattern for our own N04 ecosystem-scout"
+
+tags:
+  phase: [1]
+  type: [cli-tool]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

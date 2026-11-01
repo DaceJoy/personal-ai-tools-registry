@@ -1,0 +1,15 @@
+tool_id: discordchatexporter
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: data-export-tools
+additional_categories: []
+
+use_cases:
+  - "Mic's own named requirement: export a private Discord account's messages (no attachments) with randomized pacing. ADOPT via the maintained Docker image, gated on mic's explicit credential go-ahead."
+
+tags:
+  phase: [1]
+  type: [cli-tool]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

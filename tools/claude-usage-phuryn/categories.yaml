@@ -1,0 +1,15 @@
+tool_id: claude-usage-phuryn
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: usage-observability
+additional_categories: []
+
+use_cases:
+  - "Loses the T19f rivalry on multi-account correctness for our 6-OAuth-account pool, despite true zero dependencies"
+
+tags:
+  phase: [2]
+  type: [cli-tool]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

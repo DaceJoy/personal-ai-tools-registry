@@ -1,0 +1,15 @@
+tool_id: postiz-app
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: social-publishing
+additional_categories: []
+
+use_cases:
+  - "No live consumer project exists (NEEDS.md holds no row); unresolved AUTONOMY question -- no documented agent-publish consent gate, unlike its graded rival yominpost"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

@@ -1,0 +1,35 @@
+tool_id: caveman
+display_name: Caveman
+category: token-optimization
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/JuliusBrussee/caveman
+  docs: https://github.com/JuliusBrussee/caveman#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Strongest NEEDS.md match in this whole program: closes N21 (Read-less rock, externally corroborated by Adobe Research/JetBrains/Elastic) and N12 (/caveman-compress memory-file tool) via a zero-risk skill-only install"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "\"Read less\": 33.2% fewer input tokens/session, externally corroborated (Adobe Research CAVEWOMAN paper, JetBrains A/B test, Elastic engineering post)"
+  - "/caveman-compress: 22.8-49.1% memory-file reduction, headings/code/paths intact"
+  - "Skill-only install makes no network call at all (SECURITY.md's own data-flow table)"
+
+install:
+  hint: "see https://github.com/JuliusBrussee/caveman#readme"
+  docs_url: https://github.com/JuliusBrussee/caveman#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 9b68f7ed12b05e7efaff18e65c5a3fc2849fd0a4
+upstream_head_date: 2026-10-25
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T19b grill (S7, orphan from S3a): HARVEST the skill-only Say-less/Read-less install and /caveman-compress; full CLI/proxy/cloud surface stays WATCH/IGNORE pending a dedicated supply-chain review"

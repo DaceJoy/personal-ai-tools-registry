@@ -1,0 +1,33 @@
+tool_id: opencut
+display_name: OpenCut
+category: video-editing
+status: watch
+type: application
+
+source:
+  github: https://github.com/opencut-app/opencut
+  docs: https://github.com/opencut-app/opencut#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "97k-star \"CapCut alternative\" claim is OVERSTATED -- mid-rewrite, contributions closed; prior working version (opencut-classic) is archived. Re-check once the rewrite ships MCP/headless features"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Planned MCP server + headless/automation mode (not yet built)"
+
+install:
+  hint: "see https://github.com/opencut-app/opencut#readme"
+  docs_url: https://github.com/opencut-app/opencut#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: e668010778568641babef2cc40be4703ae6916d6
+upstream_head_date: 2026-09-24
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T16 grill (S6): WATCH, nothing gradeable exists today in either repo (main=pre-alpha rewrite, classic=archived)"

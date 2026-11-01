@@ -1,0 +1,15 @@
+tool_id: agent-browser
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: browser-automation
+additional_categories: []
+
+use_cases:
+  - "Duplicates familypai-crawl4ai for fetch (same framing as chrome-devtools-mcp); best-documented supply-chain posture in this program -- encrypted auth vault, side-channel-aware domain allowlist; standalone-CLI UI-testing niche unfilled"
+
+tags:
+  phase: [3]
+  type: [cli-tool]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

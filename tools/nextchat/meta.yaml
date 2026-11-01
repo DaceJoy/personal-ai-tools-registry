@@ -1,0 +1,33 @@
+tool_id: nextchat
+display_name: NextChat
+category: chat-ui
+status: watch
+type: application
+
+source:
+  github: https://github.com/ChatGPTNextWeb/NextChat
+  docs: https://github.com/ChatGPTNextWeb/NextChat#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Duplicates our own already-deployed librechat; in-app MCP-discovery-UI pattern noted for future ops-gw surface work"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "In-app MCP-server discovery UI (\"MCP Market\")"
+
+install:
+  hint: "see https://github.com/ChatGPTNextWeb/NextChat#readme"
+  docs_url: https://github.com/ChatGPTNextWeb/NextChat#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: 1d3dc331512929a4b1d3e82354e72acce33b5c7a
+upstream_head_date: 2026-10-20
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T13 grill (S6): WATCH, duplicates librechat; MCP-market UI pattern harvested as a UX idea only"

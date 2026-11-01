@@ -1,0 +1,35 @@
+tool_id: awesome-free-llm-apis
+display_name: Awesome Free LLM APIs
+category: registry-maintenance
+status: watch
+type: reference-list
+
+source:
+  github: https://github.com/mnfst/awesome-free-llm-apis
+  docs: https://github.com/mnfst/awesome-free-llm-apis#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Evidence-ledger + reliability-classified-probing pattern for our own tool-registry freshness (N04/N05/N15)"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Daily per-fact probe with an evidence-reliability table (200/404/410/402 = signal; 401/403/429/0/5xx/400 = noise)"
+  - "Doc-fact verification with a quoted source per claim"
+  - "Agent red-lines for autonomous data edits (no merge, no scope creep, evidence-or-nothing)"
+
+install:
+  hint: "see https://github.com/mnfst/awesome-free-llm-apis#readme"
+  docs_url: https://github.com/mnfst/awesome-free-llm-apis#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 2527fd445fb94a1361d31d1891fbbef91f1d81eb
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T02 grill (S5a): HARVEST the verification-pipeline pattern, not the list itself (CC0, 100% agent-maintained, hides that fact from the public repo)"

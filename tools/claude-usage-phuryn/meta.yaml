@@ -1,0 +1,34 @@
+tool_id: claude-usage-phuryn
+display_name: Claude Code Usage Dashboard (phuryn)
+category: usage-observability
+status: watch
+type: cli-tool
+
+source:
+  github: https://github.com/phuryn/claude-usage
+  docs: https://github.com/phuryn/claude-usage#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Loses the T19f rivalry on multi-account correctness for our 6-OAuth-account pool, despite true zero dependencies"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "True zero-dependency (stdlib only)"
+  - "Read-only Docker mount of ~/.claude"
+
+install:
+  hint: "see https://github.com/phuryn/claude-usage#readme"
+  docs_url: https://github.com/phuryn/claude-usage#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 3eea154474e93761f774ed38beeaf45baf838a45
+upstream_head_date: 2026-07-10
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T19e grill (S6): WATCH, named rival to T19f per the T24 comparison pattern; loses on the axis that matters for this household"

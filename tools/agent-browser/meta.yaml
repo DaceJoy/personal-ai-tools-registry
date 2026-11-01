@@ -1,0 +1,36 @@
+tool_id: agent-browser
+display_name: agent-browser (Vercel Labs)
+category: browser-automation
+status: watch
+type: cli-tool
+
+source:
+  github: https://github.com/vercel-labs/agent-browser
+  docs: https://github.com/vercel-labs/agent-browser#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Duplicates familypai-crawl4ai for fetch (same framing as chrome-devtools-mcp); best-documented supply-chain posture in this program -- encrypted auth vault, side-channel-aware domain allowlist; standalone-CLI UI-testing niche unfilled"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Encrypted local Auth Vault, credentials resolved out-of-process, LLM never sees them"
+  - "Domain allowlist closing WebRTC/worker side-channels"
+  - "Content Boundary Markers for untrusted page content"
+  - "Can drive T23 (obscura) as an alternate rendering engine"
+
+install:
+  hint: "see https://github.com/vercel-labs/agent-browser#readme"
+  docs_url: https://github.com/vercel-labs/agent-browser#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: 5868f7c05020e047c00e68e4abf9253cce864f41
+upstream_head_date: 2026-10-31
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T19d grill (S7, orphan from S2): WATCH, 3 security patterns harvested as confirmation; standalone-CLI use case (testing our own web apps) noted but no written need"

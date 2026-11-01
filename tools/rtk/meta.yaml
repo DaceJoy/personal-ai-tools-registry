@@ -1,0 +1,35 @@
+tool_id: rtk
+display_name: RTK (Rust Token Killer)
+category: token-optimization
+status: watch
+type: cli-tool
+
+source:
+  github: https://github.com/rtk-ai/rtk
+  docs: https://github.com/rtk-ai/rtk#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Revealed N21 (no layer compresses bash/tool OUTPUT); superseded by caveman's own Read-less rock as the stronger remedy"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "PreToolUse command-rewrite hook pattern"
+  - "~100-command compression-target reference list"
+  - "Revealed N21 (added to NEEDS.md, back-dated)"
+
+install:
+  hint: "see https://github.com/rtk-ai/rtk#readme"
+  docs_url: https://github.com/rtk-ai/rtk#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: 16d1ccfd40d1ba7030b1b6cbabede735b4218323
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T19a grill (S4): HARVEST the PreToolUse rewrite-hook pattern (REIMPLEMENT thin, not vendor the binary); rtk-proxy IGNORE (duplicates our own OAuth proxy)"

@@ -1,0 +1,15 @@
+tool_id: logo-design-skill
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: skill-packs
+additional_categories: []
+
+use_cases:
+  - "Well-built but no fit: CreatePAIPackIcon already covers our one branding touchpoint at good-enough quality; its 1,432-file reference SVG library is third-party trademarked material, flagged IGNORE for vendoring"
+
+tags:
+  phase: [3]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

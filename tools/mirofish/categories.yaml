@@ -1,0 +1,15 @@
+tool_id: mirofish
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: agent-frameworks
+additional_categories: []
+
+use_cases:
+  - "Re-verified at an unchanged HEAD; AGPL + Zep Cloud dependency + high token burn all still hold; own clean-room idea (MIROFISH-OWN-IDEA.md) parked on trading-quant L3 scenario engine"
+
+tags:
+  phase: [2]
+  type: [application]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

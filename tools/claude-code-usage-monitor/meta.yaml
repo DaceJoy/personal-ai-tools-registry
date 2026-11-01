@@ -1,0 +1,35 @@
+tool_id: claude-code-usage-monitor
+display_name: Claude Code Usage Monitor
+category: usage-observability
+status: watch
+type: cli-tool
+
+source:
+  github: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
+  docs: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor#readme
+  docker: null
+  pypi: claude-monitor
+
+relevance_to_personalai:
+  use_case: "Clearest direct NEEDS.md match found anywhere in this program: a local, host-reachable usage signal for N18 (the headroom preflight that cannot reach the proxy host)"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Provenance-labeled trust layer (official/local_estimate/experimental/unknown)"
+  - "Multi-source scanning that does not merge independent OAuth accounts into one window"
+  - "Machine-readable snapshot protocol (--once, --write-state)"
+
+install:
+  hint: "see https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor#readme"
+  docs_url: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: c59a83bf943f329f0e61f1a29c760353ee1860a5
+upstream_head_date: 2026-06-27
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T19f grill (S6): HARVEST -- call its --write-state/--once JSON output from the existing oauth-pool-headroom-watch.sh preflight"

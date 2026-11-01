@@ -1,0 +1,15 @@
+tool_id: rtk
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: token-optimization
+additional_categories: []
+
+use_cases:
+  - "Revealed N21 (no layer compresses bash/tool OUTPUT); superseded by caveman's own Read-less rock as the stronger remedy"
+
+tags:
+  phase: [1]
+  type: [cli-tool]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

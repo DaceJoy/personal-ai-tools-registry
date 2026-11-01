@@ -1,0 +1,15 @@
+tool_id: replica-skill
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: skill-packs
+additional_categories: []
+
+use_cases:
+  - "Anti-gaming scoring constraint + sweep-and-block release gate, adjacent to N09 (skill provenance)"
+
+tags:
+  phase: [2]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

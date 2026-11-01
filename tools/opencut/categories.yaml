@@ -1,0 +1,15 @@
+tool_id: opencut
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: video-editing
+additional_categories: []
+
+use_cases:
+  - "97k-star \"CapCut alternative\" claim is OVERSTATED -- mid-rewrite, contributions closed; prior working version (opencut-classic) is archived. Re-check once the rewrite ships MCP/headless features"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

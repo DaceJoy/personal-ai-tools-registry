@@ -1,0 +1,35 @@
+tool_id: replica-skill
+display_name: Replica Skill
+category: skill-packs
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/Jakeschincariol/replica-skill
+  docs: https://github.com/Jakeschincariol/replica-skill#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Anti-gaming scoring constraint + sweep-and-block release gate, adjacent to N09 (skill provenance)"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Anti-gaming scoring constraint"
+  - "Sweep-and-block release gate"
+  - "Quote-with-provenance pattern"
+
+install:
+  hint: "see https://github.com/Jakeschincariol/replica-skill#readme"
+  docs_url: https://github.com/Jakeschincariol/replica-skill#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 77c9436fb3d18c3d58169efb8caf4fe906b0dc51
+upstream_head_date: 2026-10-03
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T08 grill (S3a): WATCH, patterns adjacent to N09 but not closing it"

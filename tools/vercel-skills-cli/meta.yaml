@@ -1,0 +1,35 @@
+tool_id: vercel-skills-cli
+display_name: skills (Vercel Labs CLI)
+category: tool-discovery
+status: watch
+type: cli-tool
+
+source:
+  github: https://github.com/vercel-labs/skills
+  docs: https://github.com/vercel-labs/skills#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "The install mechanism this program used 3 times (hypit, caveman, agent-browser) without ever grilling it; find-skills sub-skill's quality-gate procedure is a pattern for our own N04 ecosystem-scout"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "find-skills: leaderboard-first, then search, then a 3-point quality gate (install count/source reputation/stars) before recommending"
+  - "Parent CLI already de facto infrastructure for 3 other graded targets"
+  - "CAUTION: its own worked example uses -y (skip human confirmation) -- never follow that literally in this household"
+
+install:
+  hint: "see https://github.com/vercel-labs/skills#readme"
+  docs_url: https://github.com/vercel-labs/skills#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: 92a9a34ac3bf88e695e468b90c7bf32f163d32c8
+upstream_head_date: 2026-10-29
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T25 grill (S11, mic's 2nd batch): HARVEST the find-skills quality-gate procedure; explicit caution against its own worked example's -y (skip-confirmation) install flag"

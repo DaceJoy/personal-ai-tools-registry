@@ -1,0 +1,15 @@
+tool_id: kimi-k3-in-c
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: local-inference
+additional_categories: []
+
+use_cases:
+  - "Real, validated 2.78T-param CPU inference engine; no household host can store the 1.56TB checkpoint or beat existing cloud access on speed -- track against an unwritten offline-resilience need"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

@@ -1,0 +1,15 @@
+tool_id: context7
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: documentation-retrieval-mcp
+additional_categories: []
+
+use_cases:
+  - "Up-to-date, version-specific library docs -- complements /library/search (static corpus) rather than rivalling it; blocked from a live test by RUBRIC rule 1 (no execution outside S-A) and ops-gw live:false policy"
+
+tags:
+  phase: [2]
+  type: [mcp-server]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

@@ -1,0 +1,35 @@
+tool_id: house-planner
+display_name: House Planner
+category: home-planning
+status: watch
+type: application
+
+source:
+  github: https://github.com/egmalt/house-planner
+  docs: https://github.com/egmalt/house-planner#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Mic's own \"someday\" future-maybe; real self-hosted tool, but electrical/plumbing code citations (ПУЭ/ГОСТ) and BOM retailer (petrovich.ru) are Russian-specific and would need Polish re-grounding"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Versioned JSON + optimistic concurrency (If-Match/409) + named snapshots -- a reusable safe-concurrent-edit pattern"
+  - "4 utility-network layers with real engineering calculation (sewer, electrical, water, underfloor heating)"
+  - "REGIONAL ADAPTATION COST flagged: ПУЭ/ГОСТ electrical codes and petrovich.ru BOM cart are Russian-specific"
+
+install:
+  hint: "see https://github.com/egmalt/house-planner#readme"
+  docs_url: https://github.com/egmalt/house-planner#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 5c91280da6c5cc84c1a534ef80ddafb64a6b5baa
+upstream_head_date: 2026-10-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T28 grill (S11, mic's 2nd batch): WATCH per mic's own 'someday' framing; storage pattern harvested now"

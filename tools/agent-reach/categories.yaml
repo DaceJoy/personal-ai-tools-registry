@@ -1,0 +1,15 @@
+tool_id: agent-reach
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: agent-frameworks
+additional_categories: []
+
+use_cases:
+  - "Typed result-envelope pattern (FINAL vs retryable codes) for our own /links pipeline; mic's library-daemon hypothesis answered NO on 3 grounds"
+
+tags:
+  phase: [1]
+  type: [library]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

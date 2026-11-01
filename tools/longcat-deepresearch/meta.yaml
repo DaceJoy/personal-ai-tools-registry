@@ -1,0 +1,35 @@
+tool_id: longcat-deepresearch
+display_name: LongCat-DeepResearch
+category: agent-frameworks
+status: watch
+type: library
+
+source:
+  github: https://github.com/meituan-longcat/LongCat-DeepResearch
+  docs: https://github.com/meituan-longcat/LongCat-DeepResearch#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "ResearchSpec-as-revisable-plan-object and global-to-local editing patterns for our own Research skill's deep mode; the multi-agent harness itself conflicts with serial-by-default and duplicates that skill"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "ResearchSpec: an executable, revisable plan object"
+  - "Global-to-local editing loop instead of full regeneration"
+  - "BYO-backend contract (llm/web_search/web_fetch)"
+
+install:
+  hint: "see https://github.com/meituan-longcat/LongCat-DeepResearch#readme"
+  docs_url: https://github.com/meituan-longcat/LongCat-DeepResearch#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: f8d3a99dabbab5617e7e49f0cbb5fa86afece72e
+upstream_head_date: 2026-10-23
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T18y grill (S5c, CLASS A): HARVEST 2 architecture patterns only; harness itself IGNORE (doctrine conflict)"

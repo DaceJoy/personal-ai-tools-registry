@@ -1,0 +1,35 @@
+tool_id: chatgpt-youtube-agent-skill
+display_name: ChatGPT YouTube Agent Skill
+category: skill-packs
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/Jakeschincariol/chatgpt-youtube-agent-skill
+  docs: https://github.com/Jakeschincariol/chatgpt-youtube-agent-skill#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Mic's own named content-publishing interest (blog/YT/social); channel-relative-median competitor-ranking script verified in full; no live household channel exists yet to apply it to"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "swipe.py: ranks competitor videos by multiple of EACH channel's OWN median (not raw views), with an honest <4-video skip"
+  - "\"Nothing gets published until you do it\" -- write-only-by-design, the THIRD independent instance of this pattern in this program"
+  - "Six dependency-free stdlib Python scripts, zero API keys"
+
+install:
+  hint: "see https://github.com/Jakeschincariol/chatgpt-youtube-agent-skill#readme"
+  docs_url: https://github.com/Jakeschincariol/chatgpt-youtube-agent-skill#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 6314d3c17dfa1e596096654204e8a09e28cdfd74
+upstream_head_date: 2026-09-22
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T27 grill (S11, mic's 2nd batch): HARVEST; confirmed distinct from T04 (same owner, different repo)"

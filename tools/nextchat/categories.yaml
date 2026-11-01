@@ -1,0 +1,15 @@
+tool_id: nextchat
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: chat-ui
+additional_categories: []
+
+use_cases:
+  - "Duplicates our own already-deployed librechat; in-app MCP-discovery-UI pattern noted for future ops-gw surface work"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

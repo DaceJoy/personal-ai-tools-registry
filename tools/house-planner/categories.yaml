@@ -1,0 +1,15 @@
+tool_id: house-planner
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: home-planning
+additional_categories: []
+
+use_cases:
+  - "Mic's own \"someday\" future-maybe; real self-hosted tool, but electrical/plumbing code citations (ПУЭ/ГОСТ) and BOM retailer (petrovich.ru) are Russian-specific and would need Polish re-grounding"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

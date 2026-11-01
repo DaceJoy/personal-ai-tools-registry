@@ -1,0 +1,35 @@
+tool_id: mirofish
+display_name: MiroFish
+category: agent-frameworks
+status: watch
+type: application
+
+source:
+  github: https://github.com/666ghj/MiroFish
+  docs: https://github.com/666ghj/MiroFish#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Re-verified at an unchanged HEAD; AGPL + Zep Cloud dependency + high token burn all still hold; own clean-room idea (MIROFISH-OWN-IDEA.md) parked on trading-quant L3 scenario engine"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "AGPL-3.0"
+  - "Zep Cloud dependency (welded, not swappable)"
+  - "High token burn, measured"
+
+install:
+  hint: "see https://github.com/666ghj/MiroFish#readme"
+  docs_url: https://github.com/666ghj/MiroFish#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 7657031ac01184afe2cb220f5ee3545573b5e843
+upstream_head_date: 2026-10-01
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T14 grill (S2): WATCH re-verified 2026-11-01 at identical head; all three 2026-10-03 findings unchanged"

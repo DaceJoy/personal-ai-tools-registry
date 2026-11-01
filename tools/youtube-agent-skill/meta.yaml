@@ -1,0 +1,34 @@
+tool_id: youtube-agent-skill
+display_name: YouTube Agent Skill (Jakeschincariol)
+category: skill-packs
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/Jakeschincariol/youtube-agent-skill
+  docs: https://github.com/Jakeschincariol/youtube-agent-skill#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Weakest-link scoring + measured-limitation disclosure patterns, adjacent to ContentAnalysis/link-routing"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Weakest-link scoring pattern"
+  - "Measured-limitation disclosure on a heuristic"
+
+install:
+  hint: "see https://github.com/Jakeschincariol/youtube-agent-skill#readme"
+  docs_url: https://github.com/Jakeschincariol/youtube-agent-skill#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+upstream_head_date: 2026-09-16
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T04 grill (S3a): WATCH, two small generic patterns, no clean NEEDS.md row"

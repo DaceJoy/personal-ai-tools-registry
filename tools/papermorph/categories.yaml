@@ -1,0 +1,15 @@
+tool_id: papermorph
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: skill-packs
+additional_categories: []
+
+use_cases:
+  - "Cost-ledger pattern for N18/N19 (a local record that does not depend on reaching the unreachable headroom-preflight host) plus a rule-set-completeness doctrine proposal"
+
+tags:
+  phase: [1]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

@@ -1,0 +1,34 @@
+tool_id: thinking-orbs
+display_name: Thinking Orbs
+category: ui-components
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/Jakubantalik/thinking-orbs
+  docs: https://github.com/Jakubantalik/thinking-orbs#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Framework-free \"AI is thinking\" loading animation for a dependency-free Claude Code Artifact"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Dependency-free canvas engine"
+  - "CLAIM-vs-MECHANISM: MATCHES, zero install-time execution found"
+
+install:
+  hint: "see https://github.com/Jakubantalik/thinking-orbs#readme"
+  docs_url: https://github.com/Jakubantalik/thinking-orbs#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: de85557ca220332586d070d8788c0e1d6e877a0d
+upstream_head_date: 2026-08-16
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T03 grill (S3b): WATCH, no NEEDS.md row, but the inline-HTML/JS engine fits Artifact constraints exactly"

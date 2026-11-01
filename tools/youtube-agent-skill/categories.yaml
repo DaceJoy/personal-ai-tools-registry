@@ -1,0 +1,15 @@
+tool_id: youtube-agent-skill
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: skill-packs
+additional_categories: []
+
+use_cases:
+  - "Weakest-link scoring + measured-limitation disclosure patterns, adjacent to ContentAnalysis/link-routing"
+
+tags:
+  phase: [2]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

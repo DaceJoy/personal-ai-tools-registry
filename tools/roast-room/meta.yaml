@@ -1,0 +1,35 @@
+tool_id: roast-room
+display_name: Roast Room
+category: judge-panel-patterns
+status: watch
+type: reference
+
+source:
+  github: https://github.com/nateherkai/roast-room
+  docs: https://github.com/nateherkai/roast-room#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Business-advisory council (NOT a code-critique tool, correcting this program's own pre-reading guess) -- panel-composition and quote-verification patterns relevant to our Workflow judge-panel and extraction-skill practice"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Chair-composed, per-question panel with a mandatory dissenting/downside-guarding seat"
+  - "Quote-verified persona extraction (every quote checked word-for-word against source)"
+  - "Raw-sources-stay-local, brain-is-quotes-and-paraphrase split"
+
+install:
+  hint: "see https://github.com/nateherkai/roast-room#readme"
+  docs_url: https://github.com/nateherkai/roast-room#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: e40f40652d5690c4d9f928c4794c673a99f2cd0e
+upstream_head_date: 2026-10-22
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T11 grill (S-C instrument wave): HARVEST patterns only; the business-advisory function itself is out of scope (domain mismatch)"

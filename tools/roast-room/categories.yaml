@@ -1,0 +1,15 @@
+tool_id: roast-room
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: judge-panel-patterns
+additional_categories: []
+
+use_cases:
+  - "Business-advisory council (NOT a code-critique tool, correcting this program's own pre-reading guess) -- panel-composition and quote-verification patterns relevant to our Workflow judge-panel and extraction-skill practice"
+
+tags:
+  phase: [2]
+  type: [reference]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

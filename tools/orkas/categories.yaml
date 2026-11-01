@@ -1,0 +1,15 @@
+tool_id: orkas
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: agent-frameworks
+additional_categories: []
+
+use_cases:
+  - "Mic's own note flagged phone-interface uncertainty; the likely actual intent is stablyai/orca (not in this registry yet, not formally graded -- named for a future look). Orkas itself is a 16-agent desktop orchestrator repeating the serial-by-default conflict found twice already"
+
+tags:
+  phase: [3]
+  type: [application]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

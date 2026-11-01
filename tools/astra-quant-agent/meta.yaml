@@ -1,0 +1,36 @@
+tool_id: astra-quant-agent
+display_name: AstraQuant (patterns only, OWNED-ELSEWHERE)
+category: software-engineering-patterns
+status: watch
+type: reference
+
+source:
+  github: https://github.com/0xethanq/astra-quant-agent
+  docs: https://github.com/0xethanq/astra-quant-agent#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Software-architecture patterns only (hypothesis-vs-enforcement, prompt-caching, fail-closed credential gate, doc-honesty CI tests) -- FamilyPAI does NOT adopt the trading component itself, by standing rule"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "LLM-proposes/code-vetoes governance pattern (confirms our own YODO review_gates)"
+  - ">90%-static-prefix prompt-caching for a multi-model panel (confirms our own OAuth-proxy cache architecture)"
+  - "CI test that fails when a doc references an untracked/deleted path (answers our own doc-claim-suppresses-the-check failure mode)"
+  - "Tested legacy-identifier allow-list (relevant to N16)"
+
+install:
+  hint: "see https://github.com/0xethanq/astra-quant-agent#readme"
+  docs_url: https://github.com/0xethanq/astra-quant-agent#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: e0b29fef1818e0ff9c6b210eb73234620e276a02
+upstream_head_date: 2026-10-03
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T05 grill (S7): HARVEST software patterns only; project itself is OWNED-ELSEWHERE / never-tier (trading component). Deposited to trading-quant per link-handling-seam."

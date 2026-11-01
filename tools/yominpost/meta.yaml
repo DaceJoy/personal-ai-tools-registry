@@ -1,0 +1,35 @@
+tool_id: yominpost
+display_name: YominPost
+category: social-publishing
+status: watch
+type: application
+
+source:
+  github: https://github.com/mrlong0129/yominpost
+  docs: https://github.com/mrlong0129/yominpost#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Won the T24 rivalry on AUTONOMY: MCP tool list architecturally excludes a publish action (verified from mcp_server.py itself); one-day-old single-push repo, real trust/maturity cost against postiz's 3 years"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "MCP tools generate_posts/check_post/save_draft/list_posts/list_platforms -- deliberately no publish tool"
+  - "Pre-publish risk gate (prompt-leak, engagement-bait, cadence caps) -- same rationale as our own DISCORD-SPEC.md pacing design"
+  - "Zero-config offline template driver, no API key needed to try the workflow"
+
+install:
+  hint: "see https://github.com/mrlong0129/yominpost#readme"
+  docs_url: https://github.com/mrlong0129/yominpost#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 12d7a35ea5ed3b10ba132df76f1029fa846c6ed0
+upstream_head_date: 2026-10-05
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T24-yominpost-rival grill (S10): WATCH; no-agent-publish-tool pattern + pre-publish risk gate HARVESTed as the sharpest findings of the T24 comparison"

@@ -1,0 +1,15 @@
+tool_id: thinking-orbs
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: ui-components
+additional_categories: []
+
+use_cases:
+  - "Framework-free \"AI is thinking\" loading animation for a dependency-free Claude Code Artifact"
+
+tags:
+  phase: [2]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

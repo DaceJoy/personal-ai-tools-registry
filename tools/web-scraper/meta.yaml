@@ -1,0 +1,35 @@
+tool_id: web-scraper
+display_name: web-scraper (yfe404)
+category: scraping-tools
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/yfe404/web-scraper
+  docs: https://github.com/yfe404/web-scraper#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Phase-0 reconnaissance pattern before escalating the 4-tier scrape ladder (N20)"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Phase-0 reconnaissance before escalating to a browser/paid-proxy rung"
+  - "Cheaper-route-first ordering (sitemap/JSON endpoint before headless browser)"
+  - "Skip-and-declare discipline instead of a silent failure"
+
+install:
+  hint: "see https://github.com/yfe404/web-scraper#readme"
+  docs_url: https://github.com/yfe404/web-scraper#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 40ef9f8c45d48e7d58087da4dfeb6394c9533495
+upstream_head_date: 2026-03-18
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T01 grill (S2): HARVEST 3 prose elements (Phase-0 reconnaissance, cheaper-route-first, skip-and-declare); it is a skill, not a fetcher"
