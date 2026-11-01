@@ -1,0 +1,34 @@
+tool_id: longcat-benchmarks-class
+display_name: meituan-longcat CLASS B (12 benchmarks, graded as one, +1 named exception)
+category: eval-benchmarks
+status: watch
+
+source:
+  github: https://github.com/meituan-longcat/WBench
+  docs: https://github.com/meituan-longcat/WBench#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "11 of 12 measure capabilities (video-world-modeling, math/omni-modal reasoning, Minecraft exploration, SOP-following, multilingual QA) that map to no household decision made by habit. Meeseeks named as the exception: PILOT-worthy against ModelOptimizer's own iterate-to-3x judge loop."
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "CLASS entry covering 12 repos, graded together per FamilyPAI's T18-CLS-B.md"
+  - "Meeseeks (multi-turn instruction-following + self-correction) is the one named exception, PILOT-worthy as a methodology borrow for ModelOptimizer (REIMPLEMENT, not vendor -- Meeseeks itself is NO LICENSE)"
+  - "vitabench (agentic tool-use, ICLR 2026) named as the next-closest candidate, stays WATCH"
+
+install:
+  hint: "n/a -- these are eval benchmarks, not tools to run; see T18-CLS-B.md for the per-repo table"
+  docs_url: https://github.com/meituan-longcat/WBench#readme
+  arm64_support: unknown
+
+maintained_by: company
+upstream_fork: null
+upstream_head: edc4e80e642baac4f2b5764dec9f1a491200af8f
+upstream_head_date: 2026-10-30
+last_verified: 2026-11-01
+added_by: manual
+added_reason: "T18-CLS-B grill (S5b): WATCH class-wide; Meeseeks named as a PILOT-worthy exception against ModelOptimizer"

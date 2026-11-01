@@ -1,0 +1,15 @@
+tool_id: longcat-benchmarks-class
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: eval-benchmarks
+additional_categories: []
+
+use_cases:
+  - "11 of 12 measure capabilities with no household decision to sharpen; Meeseeks's instruction-following-with-correction design is the one exception relevant to ModelOptimizer"
+
+tags:
+  phase: [3]
+  type: [class-reference]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

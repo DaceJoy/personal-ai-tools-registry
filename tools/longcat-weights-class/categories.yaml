@@ -1,0 +1,15 @@
+tool_id: longcat-weights-class
+detected_by: manual
+detected_date: 2026-11-01
+
+primary_category: local-inference
+additional_categories: []
+
+use_cases:
+  - "No NVIDIA/discrete GPU anywhere in the household -- cannot HOST any of 12 weight releases. Counter-check found 2 of 12 reachable via OpenRouter today, outside the free-tier-only routing default."
+
+tags:
+  phase: [3]
+  type: [class-reference]
+  maintained_by: company
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"

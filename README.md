@@ -5,8 +5,8 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-42-blue)
-![Categories](https://img.shields.io/badge/categories-27-green)
+![Tools](https://img.shields.io/badge/tools-44-blue)
+![Categories](https://img.shields.io/badge/categories-28-green)
 ![Maintained](https://img.shields.io/badge/maintained%20by-manual%20%2B%20upstream--movement%20feed-orange)
 
 ---
@@ -124,13 +124,16 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [web-scraper (yfe404)](tools/web-scraper/meta.yaml) | 2026-11-01 | `40ef9f8c45d4` | 1 | 👀 watch |
 | [YominPost](tools/yominpost/meta.yaml) | 2026-11-01 | `12d7a35ea5ed` | 3 | 👀 watch |
 | [YouTube Agent Skill (Jakeschincariol)](tools/youtube-agent-skill/meta.yaml) | 2026-11-01 | `a2feb2104981` | 2 | 👀 watch |
+| [meituan-longcat CLASS W (12 weights)](tools/longcat-weights-class/meta.yaml) | 2026-11-01 | `1ac91dad53bc` | 3 | 👀 watch |
+| [meituan-longcat CLASS B (12 benchmarks)](tools/longcat-benchmarks-class/meta.yaml) | 2026-11-01 | `edc4e80e642b` | 3 | 👀 watch |
 
-> The 31 rows above `polish-splade` are the pre-existing 11 entries (verified 2026-11-01 by the
-> S1b session of `FamilyPAI/MEMORY/WORK/20261030-230237_github-target-grill-and-source-repo-
-> register`). The 31 rows below it were ADDED by that same thread's S9 synthesis session
-> (2026-11-01), one per non-REJECT verdict across its 37-target grill program (33 obliged minus 2
-> `T18-CLS-*` class-files, which cover 12 repos each and are not individual tools -- see that
-> thread's `FIT-MATRIX.md` for the full needs x elements mapping). Every `upstream_head` pin
+> The 11 rows from PAI through `polish-splade` are the pre-existing entries (verified 2026-11-01
+> by the S1b session of `FamilyPAI/MEMORY/WORK/20261030-230237_github-target-grill-and-source-
+> repo-register`). The 33 rows below `polish-splade` were ADDED by that same thread's S9
+> synthesis session (2026-11-01), one per non-REJECT verdict across its 37-target grill program
+> (37 total minus 4 REJECT). Two of the 33 (`longcat-weights-class`, `longcat-benchmarks-class`)
+> cover 12 repos each, graded together as one class rather than per-repo -- see that thread's
+> `FIT-MATRIX.md` for the full needs x elements mapping. Every `upstream_head` pin
 > above was read live via `gh api .../commits` at write time, not estimated.
 
 > A re-verification pass, concretely (what the 2026-11-01 pass did): for each entry read
