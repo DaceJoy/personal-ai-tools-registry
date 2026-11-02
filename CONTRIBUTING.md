@@ -78,6 +78,18 @@ What ACTUALLY runs, as of 2026-11-01:
   which raises a YODO signal on transition. A re-verification pass is still a human session;
   what is automated is NOTICING that one is due.
 
+> [!NOTE]
+> DESIGN POINTER (not implemented): `FamilyPAI/MEMORY/WORK/20261030-230237_github-target-grill-
+> and-source-repo-register/targets/T02-awesome-free-llm-apis.md` (HARVEST verdict, grilled
+> 2026-11-01) found a sharper pattern than the feed above. `mnfst/awesome-free-llm-apis` runs a
+> daily per-FACT probe (`agents/provider-sync.md`, `scripts/verify-providers.js`) that classifies
+> each HTTP outcome as EVIDENCE or NOISE against a written table before editing any row, plus a
+> separate `scripts/check-sources.js` pass that stores the exact quote used as proof of a prose
+> claim (context window, pricing, feature list). `upstream-movement-feed.py` above answers "has
+> the project moved"; it does not answer "is a specific claim inside a still-live entry still
+> true" -- that is FamilyPAI's N04/N05/N15 (see that thread's `NEEDS.md`), still open. No code
+> landed here for this note; it is a forward pointer, not a build.
+
 - `status: deprecated` when a tool is no longer maintained or superseded. A fork of ours being
   stale is OUR failure, not upstream's, and is never grounds for deprecating an entry.
 - Tools with `maintained_by: company*` are not forked (low deletion risk)
