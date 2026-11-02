@@ -1,0 +1,18 @@
+tool_id: crawl4ai
+detected_by: manual
+detected_date: 2026-11-02
+
+primary_category: scraping-tools
+additional_categories: [document-ingest, browser-automation]
+
+use_cases:
+  - "Tier 3 headless render in the household 4-tier scrape ladder (familypai-crawl4ai, LXC131)"
+  - "Turning a JS-shell page into cleaned_html the acquire pipeline can parse"
+  - "Candidate source of fetch-time page compression (fit_markdown) for N20 and the T19b pattern"
+
+tags:
+  phase: [1]
+  type: [infrastructure]
+  maintained_by: community-individual
+  grill_program: "20261030-230237_github-target-grill-and-source-repo-register"
+  grill_status: "queued as T29, NOT yet graded -- mic deferred the grill to the end of the program"

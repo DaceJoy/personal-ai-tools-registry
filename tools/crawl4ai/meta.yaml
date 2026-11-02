@@ -1,0 +1,50 @@
+tool_id: crawl4ai
+display_name: Crawl4AI
+category: scraping-tools
+status: active
+type: infrastructure
+
+source:
+  github: https://github.com/unclecode/crawl4ai
+  docs: https://docs.crawl4ai.com/
+  docker: unclecode/crawl4ai
+  pypi: crawl4ai
+
+relevance_to_personalai:
+  use_case: "Tier 3 of the household scrape ladder: the headless-render service familypai-crawl4ai on LXC131"
+  phase: 1
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "ALREADY A LIVE DEPENDENCY, not a candidate: familypai-crawl4ai runs on LXC131 and the daemon calls it"
+  - "We consume a sliver of its API -- POST /crawl with cache_mode BYPASS (plus delay_before_return_html), reading cleaned_html only"
+  - "Unused upstream surface worth absorbing: content filters / fit_markdown, extraction strategies, chunking, deep crawl"
+  - "fit_markdown is page compression AT FETCH TIME -- the pattern FamilyPAI's T19b row describes and its N20 need asks for"
+
+install:
+  hint: "docker run -d -p 11235:11235 unclecode/crawl4ai  (household: familypai-crawl4ai on LXC131)"
+  docs_url: https://docs.crawl4ai.com/core/docker-deployment/
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 888299fb5f0b82181897dc0e61bfb4b036f0aea5
+upstream_head_date: 2026-10-26
+last_verified: 2026-11-02
+added_by: manual
+added_reason: >-
+  mic asked 2026-11-02 whether we do this better than crawl4ai or whether they hold advantages to
+  absorb; measuring the premise showed we DEPEND on it (Tier 3) and had never registered it, so
+  the register of adopted tools was missing one of its own running services. Three targets in the
+  FamilyPAI grill program (T06 chrome-devtools-mcp, T19d agent-browser, T23 obscura) were already
+  downgraded BECAUSE this capability is occupied by crawl4ai, which is the strongest evidence it
+  belongs here. TWO THINGS THIS SCHEMA CANNOT EXPRESS, stated here so no reader infers them wrong:
+  (1) upstream_head above is the commit this entry was VERIFIED AGAINST, NOT what we run -- our
+  image is digest-pinned unclecode/crawl4ai@sha256:9021b3cb5c6f built 2026-10-02, carries no
+  org.opencontainers.image.version label, and upstream release v0.9.5 shipped 2026-10-14, so we
+  are behind by an amount nobody has measured (this is FamilyPAI need N15 with a concrete instance).
+  (2) maintained_by is community-individual (gh api users/unclecode -> type User), which under this
+  repo's own rule means it SHOULD have a fork in the parent PersonalAI account as deletion
+  insurance; upstream_fork is null because no fork exists yet. Creating one is an outward action
+  and was not taken unasked.

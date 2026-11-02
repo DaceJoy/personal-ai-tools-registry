@@ -5,7 +5,7 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-44-blue)
+![Tools](https://img.shields.io/badge/tools-45-blue)
 ![Categories](https://img.shields.io/badge/categories-28-green)
 ![Maintained](https://img.shields.io/badge/maintained%20by-manual%20%2B%20upstream--movement%20feed-orange)
 
@@ -103,6 +103,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [Claude Code Usage Monitor](tools/claude-code-usage-monitor/meta.yaml) | 2026-11-01 | `c59a83bf943f` | 1 | 👀 watch |
 | [Claude Code Usage Dashboard (phuryn)](tools/claude-usage-phuryn/meta.yaml) | 2026-11-01 | `3eea154474e9` | 2 | 👀 watch |
 | [Context7](tools/context7/meta.yaml) | 2026-11-01 | `7836c5839183` | 2 | 👀 watch |
+| [Crawl4AI](tools/crawl4ai/meta.yaml) | 2026-11-02 | `888299fb5f0b` | 1 | ✅ active |
 | [DiscordChatExporter](tools/discordchatexporter/meta.yaml) | 2026-11-01 | `14ee1f64906c` | 1 | ✅ active |
 | [House Planner](tools/house-planner/meta.yaml) | 2026-11-01 | `5c91280da6c5` | 3 | 👀 watch |
 | [Hypit](tools/hypit/meta.yaml) | 2026-11-01 | `0762c6be56c0` | 2 | 👀 watch |
