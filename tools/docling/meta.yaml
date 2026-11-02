@@ -5,8 +5,8 @@ status: active
 type: infrastructure
 
 source:
-  github: https://github.com/DS4SD/docling
-  docs: https://ds4sd.github.io/docling/
+  github: https://github.com/docling-project/docling
+  docs: https://docling-project.github.io/docling/
   pypi: docling
   docker: null               # no official Docker image, install via pip
 
@@ -33,7 +33,7 @@ fork_notes: >
   Fork manually via GitHub UI if needed: https://github.com/DS4SD/docling
 
 maintained_by: company-ibm   # IBM Research — low deletion risk
-upstream_head: 26a5bcfd0812b2483338b591563fd64664f7272b            # DS4SD/docling@main
+upstream_head: 26a5bcfd0812b2483338b591563fd64664f7272b            # docling-project/docling@main (pinned while still DS4SD/docling)
 upstream_head_date: 2026-11-01
 last_verified: 2026-11-01
 added_by: initial-setup

@@ -5,8 +5,8 @@ status: active
 type: skill-pack
 
 source:
-  github: https://github.com/affaan-m/everything-claude-code
-  docs: https://github.com/affaan-m/everything-claude-code#readme
+  github: https://github.com/affaan-m/ECC
+  docs: https://github.com/affaan-m/ECC#readme   # upstream's own homepage is https://ecc.tools (200)
   docker: null
   pypi: null
 
@@ -29,7 +29,7 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-everything-claude-code
-upstream_head: b38be6a7f6350964d59328b52f0624e1d1d552d1            # affaan-m/everything-claude-code@main
+upstream_head: b38be6a7f6350964d59328b52f0624e1d1d552d1            # affaan-m/ECC@main (pinned while still affaan-m/everything-claude-code)
 upstream_head_date: 2026-10-30
 last_verified: 2026-11-01
 added_by: initial-setup

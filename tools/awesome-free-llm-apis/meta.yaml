@@ -26,7 +26,7 @@ install:
   docs_url: https://github.com/mnfst/awesome-free-llm-apis#readme
   arm64_support: unknown
 
-maintained_by: community-individual
+maintained_by: company   # owner mnfst is an Organization named Manifest (manifest.build), 25 public repos -- NOT an individual; corrected 2026-11-02 by registry-fact-probe. The deletion-risk exemption now rests on the org classification, not on size.
 upstream_fork: null
 upstream_head: 2527fd445fb94a1361d31d1891fbbef91f1d81eb
 upstream_head_date: 2026-11-01
