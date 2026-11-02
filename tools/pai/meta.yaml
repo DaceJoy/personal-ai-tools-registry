@@ -5,8 +5,8 @@ status: active
 type: foundation-framework
 
 source:
-  github: https://github.com/danielmiessler/Personal_AI_Infrastructure
-  docs: https://github.com/danielmiessler/Personal_AI_Infrastructure#readme
+  github: https://github.com/danielmiessler/LifeOS
+  docs: https://github.com/danielmiessler/LifeOS#readme
   docker: null
   pypi: null
 
@@ -23,12 +23,12 @@ highlights:
 
 install:
   hint: null
-  docs_url: https://github.com/danielmiessler/Personal_AI_Infrastructure#readme
+  docs_url: https://github.com/danielmiessler/LifeOS#readme
   arm64_support: null
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-pai
-upstream_head: b7efec97d8c3885feee285bee468c35602fb0606            # danielmiessler/Personal_AI_Infrastructure@main
+upstream_head: b7efec97d8c3885feee285bee468c35602fb0606            # danielmiessler/LifeOS@main
 upstream_head_date: 2026-10-28
 last_verified: 2026-11-01
 added_by: initial-setup

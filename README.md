@@ -12,7 +12,7 @@
 ---
 
 > Special thanks to **[Daniel Miessler](https://github.com/danielmiessler)** for the inspiration.
-> This registry exists because of his work on [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure).
+> This registry exists because of his work on [Personal AI Infrastructure](https://github.com/danielmiessler/LifeOS).
 
 ---
 
@@ -159,7 +159,7 @@ Tools that provide conceptual foundations, architecture patterns, or orchestrati
 Foundation architecture by Daniel Miessler. Conceptual base for this project's
 multi-tenant extensions, capability auditor, and interview-driven setup.
 
-- **Source:** https://github.com/danielmiessler/Personal_AI_Infrastructure
+- **Source:** https://github.com/danielmiessler/LifeOS
 - **Use in PersonalAI:** Bootstrap concepts only — `update_policy: audit-only`
 
 ---
