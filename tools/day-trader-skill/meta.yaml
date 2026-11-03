@@ -1,0 +1,28 @@
+tool_id: day-trader-skill
+display_name: Day Trader skill (Jakeschincariol)
+category: trading-execution
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/Jakeschincariol/day-trader-skill
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "trading-quant: per-order exact-yes approval bound to a risk-PASS fingerprint (trader-broker/ticket.py:parse_yes) -- take when micro-live go-live is unparked; no UI in the repo"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T01-day-trader-skill.md"
+  falsifier: "A live order whose approval text names a different quantity than the order must be refused; the current Bitvavo executor (run-wide --live --yes-i-understand) would send it"
+
+maintained_by: individual
+upstream_head: 3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd
+upstream_head_date: 2026-10-20
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S2 (mic, 2026-11-03)"

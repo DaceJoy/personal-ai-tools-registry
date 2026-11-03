@@ -1,0 +1,18 @@
+tool_id: day-trader-skill
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: trading-execution
+additional_categories: []
+
+keywords:
+  - order approval
+  - human-in-the-loop
+  - opening range breakout
+
+use_cases:
+  - "Per-order fingerprinted human yes before a live order (trading-quant micro-live)"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

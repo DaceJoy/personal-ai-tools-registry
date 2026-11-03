@@ -1,0 +1,28 @@
+tool_id: kronos
+display_name: Kronos (K-line foundation model)
+category: time-series-forecasting
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/shiyu-coder/Kronos
+  docs: https://arxiv.org/abs/2508.02739
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "trading-quant: pretrained OHLCV forecaster as a forward-only Cartesian signal candidate (PILOT only on mic's go: CONTRADICTS the edge=flow thesis); sampled paths as a possible third null beside the block bootstrap"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T51-kronos.md"
+  falsifier: "On bars strictly after the HF weights' upload date, the Kronos-sign entry must beat the same entry under a stationary-block-bootstrap surrogate net of cost; else drop"
+
+maintained_by: individual
+upstream_head: 67b630e67f6a18c9e9be918d9b4337c960db1e9a
+upstream_head_date: 2026-04-13
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S2 (mic, 2026-11-03)"

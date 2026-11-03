@@ -1,0 +1,18 @@
+tool_id: kronos
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: time-series-forecasting
+additional_categories: []
+
+keywords:
+  - foundation model
+  - OHLCV forecasting
+  - K-line tokenizer
+
+use_cases:
+  - "Forward-only signal candidate and generative null for trading-quant"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

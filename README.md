@@ -114,6 +114,8 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [OpenWhispr](tools/openwhispr/meta.yaml) | 2026-11-03 | `780448fa331e` | 2 | 👀 watch |
 | [VoiceStudio](tools/voicestudio/meta.yaml) | 2026-11-03 | `5875fa91b844` | 2 | 👀 watch |
 | [Audio8 TTS](tools/audio8-tts/meta.yaml) | 2026-11-03 | `1d64afcc2da5` | 2 | 👀 watch |
+| [Day Trader skill](tools/day-trader-skill/meta.yaml) | 2026-11-03 | `3d0f4ef6986f` | 3 | 👀 watch |
+| [Kronos](tools/kronos/meta.yaml) | 2026-11-03 | `67b630e67f6a` | 3 | 👀 watch |
 | [MiroFish](tools/mirofish/meta.yaml) | 2026-11-01 | `7657031ac011` | 2 | 👀 watch |
 | [NextChat](tools/nextchat/meta.yaml) | 2026-11-01 | `1d3dc3315129` | 3 | 👀 watch |
 | [Obscura](tools/obscura/meta.yaml) | 2026-11-01 | `8534b401898e` | 2 | 👀 watch |
