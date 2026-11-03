@@ -1,0 +1,19 @@
+tool_id: openwa
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: messaging-gateway
+additional_categories: []
+
+keywords:
+  - whatsapp
+  - baileys
+  - gateway
+  - capability matrix
+
+use_cases:
+  - "Shape of a per-channel capability table for a channel interface (WA vs Signal)"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

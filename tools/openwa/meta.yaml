@@ -1,0 +1,28 @@
+tool_id: openwa
+display_name: OpenWA self-hosted WhatsApp API gateway (rmyndharis)
+category: messaging-gateway
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/rmyndharis/OpenWA
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Multi-session WA gateway over baileys 7.0.0-rc14 + whatsapp-web.js behind one interface (MIT). Pattern harvested: engine-capability-matrix.ts (row set derived from the interface, curated not-available cells with rootCause + evidence, spec fails on stale curation) for the WA-vs-Signal table of the signal-channel-swap thread (N25). Watched: tiered WA-version resolver (env override, sw.js, GitHub, disk cache, fallback, 5 s timeouts) vs our untimed fetchLatestBaileysVersion."
+  phase: 3
+  replaces_what: "nothing; FamilyPAI containers/baileys-gateway/server.js stays (same baileys library, proven 405 exit-to-fresh-process fix that OpenWA's retry-forever would undo)"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T46-openwa.md"
+  falsifier: "The signal-swap capability table generated from server.js carries 9 route rows (grep -c 'app\\.\\(get\\|post\\)(' = 9 on 2026-11-04); a hand-typed table missing one fails"
+
+maintained_by: individual
+upstream_head: 11bb9592fcb0d40377159dd6012527000136c6e4
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S5 WA + seam (mic, 2026-11-03)"
