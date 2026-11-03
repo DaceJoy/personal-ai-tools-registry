@@ -1,0 +1,18 @@
+tool_id: bla
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: security
+additional_categories: []
+
+keywords:
+  - prompt injection
+  - agent reader
+  - obfuscation
+
+use_cases:
+  - "Known-answer fixtures for an injection-marker tripwire in the intake read step"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

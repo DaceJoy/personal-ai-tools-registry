@@ -1,0 +1,28 @@
+tool_id: bla
+display_name: BLA Blind LLM Agents (qybaihe)
+category: security
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/qybaihe/bla
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "FamilyPAI intake read path: bla's in-band role-marker payloads (cognitive-armor-trigger.ts) as known-answer fixtures for a tripwire over fetched third-party text (N29); its artifact protector has no subject here -- we ship nothing"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T18-bla.md"
+  falsifier: "A fetched file containing a fixture marker (e.g. <|im_start|>system) prints INJECTION-MARKER; without the scan it passes silently; bla's cognitive-armor-trigger.ts must hit, our own README must not"
+
+maintained_by: individual
+upstream_head: eb44984a5c3e1920bec9c7bdc8403c6d93d0bc0e
+upstream_head_date: 2026-11-03
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S3 security (mic, 2026-11-03)"

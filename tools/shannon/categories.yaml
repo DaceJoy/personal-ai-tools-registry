@@ -1,0 +1,18 @@
+tool_id: shannon
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: security
+additional_categories: []
+
+keywords:
+  - pentest
+  - severity calibration
+  - proof-gated findings
+
+use_cases:
+  - "Severity calibration rules for security review findings"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

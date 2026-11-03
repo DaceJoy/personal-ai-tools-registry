@@ -1,0 +1,28 @@
+tool_id: shannon
+display_name: Shannon AI pentester (KeygraphHQ)
+category: security
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/KeygraphHQ/shannon
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Proof-gated severity (repro_failure caps at LOW, marginal-capability principle) for our security reviews -- take it from google/mantis (Apache-2.0), not from shannon (AGPL-3.0); running shannon needs a non-production target"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T14-shannon.md"
+  falsifier: "A planted finding with no reproduction step comes out LOW under the calibrated review lens and HIGH without it"
+
+maintained_by: organization
+upstream_head: b9744f6cecc5429333873b86a6762f1d70c54fc2
+upstream_head_date: 2026-10-27
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S3 security (mic, 2026-11-03)"
