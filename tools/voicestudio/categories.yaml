@@ -1,0 +1,18 @@
+tool_id: voicestudio
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: text-to-speech
+additional_categories: []
+
+keywords:
+  - TTS catalogue
+  - voice cloning
+  - Polish TTS
+
+use_cases:
+  - "HARVEST E1/E4 as facts (Polish CPU TTS engines + hardware floors); engines DEPEND upstream (Apache-2.0); AGPL shell IGNORE"
+
+tags:
+  phase: [2]
+  type: [harvest-source]

@@ -1,0 +1,28 @@
+tool_id: humanizer
+display_name: Humanizer (blader)
+category: writing-quality
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/blader/humanizer
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "HARVEST E1-E3 only (kept-sentence rule, 6 structural tells, two-tell calibration) as a ~150-token Polish checklist; whole 9K-token skill rejected on cost"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T50-humanizer.md"
+  falsifier: "Census re-run on 40 transcripts: bold-label rate < 10% (from 19.7%), not-X-but-Y < 2% (from 3.7%)"
+
+maintained_by: individual
+upstream_head: 0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0
+upstream_head_date: 2026-10-28
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 (mic, 2026-11-03)"

@@ -1,0 +1,18 @@
+tool_id: humanizer
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: writing-quality
+additional_categories: []
+
+keywords:
+  - AI writing tells
+  - prose quality
+  - style checklist
+
+use_cases:
+  - "HARVEST E1-E3 only (kept-sentence rule, 6 structural tells, two-tell calibration) as a ~150-token Polish checklist; whole 9K-token skill rejected on cost"
+
+tags:
+  phase: [2]
+  type: [harvest-source]

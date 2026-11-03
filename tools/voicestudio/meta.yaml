@@ -1,0 +1,28 @@
+tool_id: voicestudio
+display_name: VoiceStudio
+category: text-to-speech
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/debpalash/VoiceStudio
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "HARVEST E1/E4 as facts (Polish CPU TTS engines + hardware floors); engines DEPEND upstream (Apache-2.0); AGPL shell IGNORE"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T07-voicestudio.md"
+  falsifier: "Blind listening test: new engines must beat Piper/Chatterbox on > 3 of 10 sentences"
+
+maintained_by: individual
+upstream_head: 5875fa91b8449c06998ad8394f3af4d6beb68cc9
+upstream_head_date: 2026-11-03
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 (mic, 2026-11-03)"

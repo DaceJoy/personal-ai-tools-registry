@@ -1,0 +1,28 @@
+tool_id: openwhispr
+display_name: OpenWhispr
+category: speech-to-text
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/OpenWhispr/openwhispr
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "HARVEST E1 Polish-capable local STT shortlist; E2 sherpa-onnx as upstream DEPEND candidate; app PILOT on mic's own laptop"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T10-openwhispr.md"
+  falsifier: "Polish STT bake-off: WER difference larger than same-model run-to-run spread on 20 notes"
+
+maintained_by: individual
+upstream_head: 780448fa331eb9106d165e7ba2897fb004a67fd8
+upstream_head_date: 2026-11-03
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 (mic, 2026-11-03)"

@@ -1,0 +1,19 @@
+tool_id: openwhispr
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: speech-to-text
+additional_categories: []
+
+keywords:
+  - dictation
+  - Parakeet
+  - Whisper
+  - Polish STT
+
+use_cases:
+  - "HARVEST E1 Polish-capable local STT shortlist; E2 sherpa-onnx as upstream DEPEND candidate; app PILOT on mic's own laptop"
+
+tags:
+  phase: [2]
+  type: [harvest-source]

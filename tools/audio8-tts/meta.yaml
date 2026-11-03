@@ -1,0 +1,28 @@
+tool_id: audio8-tts
+display_name: Audio8 TTS
+category: text-to-speech
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/Edge0-AI/Audio8_TTS
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Preview 0.6B ONNX INT4 CPU build as 5th voice in the Polish listening test; Realistic Air WATCH until ONNX export"
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T42-audio8-tts.md"
+  falsifier: "Same listening test as voicestudio entry"
+
+maintained_by: individual
+upstream_head: 1d64afcc2da56222b41ddcf53de7b8bc54be1fb6
+upstream_head_date: 2026-11-02
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 (mic, 2026-11-03)"
