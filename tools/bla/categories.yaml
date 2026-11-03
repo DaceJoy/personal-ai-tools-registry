@@ -2,7 +2,7 @@ tool_id: bla
 detected_by: intake-link-batch-1
 detected_date: 2026-11-03
 
-primary_category: security
+primary_category: prompt-injection-protection
 additional_categories: []
 
 keywords:

@@ -1,6 +1,6 @@
 tool_id: shannon
 display_name: Shannon AI pentester (KeygraphHQ)
-category: security
+category: security-scanning
 status: watch
 type: harvest-source
 

@@ -1,6 +1,6 @@
 tool_id: bla
 display_name: BLA Blind LLM Agents (qybaihe)
-category: security
+category: prompt-injection-protection
 status: watch
 type: harvest-source
 
