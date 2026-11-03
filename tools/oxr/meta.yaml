@@ -1,0 +1,28 @@
+tool_id: oxr
+display_name: OXR document parsing model (SoMarkAI)
+category: document-ingest
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/SoMarkAI/OXR
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Candidate OCR leg for image-only scanned books (VLM 1.3B + D-FINE layout, Markdown/JSON with coordinates) in place of tesseract; needs CUDA (vLLM image). Licence is custom: Apache-2.0 plus overriding terms (revenue/funding threshold, attribution, no competing hosted API). Free hosted API barred for corpus text."
+  phase: 3
+  replaces_what: "tesseract OCR leg (FamilyPAI containers/daemon/ocr_scan.py), only if it wins the falsifier"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T02-oxr.md"
+  falsifier: "On the 13 image-only quarantine scans, OXR sidecar text beats tesseract on character error rate (PL and EN pages separately); else DEPEND is dropped"
+
+maintained_by: organization
+upstream_head: c1a1dcb312ee9f691404f127785510453c0d9350
+upstream_head_date: 2026-10-24
+last_verified: 2026-11-03
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S4 library + ingest (mic, 2026-11-03)"

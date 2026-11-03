@@ -1,0 +1,19 @@
+tool_id: oxr
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: document-ingest
+additional_categories: []
+
+keywords:
+  - ocr
+  - document parsing
+  - layout analysis
+  - vision language model
+
+use_cases:
+  - "OCR of image-only scanned PDFs when a CUDA host exists"
+
+tags:
+  phase: [3]
+  type: [harvest-source]
