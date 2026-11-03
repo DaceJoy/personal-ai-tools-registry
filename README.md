@@ -120,6 +120,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [Shannon](tools/shannon/meta.yaml) | 2026-11-03 | `b9744f6cecc5` | 3 | 👀 watch |
 | [Animate skill](tools/animate/meta.yaml) | 2026-11-03 | `7e5eb56feb2d` | 3 | 👀 watch |
 | [OpenWA](tools/openwa/meta.yaml) | 2026-11-04 | `11bb9592fcb0` | 3 | 👀 watch |
+| [Janas](tools/janas/meta.yaml) | 2026-11-04 | `80062351ee74` | 3 | 👀 watch |
 | [OXR](tools/oxr/meta.yaml) | 2026-11-03 | `c1a1dcb312ee` | 3 | 👀 watch |
 | [MiroFish](tools/mirofish/meta.yaml) | 2026-11-01 | `7657031ac011` | 2 | 👀 watch |
 | [NextChat](tools/nextchat/meta.yaml) | 2026-11-01 | `1d3dc3315129` | 3 | 👀 watch |

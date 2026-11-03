@@ -1,0 +1,28 @@
+tool_id: janas
+display_name: Janas LLM engine (pure C, out-of-RAM MoE)
+category: local-inference
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/prabanta-dev/janas
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Candidate engine for local generation above qwen3:8b on our own CPU (LXC130, Zen 4 + Radeon 780M): streams MoE experts from NVMe (O_DIRECT + io_uring) so an 80B MoE runs in 32 GB. Does NOT run bge-m3 (decoder archs only), so it does not help library embedding throughput (FamilyPAI N26). GPL-3.0: run as a service, never vendor."
+  phase: 3
+  replaces_what: "nothing today; would complement Ollama on LXC130 for models above 8B"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T40-janas.md"
+  falsifier: "On LXC130's CPU, janas-bench with Qwen3-30B-A3B Q4_K_M beats Ollama on the same file (reply and prompt tok/s separately) by a margin worth a second engine; else drop"
+
+maintained_by: organization
+upstream_head: 80062351ee7429c5f24e676b446f5335924dac55
+upstream_head_date: 2026-11-03
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S6a local inference (mic, 2026-11-03 batch)"

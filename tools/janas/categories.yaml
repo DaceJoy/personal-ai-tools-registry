@@ -1,0 +1,19 @@
+tool_id: janas
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: local-inference
+additional_categories: []
+
+keywords:
+  - llm inference
+  - mixture of experts
+  - expert offloading
+  - cpu inference
+
+use_cases:
+  - "Local generation with a model larger than RAM, if a household need for it appears"
+
+tags:
+  phase: [3]
+  type: [harvest-source]
