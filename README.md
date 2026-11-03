@@ -118,6 +118,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [Kronos](tools/kronos/meta.yaml) | 2026-11-03 | `67b630e67f6a` | 3 | 🧪 experimental |
 | [BLA Blind LLM Agents](tools/bla/meta.yaml) | 2026-11-03 | `eb44984a5c3e` | 3 | 👀 watch |
 | [Shannon](tools/shannon/meta.yaml) | 2026-11-03 | `b9744f6cecc5` | 3 | 👀 watch |
+| [Animate skill](tools/animate/meta.yaml) | 2026-11-03 | `7e5eb56feb2d` | 3 | 👀 watch |
 | [MiroFish](tools/mirofish/meta.yaml) | 2026-11-01 | `7657031ac011` | 2 | 👀 watch |
 | [NextChat](tools/nextchat/meta.yaml) | 2026-11-01 | `1d3dc3315129` | 3 | 👀 watch |
 | [Obscura](tools/obscura/meta.yaml) | 2026-11-01 | `8534b401898e` | 2 | 👀 watch |

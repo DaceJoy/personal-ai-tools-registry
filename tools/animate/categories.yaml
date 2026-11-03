@@ -1,0 +1,18 @@
+tool_id: animate
+detected_by: intake-link-batch-1
+detected_date: 2026-11-03
+
+primary_category: video
+additional_categories: []
+
+keywords:
+  - rendered-frame text check
+  - safe zone
+  - procedural animation
+
+use_cases:
+  - "Rendered-frame text collision check for programmatic video"
+
+tags:
+  phase: [3]
+  type: [harvest-source]
