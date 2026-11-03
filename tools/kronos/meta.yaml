@@ -1,7 +1,7 @@
 tool_id: kronos
 display_name: Kronos (K-line foundation model)
 category: time-series-forecasting
-status: watch
+status: experimental
 type: harvest-source
 
 source:
@@ -11,7 +11,7 @@ source:
   docker: null
 
 relevance_to_personalai:
-  use_case: "trading-quant: pretrained OHLCV forecaster as a forward-only Cartesian signal candidate (PILOT only on mic's go: CONTRADICTS the edge=flow thesis); sampled paths as a possible third null beside the block bootstrap"
+  use_case: "trading-quant: pretrained OHLCV forecaster as a forward-only Cartesian signal PILOT (mic 2026-11-03 go, over the edge=flow CONTRADICTS); sampled paths as a possible third null beside the block bootstrap"
   phase: 3
   replaces_what: null
   alternatives: []
