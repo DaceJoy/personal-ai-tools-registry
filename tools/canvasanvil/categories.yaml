@@ -1,0 +1,18 @@
+tool_id: canvasanvil
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: diagrams
+additional_categories: [ui]
+
+keywords:
+  - draw.io
+  - diagram XML validation
+  - process map
+
+use_cases:
+  - "Validate model-written draw.io XML if the process-map-visual-cockpit thread picks draw.io export"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

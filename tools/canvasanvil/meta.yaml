@@ -1,0 +1,28 @@
+tool_id: canvasanvil
+display_name: CodingFeng101/CanvasAnvil (draw.io diagram skill + canvas app)
+category: diagrams
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/CodingFeng101/CanvasAnvil
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "MIT. Two elements parked to FamilyPAI thread process-map-visual-cockpit, only if it picks draw.io export: skill/diagram-skill/scripts/validate-drawio-xml.mjs (duplicate ids, dangling edge ends, root cells; HARVEST) and the XML contract in skill/diagram-skill/SKILL.md + references/edit-rules.md (REIMPLEMENT). The editor app, ppt-skill, cad-skill and shape-library docs are IGNORE."
+  phase: 3
+  replaces_what: "nothing; no draw.io XML check exists"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T52-canvasanvil.md"
+  falsifier: "Validator exits non-zero on a draw.io file with one duplicate id and one edge to a missing id, zero on the fixed file."
+
+maintained_by: individual
+upstream_head: 27f1aea1b8a7e2fcfe01cb2610a3d4e54db4987e
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S8b design (L52, seam #i76)"
