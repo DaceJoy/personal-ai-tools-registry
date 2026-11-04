@@ -1,7 +1,7 @@
 tool_id: kronos
 display_name: Kronos (K-line foundation model)
 category: time-series-forecasting
-status: experimental
+status: watch
 type: harvest-source
 
 source:
@@ -20,9 +20,11 @@ harvested_elements:
   verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T51-kronos.md"
   falsifier: "On bars strictly after the HF weights' upload date, the Kronos-sign entry must beat the same entry under a stationary-block-bootstrap surrogate net of cost; else drop"
 
+  pilot_result: "FAIL 2026-11-04 (trading-quant kronos-forward-only-pilot RESULT.md, results_registry crypto|signal-kronos-forward-sign|base): zero-shot Kronos-small 4h next-bar sign on BTC/ETH/SOL binance spot 2024-07..2026-07, gross Sharpe ~0, gate-shift p 0.42-0.99. Open: base/large, finetune, multi-step or vol forecast as a feature"
+  status_note: "watch, not deprecated: CONTRIBUTING reserves deprecated for unmaintained/superseded tools; this is a failed use case"
 maintained_by: individual
 upstream_head: 67b630e67f6a18c9e9be918d9b4337c960db1e9a
 upstream_head_date: 2026-04-13
-last_verified: 2026-11-03
+last_verified: 2026-11-04
 added_by: intake-link-batch-1
 added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S2 (mic, 2026-11-03)"

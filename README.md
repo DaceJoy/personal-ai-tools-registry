@@ -115,7 +115,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [VoiceStudio](tools/voicestudio/meta.yaml) | 2026-11-03 | `5875fa91b844` | 2 | 👀 watch |
 | [Audio8 TTS](tools/audio8-tts/meta.yaml) | 2026-11-03 | `1d64afcc2da5` | 2 | 👀 watch |
 | [Day Trader skill](tools/day-trader-skill/meta.yaml) | 2026-11-03 | `3d0f4ef6986f` | 3 | 👀 watch |
-| [Kronos](tools/kronos/meta.yaml) | 2026-11-03 | `67b630e67f6a` | 3 | 🧪 experimental |
+| [Kronos](tools/kronos/meta.yaml) | 2026-11-04 | `67b630e67f6a` | 3 | 👀 watch |
 | [BLA Blind LLM Agents](tools/bla/meta.yaml) | 2026-11-03 | `eb44984a5c3e` | 3 | 👀 watch |
 | [Shannon](tools/shannon/meta.yaml) | 2026-11-03 | `b9744f6cecc5` | 3 | 👀 watch |
 | [Animate skill](tools/animate/meta.yaml) | 2026-11-03 | `7e5eb56feb2d` | 3 | 👀 watch |
