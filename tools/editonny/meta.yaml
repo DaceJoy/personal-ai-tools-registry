@@ -1,0 +1,28 @@
+tool_id: editonny
+display_name: editonny (local video editing skill)
+category: video
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/soumatheusgomes/editonny
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "MIT Claude Code / Codex video-editing skill. The product (talking-head editing) is IGNORE for a faceless film; two elements of its delivery gate on the EXPORTED mp4 are HARVEST candidates. E1 skills/editonny/engine/helpers/quality_gate.py:text_outside + audit_data.py:parse_tesseract_tsv -- tesseract OCR on sampled frames, line boxes tested against a declared zone; for FamilyPAI N30 swap the zone for the model's plot rect (pixel-grain rival to the hyperframes DOM audit). E2 quality_gate.py:volume/adjust_volume -- integrated LUFS + true peak gate and two-pass loudnorm without re-encoding video; for FamilyPAI N31 (both shipped script01 cuts measure -23.9 LUFS)."
+  phase: 3
+  replaces_what: "nothing; video_gen has no pixel text check and no loudness check"
+  alternatives: [hyperframes, animate]
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T55-editonny.md"
+  falsifier: "E1: reports a text box inside the plot rect on the pre-M(2) 9:16 cut and none on script01-916-cut. E2: the gate FAILS both cuts at -23.9 LUFS today and PASSES them after an audio-only loudnorm, regress_frames still exit 0."
+
+maintained_by: individual
+upstream_head: 49714f2fba6eafb76b903376e1fe9f50b685506a
+upstream_head_date: 2026-10-21
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S7b video (L55, seam #i79)"

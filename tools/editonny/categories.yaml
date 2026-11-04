@@ -1,0 +1,20 @@
+tool_id: editonny
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: video
+additional_categories: [audio]
+
+keywords:
+  - rendered frame OCR
+  - text safe zone
+  - loudness gate
+  - loudnorm
+
+use_cases:
+  - "Pixel-grain text check on the exported film before assemble, for FamilyPAI N30"
+  - "Integrated-loudness gate and audio-only fix for the exported film, for FamilyPAI N31"
+
+tags:
+  phase: [3]
+  type: [harvest-source]
