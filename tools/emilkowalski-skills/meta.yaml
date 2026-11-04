@@ -1,0 +1,28 @@
+tool_id: emilkowalski-skills
+display_name: emilkowalski/skills (UI design-engineering skills)
+category: ui
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/emilkowalski/skills
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "MIT, Markdown-only set of 17 UI skills. One element is a HARVEST candidate parked to FamilyPAI kokpit-v2 W7: skills/break-ui/SKILL.md + CATALOG.md (feed realistic worst-case data per rendered field, demo/worst toggle, break report) plus ui-cheatsheet.md. apple-design, the animation family, RN/Swift/Sonner skills are IGNORE (no gesture UI, no UI-motion need, no RN/iOS)."
+  phase: 3
+  replaces_what: "nothing; no worst-case-data step exists in any UI review today"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T24-emilkowalski-skills.md"
+  falsifier: "On the first W7 screen, break-ui reports >= 1 break the W7 review checklist without it did not catch; otherwise drop it."
+
+maintained_by: individual
+upstream_head: c8a79627b59d72d764d6ab6f2c87c09a48169833
+upstream_head_date: 2026-11-04
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S8a design (L24, seam #i5b)"

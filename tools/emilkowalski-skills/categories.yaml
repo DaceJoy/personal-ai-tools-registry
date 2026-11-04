@@ -1,0 +1,18 @@
+tool_id: emilkowalski-skills
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: ui
+additional_categories: [testing]
+
+keywords:
+  - worst-case data
+  - UI stress test
+  - design engineering
+
+use_cases:
+  - "Worst-case-data review step for FamilyPAI kokpit-v2 W7 screens (household names, Polish diacritics)"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

@@ -128,6 +128,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [OXR](tools/oxr/meta.yaml) | 2026-11-03 | `c1a1dcb312ee` | 3 | 👀 watch |
 | [HyperFrames](tools/hyperframes/meta.yaml) | 2026-11-04 | `845bd638a778` | 3 | 👀 watch |
 | [editonny](tools/editonny/meta.yaml) | 2026-10-21 | `49714f2fba6e` | 3 | 👀 watch |
+| [emilkowalski/skills](tools/emilkowalski-skills/meta.yaml) | 2026-11-04 | `c8a79627b59d` | 3 | 👀 watch |
 | [MiroFish](tools/mirofish/meta.yaml) | 2026-11-01 | `7657031ac011` | 2 | 👀 watch |
 | [NextChat](tools/nextchat/meta.yaml) | 2026-11-01 | `1d3dc3315129` | 3 | 👀 watch |
 | [Obscura](tools/obscura/meta.yaml) | 2026-11-01 | `8534b401898e` | 2 | 👀 watch |
