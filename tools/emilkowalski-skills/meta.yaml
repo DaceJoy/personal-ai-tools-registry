@@ -19,6 +19,8 @@ relevance_to_personalai:
 harvested_elements:
   verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T24-emilkowalski-skills.md"
   falsifier: "On the first W7 screen, break-ui reports >= 1 break the W7 review checklist without it did not catch; otherwise drop it."
+  falsifier_result: "HOLDS 2026-11-04: 6 breaks on the :8900 Threads screen (2 Broken, 2 Ugly, 2 Fragile), 0 of them in the prior review (kokpit-ui-review F5+D3). Report: familypai:MEMORY/WORK/20261104-215310_harvest-landings-intake-batch-1/breakui/REPORT.md"
+  landed_at: "~/.claude/skills/break-ui (SKILL.md adapted + CATALOG.md + HOUSEHOLD.md + LICENSE)"
 
 maintained_by: individual
 upstream_head: c8a79627b59d72d764d6ab6f2c87c09a48169833
