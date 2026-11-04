@@ -1,0 +1,19 @@
+tool_id: craft-anything
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: agent-frameworks
+additional_categories: [security-scanning]
+
+keywords:
+  - permission prompt tool
+  - headless claude
+  - command allow-list
+  - evidence record
+
+use_cases:
+  - "Deny-by-default approver for unattended claude -p runs, if mic approves hardening the cc_agent runner"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

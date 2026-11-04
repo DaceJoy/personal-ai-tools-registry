@@ -1,0 +1,19 @@
+tool_id: founderos
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: usage-observability
+additional_categories: []
+
+keywords:
+  - spend cap
+  - monthly budget per provider
+  - scheduled never overrides
+  - approval queue
+
+use_cases:
+  - "Refuse-before-call spend gate for unattended paid calls, if FamilyPAI N27 becomes measured"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

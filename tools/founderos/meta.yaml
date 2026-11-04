@@ -1,0 +1,28 @@
+tool_id: founderos
+display_name: FounderOS (one-person company command center)
+category: usage-observability
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/Bennettxai/FounderOS
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Next.js + SQLite single-operator business dashboard (MIT). One element worth reimplementing in Python for FamilyPAI N27 (no enforced spend cap on agent runs): lib/lab/spend.ts enforceCap -- per-provider and per-line monthly caps, refuse before the client is touched, scheduled runs never override, unsettled runs counted at estimate. Note its own scope: the gate covers the Lab only and leaves llm spend uncapped. Dashboard, connectors and filename-keyed approval queue are IGNORED."
+  phase: 3
+  replaces_what: "nothing today; the money half next to ai-employees' run lease (time half)"
+  alternatives: [ai-employees]
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T16-founderos.md"
+  falsifier: "A scheduled call at its provider's monthly cap is refused before any network call (client mock never invoked) and leaves one blocked ledger row; the same call with an interactive override passes once (mirrors tests/lab-spend-gate.test.ts)"
+
+maintained_by: individual
+upstream_head: a0b5db7eb6dcb52bb148b452557f454a2bc76082
+upstream_head_date: 2026-11-01
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S6b agent/ops (mic, 2026-11-03 batch)"

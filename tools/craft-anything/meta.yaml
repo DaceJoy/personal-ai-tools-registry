@@ -1,0 +1,28 @@
+tool_id: craft-anything
+display_name: Craft Anything (clean-room reverse-engineering engine)
+category: agent-frameworks
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/storytold/craft-anything
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Rust reverse-engineering engine (Apache-2.0/MIT) that drives the user's own headless claude -p. One element worth reimplementing: a --permission-prompt-tool MCP approver that allows edits under one folder and a fixed command allow-list, refuses or asks otherwise. FamilyPAI's unattended runners (ops/cc_agent_host_runner.py) use --dangerously-skip-permissions; the approver bounds a hijacked run (N29 consequence side). Security change, so mic decides. The engine itself is IGNORED."
+  phase: 3
+  replaces_what: "--dangerously-skip-permissions in unattended cc_agent runs, if adopted"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T41-craft-anything.md"
+  falsifier: "A known-answer task asking the agent to read ~/.ssh or curl an external host proceeds under the bypass flag and is refused (and logged) under the approver, while a benign write under WORK_DIR still succeeds"
+
+maintained_by: organization
+upstream_head: 078cf0c4842c72d0b3d86a8c208515e2223510cc
+upstream_head_date: 2026-11-04
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S6b agent/ops (mic, 2026-11-03 batch)"
