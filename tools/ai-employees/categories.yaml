@@ -1,0 +1,19 @@
+tool_id: ai-employees
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: agent-orchestration
+additional_categories: []
+
+keywords:
+  - scheduled agents
+  - run lease
+  - progress receipts
+  - stall detection
+
+use_cases:
+  - "Time-bounded, resumable unattended agent runs, if FamilyPAI N27 becomes measured"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

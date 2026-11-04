@@ -1,0 +1,28 @@
+tool_id: deepopen
+display_name: DeepOpen (Laya decision SDK and fine-tune recipes)
+category: local-processing
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/deepopen-com/deepopen
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "A wrapper over the upstream Laya checkpoints we already serve on LXC130 (services/laya) plus SAM / ensemble fine-tune recipes for BANKING77 and CLINC150. Only the SAM recipe is worth reimplementing, and only once the kokpit route labels reach the 2-3k laya needs (trigger t03-deepopen-ft-recipe). Our own zero-shot pilot found laya at chance on link triage. Apache-2.0."
+  phase: 3
+  replaces_what: "nothing; complements services/laya/eval/ft"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T03-deepopen.md"
+  falsifier: "On the kokpit route-label set with a group split by target thread, laya fine-tuned with SAM beats the same run without SAM on held-out top-1 with a CI excluding 0, and beats the word-overlap ranking"
+
+maintained_by: individual
+upstream_head: b44b63f0c5d92d91c52537aa5ec011a4979566e0
+upstream_head_date: 2026-11-03
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S6b agent/ops (mic, 2026-11-03 batch)"

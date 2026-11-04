@@ -1,0 +1,28 @@
+tool_id: ai-employees
+display_name: AI Employees (scheduled agent routines)
+category: agent-orchestration
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/markfulton/ai-employees
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Eight scheduled business-role kits (MIT) whose only code is Node helpers. Two ideas worth reimplementing in Python when FamilyPAI N27 (no spend cap on control-plane agent runs) is worked: an exclusive run lease with a resumable remaining budget (run-state.mjs) and stall detection over immutable progress receipts (work-cycle.mjs). The role prompts are a commercial funnel for marketing roles and are IGNORED."
+  phase: 3
+  replaces_what: "nothing today; complements parked-trigger-watch and the lane-B cron"
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T20-ai-employees.md"
+  falsifier: "Two claims on one routine+period: the second must be refused; a partial finish must resume with remaining_ms = budget - spent (mirrors run-state.mjs --selftest)"
+
+maintained_by: individual
+upstream_head: 2cdd34e1f0d7bfa5b9dfadecf3d72b525fbb1577
+upstream_head_date: 2026-10-30
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S6b agent/ops (mic, 2026-11-03 batch)"

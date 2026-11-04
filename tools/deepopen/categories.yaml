@@ -1,0 +1,19 @@
+tool_id: deepopen
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: local-processing
+additional_categories: []
+
+keywords:
+  - intent classification
+  - laya
+  - fine-tuning
+  - non-autoregressive
+
+use_cases:
+  - "Fine-tune recipe for the kokpit routing classifier, if the route labels reach the size laya needs"
+
+tags:
+  phase: [3]
+  type: [harvest-source]
