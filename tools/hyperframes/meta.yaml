@@ -1,0 +1,28 @@
+tool_id: hyperframes
+display_name: HyperFrames (HTML to video, HeyGen)
+category: video
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/heygen-com/hyperframes
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "HTML-to-MP4 renderer (Apache-2.0). Renderer swap stays PARKED (FamilyPAI 20261002 trigger: Remotion licence or render determinism becomes a real limit -- not fired; trading-quant video_gen measured 5665/5665 frames byte-identical). One element to vendor for FamilyPAI N30 (no check on RENDERED frames for text collision): packages/cli/src/commands/layout-audit.browser.js, a standalone DOM IIFE window.__hyperframesLayoutAudit({time,tolerance}) reporting clipped_text, text_box_overflow, content_overlap, text_occluded, panel_out_of_canvas per sampled frame; falls back to document.body without a composition root. Cheaper than rewriting cth9191/animate textcheck.mjs (canvas-only)."
+  phase: 3
+  replaces_what: "the rewrite proposed in the animate entry for N30"
+  alternatives: [animate]
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T35-hyperframes.md"
+  falsifier: "Injected into the Remotion-rendered pre-M(2) 9:16 cut (caption and panel over live candles) the audit reports content_overlap or text_occluded; on the current script01-916-cut it reports zero error-severity issues. If the SVG <text> caption goes unseen, the element does not close N30."
+
+maintained_by: organization
+upstream_head: 845bd638a7784d0859df047e16c61b8790b9a8bb
+upstream_head_date: 2026-11-04
+last_verified: 2026-11-04
+added_by: intake-link-batch-1
+added_reason: "Re-graded in docs/THIRD-PARTY-INTAKE.md batch 1 S7a video (prior #d5p PARKED 2026-10-02)"

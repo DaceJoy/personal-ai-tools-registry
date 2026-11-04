@@ -1,0 +1,19 @@
+tool_id: hyperframes
+detected_by: intake-link-batch-1
+detected_date: 2026-11-04
+
+primary_category: video
+additional_categories: []
+
+keywords:
+  - rendered frame text audit
+  - clipped text
+  - text overlap
+  - html to video
+
+use_cases:
+  - "Vendored DOM layout audit run over sampled frames of a Remotion film before assemble, for FamilyPAI N30"
+
+tags:
+  phase: [3]
+  type: [harvest-source]
