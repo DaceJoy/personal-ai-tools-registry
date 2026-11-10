@@ -1,0 +1,18 @@
+tool_id: fracdiff
+detected_by: trading-quant fracdiff-intake
+detected_date: 2026-11-10
+
+primary_category: time-series-features
+additional_categories: []
+
+keywords:
+  - fractional differencing
+  - long memory
+  - stationarity (ADF)
+
+use_cases:
+  - "Stationary, memory-preserving price feature for the trading-quant cartesian"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

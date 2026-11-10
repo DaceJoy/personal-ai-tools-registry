@@ -1,0 +1,28 @@
+tool_id: fracdiff
+display_name: Fracdiff (fixed-width fractional differencing, AFML ch. 5)
+category: time-series-features   # no categories/ file yet, same as kronos's time-series-forecasting
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/eortizt/Fracdiff
+  docs: https://github.com/eortizt/Fracdiff/blob/master/README.md
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "trading-quant: a stationary price transform that keeps memory, as a feature input for cartesian regime/filter axes (gap named in TQ docs/TQ-REVISION-AND-GRILL-PROGRAM-2026-08-01.md:66)"
+  phase: 3
+  replaces_what: null
+  alternatives: []
+
+harvested_elements:
+  verdict_file: "trading-quant:MEMORY/WORK/20261104-202545_fracdiff-intake/targets/T-1qa-fracdiff.md"
+  taken: "E1 FFD weights and E3 minimum-d selection, both REIMPLEMENT from the published method (Tsay pp. 159-161; AFML ch. 5); nothing vendored -- the repo names an unlicensed gist as its starting point"
+  falsifier: "ffd(x, d=1) equals np.diff(x) on real bars of every TF; changing x[t+1:] leaves ffd(x)[:t+1] bit-identical; min-d fitted on a train slice is unchanged when test-slice values are permuted"
+maintained_by: individual
+upstream_head: c20981759e76e07bf2bfd15ec81e10a591b1eb4f
+upstream_head_date: 2020-10-02
+last_verified: 2026-11-10
+added_by: manual
+added_reason: "Graded in trading-quant fracdiff-intake (seam #1qa, owner mic) per FamilyPAI docs/INTAKE-RUBRIC.md, 2026-11-10"
