@@ -19,10 +19,11 @@ relevance_to_personalai:
 harvested_elements:
   verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T55-editonny.md"
   falsifier: "E1: reports a text box inside the plot rect on the pre-M(2) 9:16 cut and none on script01-916-cut. E2: the gate FAILS both cuts at -23.9 LUFS today and PASSES them after an audio-only loudnorm, regress_frames still exit 0."
+  falsifier_result: "E1 HOLDS 2026-11-10: tesseract on real pre-M(2) beat 1 at 9:16 -> 165 confident words inside the plot rect, current beat 1 -> 1 (BOS, an in-plot label by design; excluded by scene annotation labels). E2 gate built by trading-quant VIDEO_AI iter 9 (video_gen/loudness.py), both cuts off_target -9.9 LU; PASS half awaits the loudnorm decision. familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T55-editonny.md ## FALSIFIER RESULT"
 
 maintained_by: individual
 upstream_head: 49714f2fba6eafb76b903376e1fe9f50b685506a
 upstream_head_date: 2026-10-21
-last_verified: 2026-11-04
+last_verified: 2026-11-10
 added_by: intake-link-batch-1
 added_reason: "Graded in docs/THIRD-PARTY-INTAKE.md batch 1 S7b video (L55, seam #i79)"

@@ -19,10 +19,11 @@ relevance_to_personalai:
 harvested_elements:
   verdict_file: "familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T35-hyperframes.md"
   falsifier: "Injected into the Remotion-rendered pre-M(2) 9:16 cut (caption and panel over live candles) the audit reports content_overlap or text_occluded; on the current script01-916-cut it reports zero error-severity issues. If the SVG <text> caption goes unseen, the element does not close N30."
+  falsifier_result: "FAILS 2026-11-10 at the defect grain: known-answer page in Remotion chrome-headless-shell -- HTML caption over SVG candles 0 issues, text-over-text controls 3/3 content_overlap (SVG text IS seen). content_overlap is text-vs-text only, text_occluded needs an occluder ABOVE the text. Does not close N30. familypai:MEMORY/WORK/20261103-193037_intake-link-batch-1/targets/T35-hyperframes.md ## FALSIFIER RESULT"
 
 maintained_by: organization
 upstream_head: 845bd638a7784d0859df047e16c61b8790b9a8bb
 upstream_head_date: 2026-11-04
-last_verified: 2026-11-04
+last_verified: 2026-11-10
 added_by: intake-link-batch-1
 added_reason: "Re-graded in docs/THIRD-PARTY-INTAKE.md batch 1 S7a video (prior #d5p PARKED 2026-10-02)"
