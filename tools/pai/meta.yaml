@@ -28,8 +28,36 @@ install:
 
 maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-pai
-upstream_head: b7efec97d8c3885feee285bee468c35602fb0606            # danielmiessler/LifeOS@main
-upstream_head_date: 2026-10-28
-last_verified: 2026-11-01
+upstream_head: f6ab5e0228bfb356c82edbf52b69344dbd585486            # danielmiessler/LifeOS@main
+upstream_head_date: 2026-11-05
+last_verified: 2026-11-13
+
+harvested_elements:
+  # Second adoption review (releases 7.28.3, 7.40.4, 8.761.0), 2026-11-13. Concepts only, in our own
+  # words; nothing vendored. NEEDS ids refer to our private needs register.
+  adopt_concept:
+    - "A reviewer never resolves a conflict it cannot source (N19)"
+    - "An evaluation that did not run reports UNMEASURED, never pass"
+    - "A judged check earns blocking power only from human labels; agreement between two models never validates it"
+    - "One correction register with explicit capture, clustered into measured improvements"
+    - "A kept change's cheap evaluation becomes a recurring standing check (N11)"
+    - "An unanswered default is recorded as unratified, never as agreement (N19, N22)"
+    - "Alerts routed by severity under a daily interruption budget; a silent monitor counts as a missing heartbeat (N03, N19, N24)"
+  built:
+    - "Pre-push gate asks the host whether the remote is private and refuses what it cannot confirm (N33)"
+  deferred:
+    - "Periodic consolidation of the memory store -- named option at a later decision"
+    - "Static check that every send/deploy/spend path has a human approval upstream (N19, N27)"
+    - "Re-checking the exact outgoing bytes at every send -- partial today, full gate not yet planned"
+    - "Conversation trust taken from its least-trusted member, failing closed"
+    - "Replacing per-call guard hooks with permission rules -- waits on our own hook fire/catch counts"
+    - "Smaller always-on doctrine core -- waits on an outcome measure"
+  have_already: ["fresh diagnosis after repeated failed fixes", "work-location inventory", "script-only heartbeats", "model registry with pool-aware fallback"]
+  rejected:
+    - "Typed archive as a loading axis -- measured worse recall on our pool"
+    - "Criteria forced to move with code every turn; per-edit complexity meter; vulnerability-feed cross-reference (no felt need)"
+    - "Append-only event store with derived state files (an existing decision log covers the use)"
+    - "Dashboard and installer re-proposals -- earlier rejections stand, premise unchanged"
+  skipped: "single-user desktop and messaging surfaces, voice, statusline, bundled skills"
 added_by: initial-setup
 added_reason: "Foundation of this project"
