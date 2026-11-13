@@ -1,0 +1,6 @@
+tool_id: amux
+categories: [agent-orchestration]
+keywords: [tmux, claude-code, parallel-agents, kanban, atomic-claim, usage-limit-recovery]
+use_cases:
+  - "run and watch many coding-agent sessions in tmux from one dashboard"
+  - "agents claim board tasks atomically and message each other"

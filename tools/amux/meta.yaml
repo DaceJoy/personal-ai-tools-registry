@@ -1,0 +1,35 @@
+tool_id: amux
+display_name: amux (Mixpeek)
+category: agent-orchestration
+status: watch
+type: agent-framework
+
+source:
+  github: https://github.com/mixpeek/amux
+  docs: https://amux.io/docs
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "tmux control plane for parallel Claude Code sessions (board with CAS claim, channels, reset-time resume); overlaps our own Kokpit + auto-next session layer"
+  phase: 3
+  replaces_what: null
+  alternatives: [paperclip]
+
+highlights:
+  - "Atomic task claim via SQLite compare-and-swap (idea behind FamilyPAI need N32)"
+  - "Holds delivery at a usage limit and resumes at the provider reset time"
+  - "CLI resolves session names by PREFIX -- the defect FamilyPAI fixed in auto-next; do not run as offered"
+
+install:
+  hint: "curl -fsSL https://amux.io/install.sh | bash (installs a service; not run here)"
+  docs_url: https://amux.io/docs
+  arm64_support: unknown
+
+maintained_by: company-mixpeek
+upstream_fork: null
+upstream_head: 25bccfb00143bc4359155563d354b598a6dacb6a
+upstream_head_date: 2026-11-13
+last_verified: 2026-11-13
+added_by: manual
+added_reason: "FamilyPAI T01-amux grill (MEMORY/WORK/20261113-092228_intake-amux): WATCH; E1 claim -> N32, E2/E3 ideas for the parked automaton thread; prior verdict 2026-08-07 (paperclip analysis) superseded"
