@@ -1,0 +1,18 @@
+tool_id: react-bits
+detected_by: manual
+detected_date: 2026-11-15
+
+primary_category: ui-components
+additional_categories: []
+
+keywords:
+  - animated react components
+  - text animation
+  - backgrounds
+
+use_cases:
+  - "Reference catalogue of animated UI effects; no component adopted"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

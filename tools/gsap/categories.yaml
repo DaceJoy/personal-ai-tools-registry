@@ -1,0 +1,18 @@
+tool_id: gsap
+detected_by: manual
+detected_date: 2026-11-15
+
+primary_category: ui
+additional_categories: []
+
+keywords:
+  - flip layout transition
+  - animation engine
+  - layout re-flow animation
+
+use_cases:
+  - "Animate many cards from an old layout to a new one inside a zoomed canvas (FamilyPAI need N35), as a bounded pilot"
+
+tags:
+  phase: [3]
+  type: [harvest-source]

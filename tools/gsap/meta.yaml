@@ -1,0 +1,42 @@
+tool_id: gsap
+display_name: GSAP (GreenSock, Webflow) -- core + Flip
+category: ui
+status: experimental
+type: harvest-source
+
+source:
+  github: https://github.com/greensock/GSAP
+  docs: https://gsap.com/docs/v3/
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Browser animation engine. Only two elements are in scope: the core ticker and the Flip plugin (record N elements, re-lay out, animate each from old rect to new, corrected for a scaled parent). Bounded PILOT for FamilyPAI need N35: blocks on the process map re-flowing visibly after a hand move, decided against a hand-rolled WAAPI variant. Draggable, Inertia, ScrollTrigger and matchMedia are IGNORE (duplicate of what the map has, or no scrolling surface)."
+  phase: 3
+  replaces_what: "nothing yet; would replace the hand-rolled single-element FLIP if the pilot keeps it"
+  alternatives: []
+
+licence:
+  spdx: LicenseRef-GSAP-Standard-No-Charge
+  read: "standard-license, effective 2025-04-30, modified 2025-05-30"
+  notes: "Grant = use, reproduce, display, implement for websites and web apps; NO modify grant, so no harvesting of source; proprietary notices must stay in shipped files; visual no-code animation builders competing with Webflow are prohibited; a revised licence binds only later versions, so the pin keeps these terms."
+
+pinned_version: "3.15.1"
+
+harvested_elements:
+  verdict_file: "familypai:intake target T01-gsap (frontend-stack intake, 2026-11-15)"
+  falsifier: "On the process map's demo and worst fixtures: after a hand move every re-flowed card animates and lands within 0.6 px of its layout rect; a second move mid-flight lands too; the built page still carries the GSAP licence header twice. GSAP is kept only if the hand-rolled WAAPI variant fails one of the first two and Flip passes."
+  falsifier_result: "not run -- pilot not started"
+
+install:
+  hint: "npm i gsap@3.15.1 (exact pin), inline dist/gsap.min.js and dist/Flip.min.js unmodified at build time; no CDN"
+  docs_url: https://gsap.com/docs/v3/Plugins/Flip/
+  arm64_support: true
+
+maintained_by: company-webflow
+upstream_fork: null
+upstream_head: 5e6c35ff8eedea12d4f229129def635277d8b0f2
+upstream_head_date: 2026-11-04
+last_verified: 2026-11-16
+added_by: manual
+added_reason: "Third-party intake grill 2026-11-15: PILOT; core + Flip as a pinned dependency for one need (N35), trialled against our own native variant before it enters a page"

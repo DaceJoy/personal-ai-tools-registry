@@ -1,0 +1,38 @@
+tool_id: react-bits
+display_name: React Bits (animated React components)
+category: ui-components
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/DavidHDev/react-bits
+  docs: https://reactbits.dev
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Copy-in catalogue of 218 animated React components (engines vary: gsap, motion, three.js). Nothing taken: the household surfaces that animate are vanilla JS in one self-contained HTML, and the React surfaces state no motion need. Tracked because it is the largest maintained catalogue of such effects."
+  phase: 3
+  replaces_what: null
+  alternatives: [gsap]
+
+licence:
+  spdx: LicenseRef-MIT-Commons-Clause
+  notes: "Use and modify as part of an application is allowed; selling, sublicensing or redistributing the components themselves, including a ported version, is not -- so a port may never enter a publicly exported tree."
+
+highlights:
+  - "Components carry their own engines; a single effect can pull in three.js or a physics engine"
+  - "Frame-driven video renderers are a poor fit for components on their own clock (inferred, not tested)"
+
+install:
+  hint: "not installed; components are copied into an app by its registry CLI or by hand"
+  docs_url: https://reactbits.dev
+  arm64_support: unknown
+
+maintained_by: individual
+upstream_fork: null
+upstream_head: cf2801031f07f53d4684e65b961bde7c2e2a6921
+upstream_head_date: 2026-11-14
+last_verified: 2026-11-16
+added_by: manual
+added_reason: "Third-party intake grill 2026-11-15: WATCH; every element IGNORE (stack, duplicate, security); reopens when a household React surface states a motion need"

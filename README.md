@@ -129,6 +129,8 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [HyperFrames](tools/hyperframes/meta.yaml) | 2026-11-04 | `845bd638a778` | 3 | 👀 watch |
 | [editonny](tools/editonny/meta.yaml) | 2026-10-21 | `49714f2fba6e` | 3 | 👀 watch |
 | [emilkowalski/skills](tools/emilkowalski-skills/meta.yaml) | 2026-11-04 | `c8a79627b59d` | 3 | 👀 watch |
+| [GSAP core + Flip](tools/gsap/meta.yaml) | 2026-11-16 | `5e6c35ff8eed` | 3 | 🧪 experimental |
+| [React Bits](tools/react-bits/meta.yaml) | 2026-11-16 | `cf2801031f07` | 3 | 👀 watch |
 | [CanvasAnvil](tools/canvasanvil/meta.yaml) | 2026-11-04 | `27f1aea1b8a7` | 3 | 👀 watch |
 | [MiroFish](tools/mirofish/meta.yaml) | 2026-11-01 | `7657031ac011` | 2 | 👀 watch |
 | [NextChat](tools/nextchat/meta.yaml) | 2026-11-01 | `1d3dc3315129` | 3 | 👀 watch |
