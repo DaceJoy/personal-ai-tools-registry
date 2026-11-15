@@ -11,7 +11,7 @@ source:
   docker: null
 
 relevance_to_personalai:
-  use_case: "Browser animation engine. Only two elements are in scope: the core ticker and the Flip plugin (record N elements, re-lay out, animate each from old rect to new, corrected for a scaled parent). Bounded PILOT for FamilyPAI need N35: blocks on the process map re-flowing visibly after a hand move, decided against a hand-rolled WAAPI variant. Draggable, Inertia, ScrollTrigger and matchMedia are IGNORE (duplicate of what the map has, or no scrolling surface)."
+  use_case: "Browser animation engine. Only two elements are in scope: the core ticker and the Flip plugin (record N elements, re-lay out, animate each from old rect to new, corrected for a scaled parent). Bounded PILOT for FamilyPAI need N35: blocks on the process map re-flowing visibly after a hand move, decided against a hand-rolled WAAPI variant. Revised 2026-11-16 because the surface may be sold: a licence-free native implementation is the primary and GSAP the comparator, kept only behind a one-file adapter if the native variants fail. Draggable, Inertia, ScrollTrigger and matchMedia are IGNORE (duplicate of what the map has, or no scrolling surface)."
   phase: 3
   replaces_what: "nothing yet; would replace the hand-rolled single-element FLIP if the pilot keeps it"
   alternatives: []
@@ -19,7 +19,8 @@ relevance_to_personalai:
 licence:
   spdx: LicenseRef-GSAP-Standard-No-Charge
   read: "standard-license, effective 2025-04-30, modified 2025-05-30"
-  notes: "Grant = use, reproduce, display, implement for websites and web apps; NO modify grant, so no harvesting of source; proprietary notices must stay in shipped files; visual no-code animation builders competing with Webflow are prohibited; a revised licence binds only later versions, so the pin keeps these terms."
+  notes: "Grant = use, reproduce, display, implement for websites and web apps by any person or entity; NO modify grant, so no harvesting of source; proprietary notices must stay in shipped files; visual no-code animation builders competing with Webflow are prohibited; a revised licence binds only later versions, so the pin keeps these terms."
+  sale_check: "2026-11-16: selling a web app that ships GSAP unmodified is inside the displayed grant. The page still carries the pre-2025 sentence (end users must not be charged / Business licence) but INSIDE an HTML comment -- not displayed, not the licence; a tag-stripping extract that keeps comment text shows it as if live. Residual vendor risks for a sold product: no modify grant, refusing a revised licence freezes security fixes, a buyer component review must accept a non-OSI single-vendor licence."
 
 pinned_version: "3.15.1"
 
