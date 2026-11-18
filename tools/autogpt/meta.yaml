@@ -1,0 +1,36 @@
+tool_id: autogpt
+display_name: AutoGPT (platform with Experts and Otto)
+category: agent-orchestration
+status: watch
+type: agent-framework
+
+source:
+  github: https://github.com/Significant-Gravitas/AutoGPT
+  docs: https://github.com/Significant-Gravitas/AutoGPT/tree/master/docs/platform
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Hosted-first platform of persistent role agents (Experts) under a coordinator (Otto) with per-agent approval modes, activity log and weekly budget; compared feature by feature, no demand row in NEEDS, nothing adopted"
+  phase: 3
+  replaces_what: null
+  alternatives: [paperclip, amux]
+
+highlights:
+  - "LICENCE IS SPLIT: autogpt_platform/ (Experts, Otto) is PolyForm Shield 1.0.0 with a noncompete clause; only the rest (classic/) is MIT; GitHub reports NOASSERTION"
+  - "Expert entity landed 2026-07-29, so the repo pivoted into this category 112 days before the read; the repo itself dates from 2023-03"
+  - "Footprint: 14 compose services, about 5-6 GiB RAM, 8 GB recommended"
+  - "Ideas worth re-implementing, not copying: pause-on-budget-breach with an event row and an operator-visible item; credential-swapping egress proxy (placeholder in sandbox, real token swapped per bound host)"
+
+install:
+  hint: "not installed, not run; read at a pinned commit in a throwaway clone"
+  docs_url: https://github.com/Significant-Gravitas/AutoGPT/tree/master/docs/platform
+  arm64_support: unknown
+
+maintained_by: company-significant-gravitas
+upstream_fork: null
+upstream_head: 657153887ea25aca92014ee713f9ceb344378e74
+upstream_head_date: 2026-11-18
+last_verified: 2026-11-18
+added_by: manual
+added_reason: "Third-party intake sweep and grill 2026-11-18: WATCH; FIT none against the demand register; licence of the platform part forbids reuse in a competing product"

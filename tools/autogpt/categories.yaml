@@ -1,0 +1,6 @@
+tool_id: autogpt
+categories: [agent-orchestration]
+keywords: [agents, experts, coordinator, approval-modes, activity-log, budget-guardrail, polyform-shield, self-host]
+use_cases:
+  - "hire persistent role agents from a template roster and brief them through one coordinator"
+  - "per-agent weekly credit budget with automatic pause on breach"
