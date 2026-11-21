@@ -1,0 +1,34 @@
+tool_id: t3code
+display_name: T3 Code
+category: agent-control-plane
+status: watch
+type: application
+
+source:
+  github: https://github.com/pingdotgg/t3code
+  docs: https://github.com/pingdotgg/t3code#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Control plane for locally-running coding agents (Claude Code, Codex, ACP) with native mobile approval, multi-client thread sync, per-thread git worktrees, mid-thread model switching; overlaps the Kokpit session-control subset, none of the process/memory/quota layers"
+  phase: 2
+  replaces_what: null
+  alternatives: ["apps/kokpit (:8900)", "CC Remote Control", "answer-deliver.py + AUTO-NEXT automaton"]
+
+highlights:
+  - "69.2k stars, very active, shipped iOS/Android apps; MIT and explicitly fork-friendly"
+  - "Uses your existing subscriptions ('does not resell tokens'); no quota-pool logic of its own"
+  - "Mobile permission modes = direct overlap with Kokpit Pytania / WAIT-ON-MIC"
+  - "Re-probe question for a future grill: what would mobile approval + per-thread worktrees ADD vs the cost of a second control plane"
+
+install:
+  hint: "desktop apps (brew/winget/scoop/AUR/Nix/.deb) or npx t3@latest; not installed"
+  docs_url: https://github.com/pingdotgg/t3code#readme
+  arm64_support: unknown
+
+licence: MIT
+maintained_by: company
+upstream_fork: null
+verdict_source: FamilyPAI MEMORY/WORK/20261121-181935_fp-audit-fable-groundwork/AUDIT-P2.md (2026-11-21)
+last_verified: 2026-11-21

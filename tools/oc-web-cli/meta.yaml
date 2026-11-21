@@ -1,0 +1,34 @@
+tool_id: oc-web-cli
+display_name: oc (only-cli)
+category: agent-web-access
+status: watch
+type: cli
+
+source:
+  github: https://github.com/only-cli/oc
+  docs: https://github.com/only-cli/oc#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Token-efficient web reads for agents (~500 tok/page, numbered actions); candidate cheap route BEFORE tier 1 of the Scraping ladder and a WebFetch complement for docs/HN/Reddit-class lookups"
+  phase: 2
+  replaces_what: null
+  alternatives: ["built-in WebFetch (small-model summary)", "Scraping skill Phase-0 recon"]
+
+highlights:
+  - "Claimed 118x fewer tokens than raw HTML; ~half the cost of built-in WebSearch on Wikipedia-class pages"
+  - "Ships as a Claude Code plugin/skill; one-line CLAUDE.md integration"
+  - "Treats rendered page text as data, never instructions (prompt-injection aware)"
+  - "Early: no JS rendering, write actions unimplemented, single maintainer, 694 stars"
+
+install:
+  hint: "npm; NOT piloted -- npm code on the CC host and N10 (no isolation primitive) blocks SAFE-TO-RUN-SANDBOXED; run-on-host is mic's decision"
+  docs_url: https://github.com/only-cli/oc#readme
+  arm64_support: unknown
+
+licence: MIT
+maintained_by: individual
+upstream_fork: null
+verdict_source: FamilyPAI MEMORY/WORK/20261121-181935_fp-audit-fable-groundwork/AUDIT-P2.md (2026-11-21)
+last_verified: 2026-11-21
