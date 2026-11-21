@@ -25,6 +25,7 @@ highlights:
 
 install:
   hint: "Copy chosen skills/<name>/ dirs with LICENSE notice; do NOT wire tools/ partner integrations"
+  landed: "2026-11-21 /home/mic/code/private/commercial-program (.claude/skills, 9 dirs + scripts/check-hidden-content.mjs) @ 5b2b400e; manifest PROVENANCE.sha256; blind A/B frozen, not yet run"
   docs_url: https://github.com/coreyhaines31/marketingskills#readme
   arm64_support: null
 
