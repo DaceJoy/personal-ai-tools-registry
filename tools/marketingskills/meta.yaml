@@ -1,0 +1,37 @@
+tool_id: marketingskills
+display_name: Marketing Skills for AI Agents
+category: skill-packs
+status: watch
+type: skill-pack
+
+source:
+  github: https://github.com/coreyhaines31/marketingskills
+  docs: https://github.com/coreyhaines31/marketingskills#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "53 marketing skills (agentskills spec, markdown) around a product-marketing hub context doc; HARVEST verdict -- hub skill + commercial-core subset (pricing, offers, launch, copywriting, cold-email, emails, cro, lead-magnets) + hidden-content checker script; partner SaaS wiring (tools/) ignored"
+  phase: 1
+  replaces_what: null
+  alternatives: [everything-claude-code]
+
+highlights:
+  - "Hub-and-spoke: every skill reads .agents/product-marketing.md context doc first"
+  - "Zero runtime deps -- content is markdown, maintainer scripts run on bare node"
+  - "scripts/check-hidden-content.mjs: hidden-instruction scanner (invisible unicode, pipe-to-shell, exfil URLs) -- fits N09 skill-provenance gap"
+  - "Partner products appear INSIDE some skill bodies with a disclosure marker (measured; README claim 'never influencing core skills' is overstated)"
+  - "Falsifiers pre-registered in the grill: blind A/B per harvested skill; known-answer planted-content test for the checker"
+
+install:
+  hint: "Copy chosen skills/<name>/ dirs with LICENSE notice; do NOT wire tools/ partner integrations"
+  docs_url: https://github.com/coreyhaines31/marketingskills#readme
+  arm64_support: null
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1
+upstream_head_date: 2026-11-19
+last_verified: 2026-11-21
+added_by: manual
+added_reason: "T01 grill in FamilyPAI MEMORY/WORK/20261121-190322_commercial-program/targets/T01-marketingskills.md: HARVEST (hub skill, commercial-core subset, hidden-content checker); landing deferred until the commercial program has a workspace (mic's iuscio-first vs standalone fork)"

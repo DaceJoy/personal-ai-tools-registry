@@ -1,0 +1,16 @@
+tool_id: marketingskills
+detected_by: manual
+detected_date: 2026-11-21
+
+primary_category: skill-packs
+additional_categories: [marketing]
+
+use_cases:
+  - "Product-marketing context doc + operational skills for pricing, offers, launch, copywriting, cold outreach, CRO -- the commercial program's product-marketing capability"
+  - "Hidden-content scanning of skill markdown (provenance gate candidate for N09)"
+
+tags:
+  phase: [1]
+  type: [skill-pack]
+  maintained_by: community-individual
+  grill_program: "20261121-190322_commercial-program"

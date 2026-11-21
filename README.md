@@ -5,7 +5,7 @@
 > Every entry is evaluated for use in [Personal AI](https://github.com/DaceJoy/personal-ai-core-public) deployments:
 > local-first · multi-tenant · privacy-aware · ARM64-compatible.
 
-![Tools](https://img.shields.io/badge/tools-45-blue)
+![Tools](https://img.shields.io/badge/tools-46-blue)
 ![Categories](https://img.shields.io/badge/categories-28-green)
 ![Maintained](https://img.shields.io/badge/maintained%20by-manual%20%2B%20upstream--movement%20feed-orange)
 
@@ -202,6 +202,18 @@ Adopt selectively via `capability-auditor` — do not import wholesale.
 - **Source:** https://github.com/affaan-m/everything-claude-code
 - **Keywords:** skills, hooks, memory patterns, AgentShield, slash commands
 - **Compare with:** [gstack](tools/gstack/meta.yaml) — specialist roles vs breadth of skills
+
+### [Marketing Skills for AI Agents](tools/marketingskills/meta.yaml)
+
+![Phase 1](https://img.shields.io/badge/phase-1-brightgreen)
+![Stars](https://img.shields.io/github/stars/coreyhaines31/marketingskills?style=flat)
+
+53 marketing skills (MIT) around a `product-marketing` hub context doc.
+HARVEST verdict: hub + commercial-core subset + hidden-content checker; partner SaaS wiring ignored.
+
+- **Source:** https://github.com/coreyhaines31/marketingskills
+- **Keywords:** marketing, pricing, launch, copywriting, CRO, hidden-content scan
+- **Compare with:** [everything-claude-code](tools/everything-claude-code/meta.yaml) — domain depth (marketing) vs breadth
 
 ### [gstack](tools/gstack/meta.yaml)
 
