@@ -25,7 +25,8 @@ highlights:
 
 install:
   hint: "Copy chosen skills/<name>/ dirs with LICENSE notice; do NOT wire tools/ partner integrations"
-  landed: "2026-11-21 /home/mic/code/private/commercial-program (.claude/skills, 9 dirs + scripts/check-hidden-content.mjs) @ 5b2b400e; manifest PROVENANCE.sha256; blind A/B frozen, not yet run"
+  landed: "2026-11-21 /home/mic/code/private/commercial-program (.claude/skills, 9 dirs + scripts/check-hidden-content.mjs) @ 5b2b400e; manifest PROVENANCE.sha256; skills RETIRED 2026-11-22, checker kept"
+  adoption: "rejected-for-use 2026-11-22 (mic R1): blind A/B v3 on 8 Polish iuscio tasks FAIL -- 3 SKILL / 3 BARE / 1 inconsistent of 7 valid, skill arm 60 vs 41 unsupported claims; 0 Skill tool calls in 12 runs (no natural triggering on PL). Evidence: commercial-program ab/20261121-subset-v3/READOUT.md. Scope: PL legal-product tasks only."
   docs_url: https://github.com/coreyhaines31/marketingskills#readme
   arm64_support: null
 
@@ -33,6 +34,6 @@ maintained_by: community-individual
 upstream_fork: null
 upstream_head: 5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1
 upstream_head_date: 2026-11-19
-last_verified: 2026-11-21
+last_verified: 2026-11-22
 added_by: manual
 added_reason: "T01 grill in FamilyPAI MEMORY/WORK/20261121-190322_commercial-program/targets/T01-marketingskills.md: HARVEST (hub skill, commercial-core subset, hidden-content checker); landing deferred until the commercial program has a workspace (mic's iuscio-first vs standalone fork)"
