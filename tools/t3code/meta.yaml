@@ -1,7 +1,7 @@
 tool_id: t3code
 display_name: T3 Code
 category: agent-control-plane
-status: watch
+status: experimental
 type: application
 
 source:
@@ -37,6 +37,7 @@ harvested_elements:
   verdict_file: "familypai:MEMORY/WORK/20261121-194635_t3code-intake-vs-wa/targets/T01-t3code.md"
   falsifier: "a test WAIT-ON-MIC item yields exactly one push to mic's topic within 2 min carrying the Kokpit URL; emitter off yields none; still delivered with the WA gateway stopped"
   not_taken: "E1 approval card, E3 permission ladder, E5 MCP OAuth levels, E6 --wait exit 2 = IGNORE[dup]; E4 worktree per session = IDEA I19"
+  pilot: "familypai:MEMORY/WORK/20261121-210623_t3code-pilot-on-a-dedicated-lxc-stock-t3code-telemetry-off-v (mic O1+P 2026-11-21; readout R1-R5 pre-registered)"
   wa_replacement: "no -- approves only threads it spawned; no Zumi/family/link surface; push needs the T3 Connect relay (titles egress)"
 upstream_head: 194025ef11027c95b0d226a4d2bbdafb92279eab
 upstream_head_date: 2026-11-21
