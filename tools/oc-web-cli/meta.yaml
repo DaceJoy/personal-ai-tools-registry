@@ -21,6 +21,7 @@ highlights:
   - "Ships as a Claude Code plugin/skill; one-line CLAUDE.md integration"
   - "Treats rendered page text as data, never instructions (prompt-injection aware)"
   - "Early: no JS rendering, write actions unimplemented, single maintainer, 694 stars"
+  - "mic 2026-11-21: MIT permits ADAPTING the code (harvest its compact-render + site-shortcut patterns into our own fetch path) without ever executing upstream code on the host -- N10 blocks running untrusted code, not reading it; HARVEST is the open disposition"
 
 install:
   hint: "npm; NOT piloted -- npm code on the CC host and N10 (no isolation primitive) blocks SAFE-TO-RUN-SANDBOXED; run-on-host is mic's decision"

@@ -20,7 +20,7 @@ highlights:
   - "69.2k stars, very active, shipped iOS/Android apps; MIT and explicitly fork-friendly"
   - "Uses your existing subscriptions ('does not resell tokens'); no quota-pool logic of its own"
   - "Mobile permission modes = direct overlap with Kokpit Pytania / WAIT-ON-MIC"
-  - "Re-probe question for a future grill: what would mobile approval + per-thread worktrees ADD vs the cost of a second control plane"
+  - "Re-probe question for a future grill (mic 2026-11-21: 't3code seems fuller than WA'): compare as the mobile APPROVAL SURFACE against the WA gateway path (baileys + Zumi), not only against Kokpit; MIT + fork-friendly allows adapting the approval/client layer"
 
 install:
   hint: "desktop apps (brew/winget/scoop/AUR/Nix/.deb) or npx t3@latest; not installed"
