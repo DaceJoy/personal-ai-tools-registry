@@ -28,8 +28,12 @@ install:
 
 maintained_by: community-individual
 upstream_fork: null
-upstream_head: 9b68f7ed12b05e7efaff18e65c5a3fc2849fd0a4
-upstream_head_date: 2026-10-25
-last_verified: 2026-11-01
+upstream_head: 70f4f34e834893ea9af9f4fc6022266bd56d18b1
+upstream_head_date: 2026-11-22
+last_verified: 2026-11-23   # re-read v4.1.0..v4.2.0; skills/caveman-compress upgraded 9b68f7ed -> 70f4f34e (credential refusal), skills/caveman unchanged upstream
 added_by: manual
 added_reason: "T19b grill (S7, orphan from S3a): HARVEST the skill-only Say-less/Read-less install and /caveman-compress; full CLI/proxy/cloud surface stays WATCH/IGNORE pending a dedicated supply-chain review"
+# runs_on: where the household RUNS this tool, measured (host: how, version). Non-empty = a release
+# since last_verified is an ALARM (registry-fact-probe), not queue churn. Measured 2026-11-23 via ssh/pip/skills.
+runs_on:
+  - "cc-host: ~/.claude/skills/caveman + caveman-compress @70f4f34e (skill-only; CLI/proxy NOT installed)"

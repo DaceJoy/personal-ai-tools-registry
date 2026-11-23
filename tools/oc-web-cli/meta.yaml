@@ -32,4 +32,6 @@ licence: MIT
 maintained_by: individual
 upstream_fork: null
 verdict_source: FamilyPAI MEMORY/WORK/20261121-181935_fp-audit-fable-groundwork/AUDIT-P2.md (2026-11-21)
+upstream_head: 4d645bc59c1963f7a8924951e8c36f6535d66f52            # only-cli/oc@main
+upstream_head_date: 2026-11-17
 last_verified: 2026-11-21

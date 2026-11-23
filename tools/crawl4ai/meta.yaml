@@ -31,7 +31,7 @@ maintained_by: community-individual
 upstream_fork: null
 upstream_head: 888299fb5f0b82181897dc0e61bfb4b036f0aea5
 upstream_head_date: 2026-10-26
-last_verified: 2026-11-02
+last_verified: 2026-11-23   # re-read v0.9.5..v0.9.6: 0.9.6 is a SECURITY release (11 advisories, 9 in the Docker server); upgrade routed to server-patch-window 2026-11-23
 added_by: manual
 added_reason: >-
   mic asked 2026-11-02 whether we do this better than crawl4ai or whether they hold advantages to
@@ -48,3 +48,8 @@ added_reason: >-
   repo's own rule means it SHOULD have a fork in the parent PersonalAI account as deletion
   insurance; upstream_fork is null because no fork exists yet. Creating one is an outward action
   and was not taken unasked.
+# runs_on: where the household RUNS this tool, measured (host: how, version). Non-empty = a release
+# since last_verified is an ALARM (registry-fact-probe), not queue churn. Measured 2026-11-23 via ssh/pip/skills.
+runs_on:
+  - "lxc131: docker familypai-crawl4ai (unclecode/crawl4ai 0.9.4, 10.100.0.31:11235)"
+  - "lxc122: pip Crawl4AI 0.9.0 in /opt/pai/venv and in container familypai-yodo"

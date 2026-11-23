@@ -61,3 +61,7 @@ harvested_elements:
   skipped: "single-user desktop and messaging surfaces, voice, statusline, bundled skills"
 added_by: initial-setup
 added_reason: "Foundation of this project"
+# runs_on: where the household RUNS this tool, measured (host: how, version). Non-empty = a release
+# since last_verified is an ALARM (registry-fact-probe), not queue churn. Measured 2026-11-23 via ssh/pip/skills.
+runs_on:
+  - "cc-host: ~/.claude/PAI (Algorithm v3.13.0, household fork of the upstream layout)"

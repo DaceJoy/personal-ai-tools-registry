@@ -31,6 +31,10 @@ maintained_by: community-individual
 upstream_fork: https://github.com/DaceJoy/upstream-code-review-graph
 upstream_head: d72e8fbf7ef571b668c26a4222a284bf7792e7a1            # tirth8205/code-review-graph@staging
 upstream_head_date: 2026-10-15
-last_verified: 2026-11-01
+last_verified: 2026-11-23   # re-read v2.3.6..v2.4.0: no security item; 2.3.8 fixes watch mode reporting ok while the graph stops updating; 2.4.0 moves graph schema 13 -> 15
 added_by: initial-setup
 added_reason: "Solves context window pressure without truncating — structural solution"
+# runs_on: where the household RUNS this tool, measured (host: how, version). Non-empty = a release
+# since last_verified is an ALARM (registry-fact-probe), not queue churn. Measured 2026-11-23 via ssh/pip/skills.
+runs_on:
+  - "cc-host: pip code-review-graph 2.3.5 (MCP for FamilyPAI sessions)"
