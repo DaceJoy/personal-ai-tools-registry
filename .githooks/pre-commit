@@ -1,0 +1,15 @@
+#!/bin/sh
+# Thin dispatcher (household rule code-process-commodity-layer (4)). Gate logic lives once in FamilyPAI
+# scripts/git-hooks and ships via familypai-core. Activate: git config core.hooksPath .githooks
+# household-pre-commit.sh = shared-index gate (BLOCKING: a commit naming no paths takes every session's stage;
+# commit with `git commit -m ... -- <paths>`) + format/lint ratchet (WARN). Older checkouts without it: ratchet only.
+for d in "${PAI_GIT_HOOKS_DIR:-}" "$HOME/code/active/familypai-core/scripts/git-hooks" \
+         "$HOME/code/active/FamilyPAI/scripts/git-hooks"; do
+  [ -n "$d" ] && [ -x "$d/household-pre-commit.sh" ] && exec "$d/household-pre-commit.sh"
+done
+for d in "${PAI_GIT_HOOKS_DIR:-}" "$HOME/code/active/familypai-core/scripts/git-hooks" \
+         "$HOME/code/active/FamilyPAI/scripts/git-hooks"; do
+  [ -n "$d" ] && [ -x "$d/format-lint-gate.sh" ] && exec "$d/format-lint-gate.sh"
+done
+echo "[pre-commit] household gates not found (set PAI_GIT_HOOKS_DIR) -- skipped"
+exit 0
