@@ -1,0 +1,40 @@
+tool_id: yogurt
+display_name: Yogurt (local meeting notes)
+category: speech-to-text
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/FrigadeHQ/yogurt
+  docs: https://yogurt.so/
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Local two-track meeting recorder on whisper.cpp. Nothing of the app taken (no household meeting need). Its whisper guards are harvested for FamilyPAI need N37 (yt-whisper stores decoder loops): E1 VAD before whisper (DEPEND on the whisper.cpp flag we already run), E2 garbled-chunk check and retry with the language open, E3 forced language when it is known. E4 stock-line filter kept as idea I31."
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+licence:
+  spdx: MIT
+  read: "license.spdx_id via gh api repos/FrigadeHQ/yogurt (2026-11-24)"
+  notes: "E2/E3 adapted into Python with an adapted-from line naming app/src/main/asr/transcribe.ts at aaa07d8e"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261124-000607_intake-link-batch-45-cc-links-and-github-similar-search/targets/T24-yogurt.md"
+  falsifier: "After the yt-whisper change, probes/whisper-loop-census.py --since <deploy date> reads bad 0 of n with n >= 20, a re-transcription of #2am has no run of >= 20 identical lines, and scripts/stt_bakeoff WER on FLEURS pl n=100 stays inside the 0.057 run's CI."
+  falsifier_result: "not run -- repair deposited to the FamilyPAI program register (INBOX 20261124-1010); baseline bad 91 of 904 ever, 5 of 53 since 2026-11-01"
+
+install:
+  hint: "nothing installed; the harvested elements are whisper.cpp flags and a function"
+  docs_url: https://github.com/FrigadeHQ/yogurt
+  arm64_support: true
+
+maintained_by: company
+upstream_fork: null
+upstream_head: aaa07d8eb9afa37ec0664fabdd792e33b5cf999a
+upstream_head_date: 2026-11-24
+last_verified: 2026-11-24
+added_by: manual
+added_reason: "Third-party intake grill 2026-11-24 (link batch 45, T24): HARVEST for N37"

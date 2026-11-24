@@ -1,0 +1,19 @@
+tool_id: yogurt
+detected_by: intake-link-batch-45
+detected_date: 2026-11-24
+
+primary_category: speech-to-text
+additional_categories: []
+
+keywords:
+  - whisper.cpp
+  - VAD
+  - hallucination
+  - meeting notes
+
+use_cases:
+  - "HARVEST E1 VAD, E2 garble check, E3 forced language for N37 (yt-whisper decoder loops)"
+
+tags:
+  phase: [2]
+  type: [harvest-source]
