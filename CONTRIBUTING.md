@@ -56,6 +56,9 @@ upstream_fork: <url or null>   # a fork we keep as deletion insurance; null = no
 upstream_head: <sha or null>   # the commit this entry was last verified AGAINST (the PIN)
 upstream_head_date: <date>     # that commit's date -- drift is measured from these two
 last_verified: <date>
+runs_on:                       # where the household RUNS it; omit if installed nowhere. A new
+  - "<host>: <how>, <version>" # upstream release raises an alarm only for entries carrying this
+                               # (status: active is not that proxy -- 6 of 9 ran nowhere, 2026-11-23)
 added_by: ecosystem-scout | initial-setup | manual
 added_reason: "<why this tool was added>"
 ```
