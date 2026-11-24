@@ -11,7 +11,7 @@ source:
   pypi: null
 
 relevance_to_personalai:
-  use_case: "Markdown-backed boards mic may install in his own Obsidian (d012). Nothing in PAI changes: a board is a plain .md file (## lanes, list-item cards, %% kanban:settings block). Watched for custody: moved to community-archive, 0 commits in 90 days, maintainers wanted."
+  use_case: "Markdown-backed boards mic may install in his own Obsidian (d012). Nothing in PAI changes: a board is a plain .md file (## lanes, list-item cards, %% kanban:settings block). Watched for custody: moved to community-archive, 0 commits in 90 days, maintainers wanted. Core Obsidian Bases has its own Kanban view since app 1.14 (cards = notes), which replaces this plugin for one-note-per-task boards."
   phase: 2
   replaces_what: null
   alternatives: []
