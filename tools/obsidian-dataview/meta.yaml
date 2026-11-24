@@ -1,0 +1,45 @@
+tool_id: obsidian-dataview
+display_name: Obsidian Dataview
+category: notes-tooling
+status: watch
+type: application
+
+source:
+  github: https://github.com/blacksmithgu/obsidian-dataview
+  docs: https://blacksmithgu.github.io/obsidian-dataview/
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Named by tenant decision d012 for an AppFlowy-like grid. Measured 2026-11-24: mic's vault already runs core Obsidian Bases (bases:true, 3 .base files incl. a filtered Project Management table), and Dataview has 0 commits in 90 days. Held at watch only until mic settles the d012 conflict; REJECT expected."
+  phase: 2
+  replaces_what: null
+  alternatives:
+    - obsidian-core-bases (already enabled in mic's vault)
+
+highlights:
+  - "DQL parser src/query/parse.ts:74 (parsimmon); index src/data-index/index.ts"
+  - "DataviewJS executes note text (src/api/inline-api.ts:350); off by default (src/settings.ts:104)"
+  - "Last commit 2025-04-08, release 0.5.70 2025-04-07; successor blacksmithgu/datacore"
+
+licence:
+  spdx: MIT
+  read: "license.spdx_id via gh api repos/blacksmithgu/obsidian-dataview (2026-11-24)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261030-230237_github-target-grill-and-source-repo-register/targets/T31-obsidian-dataview.md"
+  falsifier: "see the verdict file's FALSIFIER heading"
+  falsifier_result: "not run -- no element taken (all IGNORE; WATCH capped by d012)"
+
+install:
+  hint: "nothing installed; not recommended while core Bases serves the grid"
+  docs_url: https://blacksmithgu.github.io/obsidian-dataview/
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 5ad0994ff384cbb797de382e7edff2388141b73a
+upstream_head_date: 2025-04-08
+last_verified: 2026-11-24
+added_by: manual
+added_reason: "T31 grill iter 37 (mic Obsidian batch, d012): WATCH capped by the d012 CONTRADICTS row; every element IGNORE"

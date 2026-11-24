@@ -1,0 +1,19 @@
+tool_id: obsidian-tasks
+detected_by: github-target-grill
+detected_date: 2026-11-24
+
+primary_category: notes-tooling
+additional_categories: []
+
+keywords:
+  - obsidian
+  - tasks
+  - task format
+  - recurrence
+
+use_cases:
+  - "T33 grill iter 37 (mic Obsidian batch): WATCH -- DEPEND-eligible as mic's install; E2 format HARVEST-eligible gated on thread 20261124-165302"
+
+tags:
+  phase: [2]
+  type: [application]

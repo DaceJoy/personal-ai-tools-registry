@@ -1,0 +1,44 @@
+tool_id: obsidian-kanban
+display_name: Obsidian Kanban
+category: notes-tooling
+status: watch
+type: application
+
+source:
+  github: https://github.com/community-archive/obsidian-kanban
+  docs: https://publish.obsidian.md/kanban/
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Markdown-backed boards mic may install in his own Obsidian (d012). Nothing in PAI changes: a board is a plain .md file (## lanes, list-item cards, %% kanban:settings block). Watched for custody: moved to community-archive, 0 commits in 90 days, maintainers wanted."
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Board format: frontmatter kanban-plugin, ## lane headings, cards as list items (src/parsers/formats/list.ts:407-443)"
+  - "Every move rewrites the whole file via vault.modify (src/main.ts:350)"
+  - "GPL-3.0: use yes, copy into our code no; REIMPLEMENT the format if Zumi ever reads boards"
+
+licence:
+  spdx: GPL-3.0
+  read: "license.spdx_id via gh api repos/community-archive/obsidian-kanban (2026-11-24)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261030-230237_github-target-grill-and-source-repo-register/targets/T32-obsidian-kanban.md"
+  falsifier: "see the verdict file's FALSIFIER heading"
+  falsifier_result: "not run -- no element landed (WATCH)"
+
+install:
+  hint: "nothing installed by the household; an Obsidian community plugin mic may add himself"
+  docs_url: https://publish.obsidian.md/kanban/
+  arm64_support: unknown
+
+maintained_by: community-archive
+upstream_fork: null
+upstream_head: 5134c05ad9a7861f551cd15d57cf50db8394901a
+upstream_head_date: 2026-03-06
+last_verified: 2026-11-24
+added_by: manual
+added_reason: "T32 grill iter 37 (mic Obsidian batch, d012): WATCH -- DEPEND-eligible as mic's own install, custody risk"

@@ -1,0 +1,19 @@
+tool_id: obsidian-dataview
+detected_by: github-target-grill
+detected_date: 2026-11-24
+
+primary_category: notes-tooling
+additional_categories: []
+
+keywords:
+  - obsidian
+  - dataview
+  - note query
+  - frontmatter
+
+use_cases:
+  - "T31 grill iter 37: WATCH capped by d012; core Bases already serves the grid"
+
+tags:
+  phase: [2]
+  type: [application]

@@ -1,0 +1,44 @@
+tool_id: obsidian-tasks
+display_name: Obsidian Tasks
+category: notes-tooling
+status: watch
+type: application
+
+source:
+  github: https://github.com/obsidian-tasks-group/obsidian-tasks
+  docs: https://publish.obsidian.md/tasks/
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Inline task management over the checkbox lines mic already writes (551 open, 82 done across 39 files, measured 2026-11-24). Its task-line format (DefaultTaskSerializer) is the contract a future Zumi vault-task reader must parse -- handed to FamilyPAI thread 20261124-165302."
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Task line format: DefaultTaskSerializer.ts:86-104 (signifier emoji), DataviewTaskSerializer.ts:72-78 (due::/start::/repeat::)"
+  - "Write-back is read-then-modify, not vault.process (src/Obsidian/File.ts:176, :223 TODO)"
+  - "Active: 748 commits in 90 days, release 8.6.0 2026-10-16"
+
+licence:
+  spdx: MIT
+  read: "license.spdx_id via gh api repos/obsidian-tasks-group/obsidian-tasks (2026-11-24)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261030-230237_github-target-grill-and-source-repo-register/targets/T33-obsidian-tasks.md"
+  falsifier: "see the verdict file's FALSIFIER heading"
+  falsifier_result: "not run -- no element landed (WATCH)"
+
+install:
+  hint: "nothing installed by the household; an Obsidian community plugin mic may add himself"
+  docs_url: https://publish.obsidian.md/tasks/
+  arm64_support: unknown
+
+maintained_by: community-org
+upstream_fork: null
+upstream_head: 58f9960cd1d40429b1e2708659f7e37f352614ce
+upstream_head_date: 2026-11-22
+last_verified: 2026-11-24
+added_by: manual
+added_reason: "T33 grill iter 37 (mic Obsidian batch): WATCH -- DEPEND-eligible as mic's install; E2 format HARVEST-eligible gated on thread 20261124-165302"

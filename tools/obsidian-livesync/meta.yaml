@@ -1,0 +1,44 @@
+tool_id: obsidian-livesync
+display_name: Self-hosted LiveSync (Obsidian)
+category: notes-tooling
+status: watch
+type: application
+
+source:
+  github: https://github.com/vrtmrz/obsidian-livesync
+  docs: https://github.com/vrtmrz/obsidian-livesync#readme
+  docker: null
+  pypi: null
+
+relevance_to_personalai:
+  use_case: "Vault sync over self-hosted CouchDB. NOT for mic's vault: Syncthing michal-workspace already syncs it on 3 peers with 0 conflicts and README.md:29 forbids running beside another sync. Watched for E2, a separate shared family vault for Hania, gated on mic (L2 infra + account)."
+  phase: 2
+  replaces_what: null
+  alternatives: []
+
+highlights:
+  - "Own hard limit: not alongside another sync solution (README.md:29, docs/quick_setup.md:10)"
+  - "Headless CLI peer src/apps/cli (Node >= 22.22) is the only way a non-Obsidian host stays a peer"
+  - "E2EE + path obfuscation; ids, revision info, counts and ciphertext lengths stay visible (docs/settings.md:334)"
+
+licence:
+  spdx: MIT
+  read: "license.spdx_id via gh api repos/vrtmrz/obsidian-livesync (2026-11-24)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261030-230237_github-target-grill-and-source-repo-register/targets/T30-obsidian-livesync.md"
+  falsifier: "see the verdict file's FALSIFIER heading"
+  falsifier_result: "not run -- no element landed (WATCH)"
+
+install:
+  hint: "nothing installed by the household; an Obsidian community plugin mic may add himself"
+  docs_url: https://github.com/vrtmrz/obsidian-livesync#readme
+  arm64_support: unknown
+
+maintained_by: community-individual
+upstream_fork: null
+upstream_head: 70899e2fd44277e564173d2c45ee7fde6f499185
+upstream_head_date: 2026-11-23
+last_verified: 2026-11-24
+added_by: manual
+added_reason: "T30 grill iter 37 (mic Obsidian batch, d012): WATCH -- E2 family vault DEPEND-eligible gated on mic"

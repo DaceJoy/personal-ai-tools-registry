@@ -1,0 +1,20 @@
+tool_id: obsidian-livesync
+detected_by: github-target-grill
+detected_date: 2026-11-24
+
+primary_category: notes-tooling
+additional_categories: []
+
+keywords:
+  - obsidian
+  - vault sync
+  - couchdb
+  - pouchdb
+  - e2ee
+
+use_cases:
+  - "T30 grill iter 37 (mic Obsidian batch, d012): WATCH -- E2 family vault DEPEND-eligible gated on mic"
+
+tags:
+  phase: [2]
+  type: [application]

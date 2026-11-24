@@ -1,0 +1,19 @@
+tool_id: obsidian-kanban
+detected_by: github-target-grill
+detected_date: 2026-11-24
+
+primary_category: notes-tooling
+additional_categories: []
+
+keywords:
+  - obsidian
+  - kanban
+  - markdown boards
+  - tasks
+
+use_cases:
+  - "T32 grill iter 37 (mic Obsidian batch, d012): WATCH -- DEPEND-eligible as mic's own install, custody risk"
+
+tags:
+  phase: [2]
+  type: [application]
