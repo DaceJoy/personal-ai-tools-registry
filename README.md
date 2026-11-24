@@ -120,6 +120,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [Shannon](tools/shannon/meta.yaml) | 2026-11-03 | `b9744f6cecc5` | 3 | 👀 watch |
 | [Animate skill](tools/animate/meta.yaml) | 2026-11-03 | `7e5eb56feb2d` | 3 | 👀 watch |
 | [T3 Code](tools/t3code/meta.yaml) | 2026-11-21 | `194025ef1102` | 2 | 🧪 experimental |
+| [Cloudflare security-audit skill](tools/security-audit-skill/meta.yaml) | 2026-11-24 | `c1c8a8c1` | 3 | 🧪 experimental |
 | [OpenWA](tools/openwa/meta.yaml) | 2026-11-04 | `11bb9592fcb0` | 3 | 👀 watch |
 | [Janas](tools/janas/meta.yaml) | 2026-11-04 | `80062351ee74` | 3 | 👀 watch |
 | [AI Employees](tools/ai-employees/meta.yaml) | 2026-10-30 | `2cdd34e1f0d7` | 3 | 👀 watch |

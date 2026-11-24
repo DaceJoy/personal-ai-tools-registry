@@ -1,0 +1,11 @@
+tool_id: security-audit-skill
+detected_by: manual
+detected_date: 2026-11-24
+
+primary_category: security
+additional_categories: []
+
+keywords:
+  - source-first security audit
+  - validated findings
+  - trust boundary

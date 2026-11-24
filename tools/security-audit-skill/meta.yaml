@@ -1,0 +1,44 @@
+tool_id: security-audit-skill
+display_name: Cloudflare security-audit skill
+category: security
+status: experimental
+type: dependency
+
+source:
+  github: https://github.com/cloudflare/security-audit-skill
+  docs: https://github.com/cloudflare/security-audit-skill/blob/main/skills/security-audit/SKILL.md
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Source-first defensive audit skill: findings as validated records (confirmed / needs_validation / rejected, severity only on confirmed, six boundary fields), a coverage ledger with explicit deferred reasons, two zero-dependency node validators, domain companions (data isolation, AI and LLM, web auth). PILOT for FamilyPAI need N36: a whole-surface audit of the daemon trust boundaries, run serially (household agent ban), known-answer readout = the cross_org_attempt optional-header class."
+  phase: 3
+  replaces_what: "nothing; incidental boundary finds during unrelated work"
+  alternatives:
+    - anthropics/defending-code-reference-harness
+    - openai/codex-security
+
+licence:
+  spdx: MIT
+  read: "LICENSE in repo root (Cloudflare)"
+  notes: "DEPEND unmodified, notice kept"
+
+pinned_version: "c1c8a8c1 (no tag upstream)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261124-000607_intake-link-batch-45-cc-links-and-github-similar-search/targets/T02-security-audit-skill.md"
+  falsifier: "A findings.json over containers/daemon that passes validate-findings.cjs and validate-coverage-ledger.cjs and contains the cross_org_attempt optional-header class (or names its fix site) passes; one missing it fails the pilot."
+  falsifier_result: "not run -- pilot not started (YODO decision signal 2026-11-24)"
+
+install:
+  hint: "copy skills/security-audit/ at c1c8a8c1 into ~/.claude/skills/security-audit; node >= 18, no npm install"
+  docs_url: https://github.com/cloudflare/security-audit-skill
+  arm64_support: true
+
+maintained_by: company-cloudflare
+upstream_fork: null
+upstream_head: c1c8a8c1
+upstream_head_date: 2026-09-14
+last_verified: 2026-11-24
+added_by: manual
+added_reason: "Third-party intake grill 2026-11-24 (link batch 45, T02): PILOT for N36"
