@@ -2,6 +2,22 @@
 
 ## Adding a new tool
 
+### Admission: how a candidate is found and vetted BEFORE it gets a directory
+
+An entry is written only after an intake grill, never from a search result. The procedure lives in
+FamilyPAI and is not repeated here:
+
+1. FIND: `~/.claude/skills/prior-art-sweep` steps 3-5 -- our own files first (this repo included),
+   then `gh search repos ... --sort stars` AND the long tail (young repos read even at 0 stars).
+2. VET: `FamilyPAI/docs/THIRD-PARTY-INTAKE.md` + `docs/INTAKE-RUBRIC.md`. Heading 1 (IDENTITY)
+   RECORDS stars, owner type, release and licence from commands; heading 3 names the real file that
+   does the work. Point the entry at that file with `verdict_source:`.
+3. NEVER GATE ON SURFACE: stars, install counts and author obscurity are recorded, never alone a
+   verdict (rubric rule 4). The `find-skills` thresholds of vercel-labs/skills (1K+ installs,
+   distrust under 100 stars) were graded 2026-11-24 and deliberately NOT adopted for that reason.
+4. NEVER INSTALL WITHOUT APPROVAL: no `-y` / skip-confirmation install flag, even where an
+   upstream example shows one (household `security-before-action`).
+
 Create a DIRECTORY `tools/<tool-id>/` holding two files. A single flat YAML file per tool is NOT the
 shape -- this document described that until 2026-11-01 while all 11 live entries used the
 directory form, so the one document a contributor reads first was the one place that
