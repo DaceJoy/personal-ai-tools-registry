@@ -79,3 +79,8 @@ categories:
     display_name: Hybrid Search & Retrieval
     emoji: "🔍"
     description: "Techniques combining semantic and keyword search: RRF, DBSF, dynamic weighting, RAG-Fusion"
+
+  - id: testing-tools
+    display_name: Testing Tools
+    emoji: "🧪"
+    description: "Test-runner plugins and guards used by household code repos"

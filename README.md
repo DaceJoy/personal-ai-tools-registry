@@ -86,6 +86,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [everything-claude-code](tools/everything-claude-code/meta.yaml) | 2026-11-01 | `b38be6a7` | 1 | ✅ active |
 | [agentshield](tools/agentshield/meta.yaml) | 2026-11-01 | `b0891303` | 1 | ✅ active |
 | [code-review-graph](tools/code-review-graph/meta.yaml) | 2026-11-01 | `d72e8fbf` | 1 | ✅ active |
+| [pytest-timeout](tools/pytest-timeout/meta.yaml) | 2026-11-27 | `ddabc934` | 1 | ✅ active |
 | [gstack](tools/gstack/meta.yaml) | 2026-11-01 | `f7397563` | 1 | ✅ active |
 | [qdrant](tools/qdrant/meta.yaml) | 2026-11-01 | `222b2e44` | 2 | ✅ active |
 | [docling](tools/docling/meta.yaml) | 2026-11-01 | `26a5bcfd` | 2 | ✅ active |

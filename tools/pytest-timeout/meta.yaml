@@ -1,0 +1,34 @@
+tool_id: pytest-timeout
+display_name: pytest-timeout (pytest-dev)
+category: testing-tools
+status: active
+type: library
+
+source:
+  github: https://github.com/pytest-dev/pytest-timeout
+  docs: https://github.com/pytest-dev/pytest-timeout#readme
+  docker: null
+  pypi: https://pypi.org/project/pytest-timeout/
+
+relevance_to_personalai:
+  use_case: "Per-test wall cap that fails a hung test BY NAME with all thread stacks (signal method); paired with an outer process-group kill (FamilyPAI scripts/test_guard.py)"
+  phase: 1
+  replaces_what: null
+  alternatives: ["pytest built-in faulthandler_timeout (dumps the frame, does not fail the test)", "own stdlib SIGALRM conftest"]
+
+highlights:
+  - "DEPEND pinned ==2.4.0 (wheel sha256 c42667e5cdadb151...); 2.5.0 is YANKED on PyPI (accidental breaking change)"
+  - "Aborts the TEST, not the run: a non-daemon multiprocessing child still hangs interpreter exit -- the outer runner must group-kill"
+
+install:
+  hint: "pip install --user 'pytest-timeout==2.4.0'; pytest.ini timeout = 120, timeout_method = signal"
+  docs_url: https://github.com/pytest-dev/pytest-timeout#readme
+  arm64_support: yes
+
+maintained_by: org
+upstream_fork: null
+upstream_head: ddabc934535081a5bf9ba7c9ca5b494aeaf8f665
+upstream_head_date: 2025-05-05
+last_verified: 2026-11-27
+added_by: manual
+added_reason: "FamilyPAI intake T01-pytest-timeout (thread 20261127-175223 item T2): ADOPT, E1-E3 DEPEND, closes N38; falsifier = known-answer hang test named FAILED, sibling runs, 0 orphans"

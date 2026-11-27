@@ -1,0 +1,15 @@
+tool_id: pytest-timeout
+detected_by: manual
+detected_date: 2026-11-27
+
+primary_category: testing-tools
+additional_categories: []
+
+use_cases:
+  - "Name a hung test as a red test on every pytest runner the day it lands (N38)"
+
+tags:
+  phase: [1]
+  type: [library]
+  maintained_by: org
+  grill_program: "20261127-175223_test-suite-time-census-and-hang-guard"
