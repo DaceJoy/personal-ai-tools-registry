@@ -31,7 +31,7 @@ maintained_by: community-individual
 upstream_fork: null
 upstream_head: 888299fb5f0b82181897dc0e61bfb4b036f0aea5
 upstream_head_date: 2026-10-26
-last_verified: 2026-11-23   # re-read v0.9.5..v0.9.6: 0.9.6 is a SECURITY release (11 advisories, 9 in the Docker server); upgrade routed to server-patch-window 2026-11-23
+last_verified: 2026-11-28   # measured on LXC131: familypai-crawl4ai runs 0.9.6 (image 2026-11-24) = latest release; the 0.9.6 security upgrade routed 2026-11-23 is deployed
 added_by: manual
 added_reason: >-
   mic asked 2026-11-02 whether we do this better than crawl4ai or whether they hold advantages to
