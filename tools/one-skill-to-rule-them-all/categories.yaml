@@ -1,0 +1,19 @@
+tool_id: one-skill-to-rule-them-all
+detected_by: intake-one-skill-to-rule-them-all
+detected_date: 2026-11-28
+
+primary_category: agent-skills
+additional_categories: [self-improvement]
+
+keywords:
+  - user corrections
+  - skill updates
+  - observation log
+  - second violation barrier
+
+use_cases:
+  - "Counting user corrections per held rule so repeated violations get a structural barrier (FamilyPAI N39)"
+
+tags:
+  phase: [2]
+  type: [harvest-source]

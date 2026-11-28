@@ -1,0 +1,30 @@
+tool_id: one-skill-to-rule-them-all
+display_name: One Skill to Rule Them All (task-observer)
+category: agent-skills
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/rebelytics/one-skill-to-rule-them-all
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Meta-skill (CC-BY-4.0) that logs session corrections as observations and stages skill-text updates for approval. Not installed: its always-on core is ~10K tokens per session start and it would be a third observation store; measured on 14 d of our transcripts, 17 of 22 corrections re-state rules we already hold. Harvested: the doctrine 'a rule broken twice gets a barrier, not a rewording', as a per-rule count of mic's correction turns (FamilyPAI N39). Evals harness pattern kept as IDEA I09."
+  phase: 2
+  replaces_what: "census6 (I18), blind at ~1 % recall, is replaced by the N39 correction census"
+  alternatives:
+    - "YujunZhou/tellonce (MIT, corrections -> rules + runtime checks via hooks; not graded)"
+    - "BayramAnnakov/claude-reflect (MIT; not graded)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261128-013414_intake-one-skill-to-rule-them-all/targets/one-skill.md"
+  falsifier: "Fixture transcript: 'Nie rób tego bez pytania' after an assistant Bash call, an auto-next push and a rule-quoting turn yields exactly one correction (census6: 0); two corrections mapped to one rule list it as a barrier candidate"
+
+maintained_by: individual
+upstream_head: 48a5ee904be716bdee89d26af64917e663a5f172
+upstream_head_date: 2026-11-27
+last_verified: 2026-11-28
+added_by: intake-one-skill-to-rule-them-all
+added_reason: "mic 2026-11-28 01:30: grill with measurement and adopt as well as possible (seam handle #m9t)"
