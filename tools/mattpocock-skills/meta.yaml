@@ -1,0 +1,31 @@
+tool_id: mattpocock-skills
+display_name: Skills For Real Engineers (mattpocock/skills)
+category: agent-skills
+status: watch
+type: harvest-source
+
+source:
+  github: https://github.com/mattpocock/skills
+  docs: null
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "MIT Markdown skills. Six household skills derive from it (copied 2026-04..05, provenance unrecorded until 2026-11-28): handoff (verbatim, base d54c497a), write-a-skill (base 62f43a18), diagnose (base 7afa86d3), to-prd (base aaf2453f), and the bases of grill-me (62f43a18) and grill-with-docs (e74f0061), both since rewritten. Each copy now carries source: <base URL> and the MIT notice in its frontmatter (FamilyPAI N09). Not installed as a plugin: it would overwrite five household edits. Upstream since our copies: diagnose -> diagnosing-bugs (adds a redact step and a red-capable-loop gate), to-prd -> to-spec, write-a-skill -> writing-for-agents, grill-me/grill-with-docs -> delegators to grilling/domain-modeling. Four elements kept as IDEA I33-I36."
+  phase: 2
+  replaces_what: "nothing; it is the upstream of skills we already run"
+  alternatives:
+    - "emilkowalski/skills (registered, watch)"
+    - "rebelytics/one-skill-to-rule-them-all (registered, watch)"
+
+harvested_elements:
+  verdict_file: "familypai:MEMORY/WORK/20261128-013223_intake-link-batch-46-skills-video-local-llm/targets/T02-mattpocock-skills.md"
+  elements: "handoff, write-a-skill, diagnose, to-prd (copies); grill-me, grill-with-docs (bases)"
+  falsifier: "FamilyPAI docs/needs-probes/N09.sh counts skill dirs without a source: key: 31 before the provenance lines, 24 after; removing any one of the six source lines makes it 25"
+
+maintained_by: individual
+upstream_head: bbadaa631c37af594e5a05c9cefacd9956136b18
+upstream_head_date: 2026-11-27
+last_verified: 2026-11-28
+added_by: intake-link-batch-46-skills-video-local-llm
+added_reason: "mic 2026-11-28 ~01:30 handed the link (seam handle #m9v); we run six skills derived from it"

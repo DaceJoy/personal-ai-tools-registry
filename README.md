@@ -154,6 +154,7 @@ Each tool lives in `tools/<tool-id>/` with up to three files:
 | [meituan-longcat CLASS W (12 weights)](tools/longcat-weights-class/meta.yaml) | 2026-11-01 | `1ac91dad53bc` | 3 | 👀 watch |
 | [meituan-longcat CLASS B (12 benchmarks)](tools/longcat-benchmarks-class/meta.yaml) | 2026-11-01 | `edc4e80e642b` | 3 | 👀 watch |
 | [One Skill to Rule Them All (task-observer)](tools/one-skill-to-rule-them-all/meta.yaml) | 2026-11-27 | `48a5ee904be7` | 2 | 👀 watch |
+| [Skills For Real Engineers (mattpocock/skills)](tools/mattpocock-skills/meta.yaml) | 2026-11-27 | `bbadaa631c37` | 2 | 👀 watch |
 
 > The 11 rows from PAI through `polish-splade` are the pre-existing entries (verified 2026-11-01
 > by the S1b session of `FamilyPAI/MEMORY/WORK/20261030-230237_github-target-grill-and-source-

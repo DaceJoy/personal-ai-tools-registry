@@ -1,0 +1,19 @@
+tool_id: mattpocock-skills
+detected_by: intake-link-batch-46-skills-video-local-llm
+detected_date: 2026-11-28
+
+primary_category: agent-skills
+additional_categories: [engineering-process]
+
+keywords:
+  - agent skills
+  - skill provenance
+  - grilling
+  - diagnosis loop
+
+use_cases:
+  - "Upstream of six household skills (handoff, write-a-skill, diagnose, to-prd, grill-me, grill-with-docs); per-skill base shas in each SKILL.md source: line"
+
+tags:
+  phase: [2]
+  type: [harvest-source]
