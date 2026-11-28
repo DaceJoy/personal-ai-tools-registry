@@ -1,0 +1,41 @@
+tool_id: inkling-2-mini
+display_name: Inkling 2 Mini (thinkingmachines, open weights)
+category: local-inference
+status: watch
+
+source:
+  github: null
+  docs: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+  pypi: null
+  docker: null
+
+relevance_to_personalai:
+  use_case: "Apache-2.0 multimodal 26.4B MoE (card 3.4B active, 5.4B with three looped passes; our config recount 4.43B), the strongest local candidate seen for the qwen3:8b roles (litellm qwen-local, daemon ACQUIRE_CLASS_MODEL, a local label judge). Not runnable on our stack on 2026-11-28: Ollama supports it on Apple silicon only through 0.40.19, LXC130 runs Ollama 0.24.0 (upgrade pending mic, S-E24-2), and the 16.61 GB Q4_K_M GGUF exceeds the vmdata margin (20.2 GiB available, 20 GB patch floor). Vendor benchmarks only; nothing measured on our tasks."
+  phase: 3
+  replaces_what: "would challenge qwen3:8b / qwen3:4b on LXC130 if a PILOT passes its falsifier"
+  alternatives:
+    - "qwen3:8b on LXC130 (in use)"
+    - "longcat-weights-class (watch, not self-hostable)"
+
+highlights:
+  - "Hosted counter-check: OpenRouter thinkingmachines/inkling-2-mini, paid 0.06 / 0.24 USD per M tokens, no :free variant -- one litellm-sidecar line away, not wired (routing is free-tier only; hosted gives up the no-egress reason)"
+  - "llama.cpp support merged 2026-11-14 (PR 32217) with follow-ups open; LXC130 has no llama.cpp"
+  - "LXC130 generation runs on the AMD iGPU gfx1103 via Vulkan: qwen3:8b 2.18 tok/s measured 2026-11-28 under load; Inkling estimated 3.1-3.8 tok/s (reasoned, upper bound)"
+
+install:
+  hint: "n/a until an Ollama release supports inkling2 on PC; then `ollama pull inkling-2-mini` on LXC130 (19-20 GB) only after vmdata >= 40 GB available"
+  docs_url: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+  arm64_support: unknown
+
+watch:
+  verdict_file: "familypai:MEMORY/WORK/20261128-013223_intake-link-batch-46-skills-video-local-llm/targets/T10-inkling-2-mini.md"
+  trigger: "watch-inkling-2-mini-pc-runtime (FamilyPAI TRIGGERS.json, reopen 2026-12-28): gates G1 Ollama PC support, G2 LXC130 version, G3 vmdata >= 40 GB"
+  falsifier: "PILOT keeps it only if it beats qwen3:8b on a fixed labelled set by more than the set's binomial 95% interval, decodes >= 2 tok/s on LXC130, and bge-m3 search latency stays in band while loaded"
+
+maintained_by: company
+upstream_fork: null
+upstream_head: c9d028302cd0f035fdf8e7e91f089a4ce94d2195
+upstream_head_date: 2026-11-24
+last_verified: 2026-11-28
+added_by: intake-link-batch-46-skills-video-local-llm
+added_reason: "mic 2026-11-28 ~01:30 handed the link (seam handle #m9x) asking 'lokalny LLM?'"

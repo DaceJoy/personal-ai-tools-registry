@@ -1,0 +1,20 @@
+tool_id: inkling-2-mini
+detected_by: intake-link-batch-46-skills-video-local-llm
+detected_date: 2026-11-28
+
+primary_category: local-inference
+additional_categories: [models]
+
+keywords:
+  - open weights
+  - mixture of experts
+  - looped transformer
+  - local LLM
+  - multimodal
+
+use_cases:
+  - "Candidate local generalist for LXC130 roles held by qwen3:8b, once an Ollama PC runtime and disk room exist"
+
+tags:
+  phase: [3]
+  type: [model-weights]
